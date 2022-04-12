@@ -297,7 +297,7 @@ Color Flipper
 
 .navbar--container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr auto;
   align-items: center;
   width: 90vw;
   margin-inline: auto;
