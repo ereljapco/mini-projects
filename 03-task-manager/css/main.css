@@ -286,9 +286,16 @@ ul {
 }
 
 /*===============
-Task Manager
+main
 ===============*/
 .task-manager {
   height: 100vh;
   background-color: var(--clr-white);
+}
+
+/*===============
+form
+===============*/
+.task-manager__title {
+  text-align: center;
 }
