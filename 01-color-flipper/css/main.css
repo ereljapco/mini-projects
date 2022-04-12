@@ -347,7 +347,7 @@ Color Flipper
   height: inherit;
   max-width: var(--max-width);
   align-content: center;
-  justify-content: center;
+  justify-items: center;
 }
 
 .color-flipper__title {
