@@ -309,6 +309,13 @@ Color Flipper
   grid-template-columns: repeat(2, 1fr);
   justify-items: end;
 }
+
 .navbar__link {
   display: inline-block;
+  color: var(--clr-primary-500);
+  transition: var(--transition);
+}
+
+.navbar__link:hover {
+  color: var(--clr-secondary-500);
 }
