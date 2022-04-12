@@ -300,6 +300,7 @@ Color Flipper
 .navbar__links {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  justify-items: end;
 }
 .navbar__link {
   display: inline-block;
