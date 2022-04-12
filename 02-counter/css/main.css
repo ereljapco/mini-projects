@@ -314,6 +314,12 @@ Counter
   margin: 0;
 }
 
+.counter__btns {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  column-gap: 1.25rem;
+}
+
 .counter__btn {
   color: var(--clr-secondary-500);
   background-color: transparent;
