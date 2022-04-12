@@ -344,5 +344,6 @@ Color Flipper
 
 .color-flipper__title {
   color: var(--clr-grey-50);
+  font-size: 2.5rem;
   background-color: var(--clr-tertiary-500);
 }
