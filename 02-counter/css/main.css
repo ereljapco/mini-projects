@@ -292,3 +292,9 @@ Counter
   height: 100vh;
   background-color: var(--clr-tertiary-500);
 }
+
+.counter__main--container {
+  height: inherit;
+  display: grid;
+  align-content: center;
+}
