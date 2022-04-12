@@ -301,6 +301,7 @@ Color Flipper
   color: var(--clr-tertiary-500);
   font-size: 1.5rem;
   font-weight: 700;
+  margin-block: 0;
 }
 
 .navbar__links {
