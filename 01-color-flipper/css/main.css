@@ -297,6 +297,12 @@ Color Flipper
   box-shadow: var(--shadow-2);
 }
 
+.navbar__logo {
+  color: var(--clr-tertiary-500);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
 .navbar__links {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
