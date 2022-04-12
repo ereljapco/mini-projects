@@ -298,11 +298,11 @@ Counter
   display: grid;
   align-content: center;
   justify-content: center;
+  text-align: center;
 }
 
 .counter__title {
   color: var(--clr-white);
-  text-align: center;
 }
 
 .counter__count {
