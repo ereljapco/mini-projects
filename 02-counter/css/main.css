@@ -313,3 +313,8 @@ Counter
   font-weight: 600;
   margin: 0;
 }
+
+.counter__btn {
+  color: var(--clr-secondary-500);
+  background-color: transparent;
+}
