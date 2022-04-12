@@ -341,3 +341,7 @@ Color Flipper
   height: calc(100vh - 4rem);
   background-color: var(--clr-grey-50);
 }
+
+.color-flipper__title {
+  background-color: var(--clr-tertiary-500);
+}
