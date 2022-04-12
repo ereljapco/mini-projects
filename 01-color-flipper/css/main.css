@@ -144,6 +144,14 @@ ul {
   object-fit: cover;
 }
 
+.primary {
+  color: var(--clr-primary-500);
+}
+
+.secondary {
+  color: var(--clr-secondary-500);
+}
+
 /* buttons */
 .btn {
   display: inline-block;
