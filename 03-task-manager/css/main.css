@@ -291,11 +291,16 @@ main
 .task-manager {
   height: 100vh;
   background-color: var(--clr-tertiary-500);
+  padding-top: 6rem;
 }
 
 /*===============
 form
 ===============*/
+.task-manager__form {
+  margin-top: 0;
+}
+
 .task-manager__title {
   font-size: 1.5rem;
   text-align: center;
