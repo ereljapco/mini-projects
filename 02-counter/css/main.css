@@ -308,4 +308,5 @@ Counter
 .counter__count {
   color: var(--clr-primary-500);
   font-size: 6rem;
+  margin: 0;
 }
