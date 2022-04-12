@@ -342,6 +342,14 @@ Color Flipper
   background-color: var(--clr-grey-50);
 }
 
+.color-flipper--container {
+  display: grid;
+  height: inherit;
+  max-width: var(--max-width);
+  align-content: center;
+  justify-content: center;
+}
+
 .color-flipper__title {
   color: var(--clr-grey-50);
   font-size: 2.5rem;
