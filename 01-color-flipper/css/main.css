@@ -343,5 +343,6 @@ Color Flipper
 }
 
 .color-flipper__title {
+  color: var(--clr-grey-50);
   background-color: var(--clr-tertiary-500);
 }
