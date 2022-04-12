@@ -367,7 +367,9 @@ Color Flipper
 .color-flipper__btn {
   font-weight: 600;
   text-transform: uppercase;
+  letter-spacing: 5px;
   background-color: transparent;
+  padding: 0.5rem 1.5rem;
   border: 2px solid var(--clr-tertiary-500);
 }
 
