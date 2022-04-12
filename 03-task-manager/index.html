@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Default Starter</title>
+    <title>Task Manager</title>
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -25,6 +25,74 @@
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
-    <!-- content -->
+    <main class="task-manager">
+      <div class="task-manager--container">
+        <!-- task-manager form -->
+        <form class="task-manager__form form">
+          <h1 class="task-manager__title">task manager</h1>
+          <div class="form-row">
+            <input
+              type="text"
+              class="task-manager__new-input form-input"
+              placeholder="e.g. wash dishes"
+            />
+            <button class="task-manager__submit-btn btn">submit</button>
+          </div>
+          <small class="task-manager__error-msg">there was an error</small>
+        </form>
+        <!-- end of task-manager form -->
+        <div class="task-manager__tasks--container">
+          <p class="task-manager__loading">loading</p>
+          <!-- task-manager tasks -->
+          <div class="task-manager__tasks">
+            <!-- task-manager task -->
+            <div class="task-manager__task--container">
+              <p class="task-manager__task">
+                <span class="task-manager__completed-icon">
+                  <i class="fa-regular fa-circle-check"></i>
+                </span>
+                task name
+              </p>
+              <!-- task actions -->
+              <div class="task-manager__actions">
+                <!-- edit link -->
+                <a class="task-manager__edit-link" href="task.html"
+                  ><i class="fa-solid fa-pen-to-square"></i
+                ></a>
+                <!-- delete button -->
+                <button class="task-manager__delete">
+                  <i class="fa-solid fa-trash"></i>
+                </button>
+              </div>
+              <!-- end of task actions -->
+            </div>
+            <!-- end of task-manager task -->
+            <!-- task-manager task -->
+            <div class="task-manager__task--container task--completed">
+              <p class="task-manager__task">
+                <span class="task-manager__completed-icon">
+                  <i class="fa-regular fa-circle-check"></i>
+                </span>
+                task name
+              </p>
+              <!-- task actions -->
+              <div class="task-manager__actions">
+                <!-- edit link -->
+                <a class="task-manager__edit-link" href="task.html"
+                  ><i class="fa-solid fa-pen-to-square"></i
+                ></a>
+                <!-- delete button -->
+                <button class="task-manager__delete">
+                  <i class="fa-solid fa-trash"></i>
+                </button>
+              </div>
+              <!-- end of task actions -->
+            </div>
+            <!-- end of task-manager task -->
+          </div>
+          <!-- end of task-manager tasks -->
+        </div>
+      </div>
+    </main>
   </body>
 </html>
