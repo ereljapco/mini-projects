@@ -317,4 +317,5 @@ Counter
 .counter__btn {
   color: var(--clr-secondary-500);
   background-color: transparent;
+  border: 2px solid var(--clr-secondary-500);
 }
