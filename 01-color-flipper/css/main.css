@@ -353,6 +353,7 @@ Color Flipper
 .color-flipper__title {
   color: var(--clr-grey-50);
   font-size: 2.5rem;
+  letter-spacing: 5px;
   text-align: center;
   background-color: var(--clr-tertiary-500);
   padding: 1rem;
