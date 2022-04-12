@@ -303,6 +303,7 @@ Counter
 
 .counter__title {
   color: var(--clr-white);
+  margin-bottom: 0;
 }
 
 .counter__count {
