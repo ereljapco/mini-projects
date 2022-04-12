@@ -30,7 +30,7 @@ Normalize CSS from [necolar/normalize.css](https://github.com/necolas/normalize.
 
 Color Flipper is a simple random color generator.
 
-Live Site: [https://color-flipper-erj.netlify.app/](https://color-flipper-erj.netlify.app/)
+Live Site: (https://color-flipper-erj.netlify.app/)
 
 ### Built with
 
