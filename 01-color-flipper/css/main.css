@@ -343,11 +343,12 @@ Color Flipper
 }
 
 .color-flipper--container {
-  display: grid;
   height: inherit;
-  max-width: var(--max-width);
+  display: grid;
   align-content: center;
   justify-items: center;
+  max-width: var(--max-width);
+  margin-inline: auto;
 }
 
 .color-flipper__title {
