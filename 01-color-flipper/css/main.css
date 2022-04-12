@@ -9,7 +9,7 @@ Global Variables
 ===============*/
 :root {
   /* fonts */
-  --ff-primary: "Poppins", sans-serif;
+  --ff-primary: 'Poppins', sans-serif;
   /* primary colors */
   --clr-primary-100: #fff7cd;
   --clr-primary-200: #ffef9a;
@@ -282,4 +282,15 @@ ul {
   height: 0.25rem;
   margin-inline: auto;
   margin-top: -1rem;
+}
+
+/*===============
+Color Flipper
+===============*/
+
+/* ---- navbar */
+.navbar {
+  height: 4rem;
+  background-color: var(--clr-white);
+  box-shadow: var(--shadow-2);
 }
