@@ -296,3 +296,11 @@ Color Flipper
   background-color: var(--clr-white);
   box-shadow: var(--shadow-2);
 }
+
+.navbar__links {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.navbar__link {
+  display: inline-block;
+}
