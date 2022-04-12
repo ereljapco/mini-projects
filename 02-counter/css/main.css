@@ -309,6 +309,7 @@ Counter
 
 .counter__count {
   color: var(--clr-primary-500);
-  font-size: 6rem;
+  font-size: 7rem;
+  font-weight: 600;
   margin: 0;
 }
