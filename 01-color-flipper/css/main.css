@@ -365,6 +365,7 @@ Color Flipper
 }
 
 .color-flipper__btn {
+  text-transform: uppercase;
   background-color: transparent;
   border: 2px solid var(--clr-tertiary-500);
 }
