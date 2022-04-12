@@ -299,3 +299,8 @@ Counter
   align-content: center;
   justify-content: center;
 }
+
+.counter__title {
+  color: var(--clr-white);
+  text-align: center;
+}
