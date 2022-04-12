@@ -37,3 +37,16 @@ Live Site: (https://color-flipper-erj.netlify.app/)
 - CSS custom properties
 - CSS Grid
 - Mobile-first workflow
+
+## Counter
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/074faae0-9bfa-456a-b7a2-95f80dd230ff/deploy-status)](https://app.netlify.com/sites/counter-erj/deploys)
+
+Counter lets the user decrease, increase, and reset the value.
+
+Live Site: (https://counter-erj.netlify.app/)
+
+### Built with
+
+- CSS custom properties
+- CSS Grid
