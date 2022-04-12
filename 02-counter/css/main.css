@@ -297,4 +297,5 @@ Counter
   height: inherit;
   display: grid;
   align-content: center;
+  justify-content: center;
 }
