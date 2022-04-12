@@ -369,3 +369,8 @@ Color Flipper
   background-color: transparent;
   border: 2px solid var(--clr-tertiary-500);
 }
+
+.color-flipper__btn:hover {
+  color: var(--clr-grey-50);
+  background-color: var(--clr-tertiary-500);
+}
