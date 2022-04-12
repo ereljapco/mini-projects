@@ -315,3 +315,8 @@ form
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
+
+.task-manager__error-msg {
+  color: var(--clr-red-dark);
+  text-transform: capitalize;
+}
