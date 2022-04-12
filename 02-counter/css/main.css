@@ -304,3 +304,8 @@ Counter
   color: var(--clr-white);
   text-align: center;
 }
+
+.counter__count {
+  color: var(--clr-primary-500);
+  font-size: 6rem;
+}
