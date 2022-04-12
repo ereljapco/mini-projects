@@ -311,6 +311,7 @@ Counter
   color: var(--clr-primary-500);
   font-size: 7rem;
   font-weight: 600;
+  line-height: 1.35;
   margin: 0;
 }
 
