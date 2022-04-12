@@ -358,7 +358,7 @@ Color Flipper
   background-color: var(--clr-tertiary-500);
   padding: 1rem;
   border-radius: var(--border-radius);
-  margin-bottom: 3rem;
+  margin-bottom: 2.5rem;
 }
 
 .color-flipper--color {
