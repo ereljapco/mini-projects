@@ -319,3 +319,8 @@ Counter
   background-color: transparent;
   border: 2px solid var(--clr-secondary-500);
 }
+
+.counter__btn:hover {
+  color: var(--clr-tertiary-500);
+  background-color: var(--clr-secondary-500);
+}
