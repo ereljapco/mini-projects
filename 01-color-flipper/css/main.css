@@ -290,6 +290,8 @@ Color Flipper
 
 /* ---- navbar */
 .navbar {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   height: 4rem;
   background-color: var(--clr-white);
   box-shadow: var(--shadow-2);
