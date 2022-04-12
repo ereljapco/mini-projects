@@ -301,7 +301,7 @@ form
   text-align: center;
 }
 
-.form-row {
+.task-manager__form-row {
   display: grid;
   grid-template-columns: 3fr 1fr;
 }
