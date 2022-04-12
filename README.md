@@ -26,7 +26,11 @@ Normalize CSS from [necolar/normalize.css](https://github.com/necolas/normalize.
 
 ## Color Flipper
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/253f4060-0b00-4d04-9ba6-81a201c25a3b/deploy-status)](https://app.netlify.com/sites/color-flipper-erj/deploys)
+
 Color Flipper is a simple random color generator.
+
+Live Site: (https://color-flipper-erj.netlify.app/)[https://color-flipper-erj.netlify.app/]
 
 ### Built with
 
