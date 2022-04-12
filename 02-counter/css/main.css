@@ -284,3 +284,11 @@ ul {
   margin-inline: auto;
   margin-top: -1rem;
 }
+
+/*===============
+Counter
+===============*/
+.counter__main {
+  height: 100vh;
+  background-color: var(--clr-tertiary-500);
+}
