@@ -327,3 +327,9 @@ Color Flipper
 .navbar__link:hover {
   color: var(--clr-secondary-500);
 }
+
+/* ------ main */
+.color-flipper__main {
+  height: calc(100vh - 4rem);
+  background-color: var(--clr-grey-50);
+}
