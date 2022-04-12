@@ -300,6 +300,7 @@ Color Flipper
   grid-template-columns: 1fr auto;
   align-items: center;
   width: 90vw;
+  max-width: var(--fixed-width);
   margin-inline: auto;
 }
 
