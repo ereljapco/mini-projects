@@ -337,5 +337,13 @@ form
 .task-manager__task--container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   background-color: var(--clr-white);
+  border-radius: var(--border-radius);
+  padding-inline: 1.25rem 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.task-manager__completed-icon {
+  margin-right: 1.5rem;
 }
