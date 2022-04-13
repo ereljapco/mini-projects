@@ -347,11 +347,15 @@ Reviews
   color: var(--clr-white);
 }
 
-.review--btn {
-  color: var(--clr-secondary-500);
+.review__action-btns {
+  width: 3.75rem;
+  display: flex;
+  justify-content: space-between;
+  margin-inline: auto;
 }
 
 .review--btn {
+  color: var(--clr-secondary-500);
   background-color: transparent;
   border: transparent;
 }
