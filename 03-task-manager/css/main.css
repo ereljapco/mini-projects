@@ -345,7 +345,7 @@ form
   margin-bottom: 1rem;
 }
 
-.task-manager__task {
+.task-manager__task-text {
   font-size: 1.25rem;
   text-transform: capitalize;
   margin: 0;
@@ -358,7 +358,7 @@ form
   visibility: hidden;
 }
 
-.task--completed .task-manager__task {
+.task--completed .task-manager__task-text {
   text-decoration: line-through;
 }
 
