@@ -312,6 +312,10 @@ Reviews
   border-radius: var(--border-radius);
 }
 
+.review {
+  text-align: center;
+}
+
 .review__img--container {
   width: 10rem;
 }
