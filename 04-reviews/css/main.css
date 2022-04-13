@@ -325,6 +325,7 @@ Reviews
   position: relative;
   width: 10rem;
   margin-inline: auto;
+  z-index: 1;
 }
 
 .review__img--container::before {
@@ -334,6 +335,7 @@ Reviews
   height: 100%;
   background-color: var(--clr-secondary-500);
   border-radius: 50%;
+  z-index: -1;
 }
 
 .review__img {
