@@ -314,6 +314,10 @@ Navbar
   margin-block: 0;
 }
 
+.navbar__logo--primary {
+  font-weight: 500;
+}
+
 /* links */
 .navbar__links {
   height: 0;
