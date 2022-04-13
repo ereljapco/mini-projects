@@ -318,6 +318,7 @@ Reviews
 
 .review__img--container {
   width: 10rem;
+  margin-inline: auto;
 }
 
 .review__img {
