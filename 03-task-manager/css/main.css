@@ -148,6 +148,7 @@ ul {
 .btn {
   display: inline-block;
   color: var(--clr-tertiary-500);
+  font-weight: 600;
   text-transform: capitalize;
   letter-spacing: var(--letter-spacing);
   background-color: var(--clr-primary-500);
