@@ -146,7 +146,7 @@ ul {
 
 /* buttons */
 .btn {
-  display: inline-block;
+  display: block;
   color: var(--clr-tertiary-500);
   font-weight: 600;
   text-transform: capitalize;
