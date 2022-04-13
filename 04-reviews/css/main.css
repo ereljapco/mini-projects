@@ -295,6 +295,10 @@ Main
 /*===============
 Reviews
 ===============*/
+.reviews {
+  height: 100%;
+}
+
 .reviews--container {
   width: 90vw;
   max-width: var(--fixed-width);
