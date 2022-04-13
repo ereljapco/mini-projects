@@ -347,6 +347,7 @@ form
 .task-manager__task {
   font-size: 1.25rem;
   text-transform: capitalize;
+  margin: 0;
 }
 
 .task-manager__completed-icon {
