@@ -296,3 +296,7 @@ Reviews
 .review__img--container {
   width: 10rem;
 }
+
+.review__img {
+  height: 10rem;
+}
