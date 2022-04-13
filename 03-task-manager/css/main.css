@@ -362,6 +362,11 @@ form
   text-decoration: line-through;
 }
 
+.task--completed .task-manager__completed-icon {
+  text-decoration: none;
+  visibility: visible;
+}
+
 .task-manager__edit-link {
   color: var(--clr-green-dark);
   font-size: 0.875rem;
