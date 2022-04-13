@@ -298,6 +298,7 @@ Navbar
 ===============*/
 .navbar {
   background-color: var(--clr-white);
+  box-shadow: var(--shadow-2);
 }
 
 .navbar--container {
