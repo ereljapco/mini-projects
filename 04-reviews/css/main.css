@@ -361,6 +361,6 @@ Reviews
   border: transparent;
 }
 
-.reviews__random-btn {
+.review__random-btn {
   background-color: var(--clr-primary-300);
 }
