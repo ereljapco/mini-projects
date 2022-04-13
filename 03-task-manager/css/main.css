@@ -335,5 +335,7 @@ form
 
 /* task */
 .task-manager__task--container {
+  display: flex;
+  justify-content: space-between;
   background-color: var(--clr-white);
 }
