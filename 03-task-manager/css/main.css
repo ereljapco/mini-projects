@@ -335,6 +335,10 @@ form
   margin-inline: auto;
 }
 
+.task-manager__loading {
+  color: var(--clr-secondary-500);
+}
+
 /* task */
 .task-manager__task--container {
   display: flex;
