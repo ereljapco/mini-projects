@@ -350,6 +350,8 @@ Reviews
   height: 2.5rem;
   background-color: var(--clr-secondary-500);
   border-radius: 50%;
+  display: grid;
+  place-items: center;
 }
 
 .review__img {
