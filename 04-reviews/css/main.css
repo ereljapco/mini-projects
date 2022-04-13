@@ -306,6 +306,10 @@ Reviews
   max-width: var(--fixed-width);
 }
 
+.reviews__header {
+  margin-bottom: 3rem;
+}
+
 /* review */
 .review--container {
   background-color: var(--clr-tertiary-500);
