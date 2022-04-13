@@ -345,6 +345,11 @@ form
   margin-bottom: 1rem;
 }
 
+.task-manager__task {
+  display: flex;
+  align-items: baseline;
+}
+
 .task-manager__task-text {
   font-size: 1.25rem;
   text-transform: capitalize;
