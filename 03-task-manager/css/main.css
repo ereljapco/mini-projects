@@ -355,6 +355,7 @@ form
   color: var(--clr-green-dark);
   font-size: 1rem;
   margin-right: 1.5rem;
+  visibility: hidden;
 }
 
 .task-manager__edit-link {
