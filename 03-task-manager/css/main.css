@@ -344,6 +344,11 @@ form
   margin-bottom: 1rem;
 }
 
+.task-manager__task {
+  font-size: 1.25rem;
+  text-transform: capitalize;
+}
+
 .task-manager__completed-icon {
   margin-right: 1.5rem;
 }
