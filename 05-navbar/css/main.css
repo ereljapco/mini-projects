@@ -299,6 +299,7 @@ Navbar
 .navbar--container {
   width: 90vw;
   max-width: var(--max-width);
+  margin-inline: auto;
 }
 
 .navbar__logo {
