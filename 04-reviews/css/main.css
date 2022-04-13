@@ -302,7 +302,7 @@ Reviews
 }
 
 .reviews--container {
-  width: 90vw;
+  width: 80vw;
   max-width: var(--fixed-width);
 }
 
