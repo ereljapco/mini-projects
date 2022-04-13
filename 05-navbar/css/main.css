@@ -296,6 +296,11 @@ Main
 /*===============
 Navbar
 ===============*/
+.navbar--container {
+  width: 90vw;
+  max-width: var(--max-width);
+}
+
 .navbar__logo {
   margin-block: 0;
 }
