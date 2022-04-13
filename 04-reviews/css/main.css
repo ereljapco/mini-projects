@@ -331,3 +331,7 @@ Reviews
   border-radius: 50%;
   margin-bottom: 1.5rem;
 }
+
+.review__reviewer {
+  color: var(--clr-white);
+}
