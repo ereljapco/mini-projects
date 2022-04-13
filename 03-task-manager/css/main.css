@@ -410,6 +410,10 @@ form
   align-items: center;
 }
 
+.edit-task__form-label {
+  margin-bottom: 0;
+}
+
 .edit-task__task-id {
   margin-block: 0;
 }
