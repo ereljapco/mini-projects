@@ -406,8 +406,9 @@ form
 /* edit task */
 .edit-task__form-row {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: minmax(8rem, 1fr) minmax(auto, 2fr);
   align-items: center;
+  height: 2.75rem;
 }
 
 .edit-task__form-label {
