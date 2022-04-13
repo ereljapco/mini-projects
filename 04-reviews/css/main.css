@@ -295,6 +295,10 @@ Main
 /*===============
 Reviews
 ===============*/
+.reviews {
+  width: 90vw;
+  max-width: var(--fixed-width);
+}
 
 .review__img--container {
   width: 10rem;
