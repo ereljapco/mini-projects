@@ -297,6 +297,8 @@ Reviews
 ===============*/
 .reviews {
   height: 100vh;
+  display: grid;
+  place-content: center;
 }
 
 .reviews--container {
