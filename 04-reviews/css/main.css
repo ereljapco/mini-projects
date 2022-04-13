@@ -288,6 +288,9 @@ ul {
 /*===============
 Main
 ===============*/
+.main {
+  background-color: var(--clr-white);
+}
 
 /*===============
 Reviews
