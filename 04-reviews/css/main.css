@@ -340,6 +340,11 @@ Reviews
   z-index: -1;
 }
 
+.review__img--container::after {
+  content: '';
+  position: absolute;
+}
+
 .review__img {
   height: 10rem;
   border-radius: 50%;
