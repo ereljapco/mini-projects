@@ -296,6 +296,10 @@ Main
 /*===============
 Navbar
 ===============*/
+.navbar {
+  background-color: var(--clr-white);
+}
+
 .navbar--container {
   width: 90vw;
   max-width: var(--max-width);
