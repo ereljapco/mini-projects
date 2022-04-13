@@ -330,4 +330,5 @@ form
 .task-manager__tasks--container {
   width: 90vw;
   max-width: var(--fixed-width);
+  margin-inline: auto;
 }
