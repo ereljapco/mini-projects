@@ -284,3 +284,15 @@ ul {
   margin-inline: auto;
   margin-top: -1rem;
 }
+
+/*===============
+Main
+===============*/
+
+/*===============
+Reviews
+===============*/
+
+.review__img--container {
+  width: 10rem;
+}
