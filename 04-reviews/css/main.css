@@ -314,6 +314,11 @@ Reviews
 .review--container {
   background-color: var(--clr-tertiary-500);
   border-radius: var(--border-radius);
+  box-shadow: var(--shadow-2);
+}
+
+.review--container:hover {
+  box-shadow: var(--shadow-4);
 }
 
 .review {
