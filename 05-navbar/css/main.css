@@ -299,3 +299,8 @@ Navbar
 .navbar__logo {
   margin-block: 0;
 }
+
+/* social links */
+.navbar__social-links {
+  display: none;
+}
