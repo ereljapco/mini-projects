@@ -352,6 +352,7 @@ form
 }
 
 .task-manager__completed-icon {
+  color: var(--clr-green-dark);
   font-size: 1rem;
   margin-right: 1.5rem;
 }
