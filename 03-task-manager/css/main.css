@@ -337,6 +337,7 @@ form
 
 .task-manager__loading {
   color: var(--clr-secondary-500);
+  text-transform: capitalize;
 }
 
 /* task */
