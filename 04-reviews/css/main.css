@@ -334,6 +334,7 @@ Reviews
 
 .review__reviewer {
   color: var(--clr-white);
+  font-size: 1.65rem;
 }
 
 .review__job-title {
