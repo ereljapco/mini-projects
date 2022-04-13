@@ -361,3 +361,8 @@ form
   color: var(--clr-green-dark);
   font-size: 0.875rem;
 }
+
+.task-manager__delete {
+  border-color: transparent;
+  background-color: transparent;
+}
