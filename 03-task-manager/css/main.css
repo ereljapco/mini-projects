@@ -326,3 +326,8 @@ form
   color: var(--clr-red-dark);
   text-transform: capitalize;
 }
+
+.task-manager__tasks--container {
+  width: 90vw;
+  max-width: var(--fixed-width);
+}
