@@ -346,3 +346,7 @@ Reviews
 .review__text {
   color: var(--clr-white);
 }
+
+.review--btn {
+  color: var(--clr-secondary-500);
+}
