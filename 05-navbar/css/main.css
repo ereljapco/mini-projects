@@ -284,3 +284,15 @@ ul {
   margin-inline: auto;
   margin-top: -1rem;
 }
+
+/*===============
+Main
+===============*/
+.main {
+  height: 100vh;
+  background-color: var(--clr-grey-50);
+}
+
+/*===============
+Navbar
+===============*/
