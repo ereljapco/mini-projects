@@ -341,7 +341,7 @@ Reviews
 }
 
 .review__img--container::after {
-  content: '';
+  content: '\f10e';
   position: absolute;
   top: 0.75rem;
   left: 0;
