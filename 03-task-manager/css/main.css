@@ -434,3 +434,7 @@ form
 .edit-task__back-btn--container {
   text-align: center;
 }
+
+.edit-task__back-btn {
+  padding-inline: 3rem;
+}
