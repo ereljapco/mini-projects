@@ -350,3 +350,8 @@ Reviews
 .review--btn {
   color: var(--clr-secondary-500);
 }
+
+.review--btn {
+  background-color: transparent;
+  border: transparent;
+}
