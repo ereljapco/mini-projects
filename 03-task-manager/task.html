@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Manager</title>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- styles -->
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <main class="edit-task">
+      <div class="edit-task--container">
+        <!-- edit-task form -->
+        <form class="edit-task__form form">
+          <h1 class="edit-task__title">edit task</h1>
+          <!-- form block -->
+          <div class="edit-task__form-block">
+            <!-- form row -->
+            <div class="edit-task__form-row">
+              <div class="edit-task__form-label form-label">task ID</div>
+              <p class="edit-task__task-id">123456789</p>
+            </div>
+            <!-- end of form row -->
+            <!-- form row -->
+            <div class="edit-task__form-row">
+              <div class="edit-task__form-label form-label" for="task-input">
+                task
+              </div>
+              <input
+                class="edit-task__task-input form-input"
+                name="task-input"
+                type="text"
+              />
+            </div>
+            <!-- end of form row -->
+            <!-- form row -->
+            <div class="edit-task__form-row">
+              <div
+                class="edit-task__form-label form-label"
+                for="task-completed"
+              >
+                completed
+              </div>
+              <input
+                class="edit-task__task-input form-input"
+                type="checkbox"
+                name="task-completed"
+                id=""
+              />
+            </div>
+            <!-- end of form row -->
+          </div>
+          <!-- end of form block -->
+          <button class="edit-task__edit-btn btn btn--block" type="submit">
+            edit
+          </button>
+          <small class="edit-task__error-msg">there was an error</small>
+        </form>
+        <!-- end of edit-task form -->
+      </div>
+    </main>
+  </body>
+</html>
