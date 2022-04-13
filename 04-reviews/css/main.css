@@ -338,4 +338,5 @@ Reviews
 
 .review__job-title {
   color: var(--clr-secondary-500);
+  text-transform: uppercase;
 }
