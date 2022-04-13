@@ -300,6 +300,7 @@ Navbar
   width: 90vw;
   max-width: var(--max-width);
   margin-inline: auto;
+  display: flex;
 }
 
 .navbar__logo {
