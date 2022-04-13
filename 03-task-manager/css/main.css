@@ -332,3 +332,8 @@ form
   max-width: var(--fixed-width);
   margin-inline: auto;
 }
+
+/* task */
+.task-manager__task--container {
+  background-color: var(--clr-white);
+}
