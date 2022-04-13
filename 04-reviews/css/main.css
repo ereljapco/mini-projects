@@ -365,3 +365,7 @@ Reviews
   background-color: var(--clr-primary-200);
   border: 2px solid var(--clr-primary-500);
 }
+
+.review__random-btn:hover {
+  background-color: var(--clr-primary-500);
+}
