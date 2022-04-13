@@ -330,3 +330,9 @@ Navbar
 .navbar__social-links {
   display: none;
 }
+
+/* toggle button */
+.navbar__toggle-btn {
+  border: transparent;
+  background-color: transparent;
+}
