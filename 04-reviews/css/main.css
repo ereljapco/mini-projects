@@ -360,3 +360,7 @@ Reviews
   background-color: transparent;
   border: transparent;
 }
+
+.reviews__random-btn {
+  background-color: var(--clr-primary-300);
+}
