@@ -301,6 +301,7 @@ Navbar
   max-width: var(--max-width);
   margin-inline: auto;
   display: flex;
+  justify-content: space-between;
 }
 
 .navbar__logo {
