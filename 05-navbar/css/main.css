@@ -315,6 +315,7 @@ Navbar
 }
 
 .navbar__logo--primary {
+  color: var(--clr-primary-500);
   font-weight: 500;
 }
 
