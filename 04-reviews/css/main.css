@@ -299,4 +299,5 @@ Reviews
 
 .review__img {
   height: 10rem;
+  border-radius: 50%;
 }
