@@ -367,4 +367,5 @@ form
   font-size: 0.875rem;
   border-color: transparent;
   background-color: transparent;
+  cursor: pointer;
 }
