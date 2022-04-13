@@ -333,6 +333,7 @@ Reviews
   width: 100%;
   height: 100%;
   background-color: var(--clr-secondary-500);
+  border-radius: 50%;
 }
 
 .review__img {
