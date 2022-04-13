@@ -342,6 +342,7 @@ Reviews
 
 .review__img--container::after {
   content: '\f10e';
+  font-size: 1.25rem;
   position: absolute;
   top: 0.75rem;
   left: 0;
