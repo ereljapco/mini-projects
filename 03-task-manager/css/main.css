@@ -289,7 +289,8 @@ ul {
 /*===============
 main
 ===============*/
-.task-manager {
+.task-manager,
+.edit-task {
   height: 100vh;
   background-color: var(--clr-tertiary-500);
   padding-top: 6rem;
