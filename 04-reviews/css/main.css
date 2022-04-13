@@ -342,3 +342,7 @@ Reviews
   font-size: 0.9rem;
   text-transform: uppercase;
 }
+
+.review__text {
+  color: var(--clr-white);
+}
