@@ -343,6 +343,9 @@ Reviews
 .review__img--container::after {
   content: '';
   position: absolute;
+  width: 2rem;
+  height: 2rem;
+  background-color: var(--clr-secondary-500);
 }
 
 .review__img {
