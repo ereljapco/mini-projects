@@ -356,3 +356,8 @@ form
   font-size: 1rem;
   margin-right: 1.5rem;
 }
+
+.task-manager__edit-link {
+  color: var(--clr-green-dark);
+  font-size: 0.875rem;
+}
