@@ -426,3 +426,7 @@ form
   display: block;
   text-align: center;
 }
+
+.edit-task__back-btn--container {
+  text-align: center;
+}
