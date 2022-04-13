@@ -356,10 +356,14 @@ Reviews
 }
 
 .review--btn {
-  color: var(--clr-secondary-500);
+  color: var(--clr-secondary-300);
   background-color: transparent;
   border: transparent;
   cursor: pointer;
+}
+
+.review--btn:hover {
+  color: var(--clr-secondary-600);
 }
 
 .review__random-btn {
