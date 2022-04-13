@@ -11,6 +11,10 @@ These mini projects were created from [John Smilga](https://www.johnsmilga.com/)
   - [x] HTML - April 13, 2022
   - [x] CSS - April 13, 2022
   - [ ] Javascript
+- [Task Manager](#color-flipper)
+  - [x] HTML - April 13, 2022
+  - [x] CSS - April 13, 2022
+  - [ ] Javascript
 
 ## Default Starter
 
