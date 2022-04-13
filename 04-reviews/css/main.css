@@ -352,6 +352,7 @@ Reviews
   display: flex;
   justify-content: space-between;
   margin-inline: auto;
+  margin-bottom: 1rem;
 }
 
 .review--btn {
