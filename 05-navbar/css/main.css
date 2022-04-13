@@ -300,6 +300,13 @@ Navbar
   margin-block: 0;
 }
 
+/* links */
+.navbar__links {
+  height: 0;
+  margin-block: 0;
+  overflow: hidden;
+}
+
 /* social links */
 .navbar__social-links {
   display: none;
