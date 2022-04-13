@@ -359,6 +359,7 @@ Reviews
   color: var(--clr-secondary-500);
   background-color: transparent;
   border: transparent;
+  cursor: pointer;
 }
 
 .review__random-btn {
