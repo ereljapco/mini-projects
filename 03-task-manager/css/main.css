@@ -409,3 +409,7 @@ form
   grid-template-columns: 1fr 2fr;
   align-items: center;
 }
+
+.edit-task__task-id {
+  margin-block: 0;
+}
