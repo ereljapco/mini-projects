@@ -296,3 +296,6 @@ Main
 /*===============
 Navbar
 ===============*/
+.navbar__logo {
+  margin-block: 0;
+}
