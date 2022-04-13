@@ -335,3 +335,7 @@ Reviews
 .review__reviewer {
   color: var(--clr-white);
 }
+
+.review__job-title {
+  color: var(--clr-secondary-500);
+}
