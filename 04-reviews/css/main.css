@@ -309,6 +309,7 @@ Reviews
 /* review */
 .review--container {
   background-color: var(--clr-tertiary-500);
+  border-radius: var(--border-radius);
 }
 
 .review__img--container {
