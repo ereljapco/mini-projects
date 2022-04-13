@@ -402,3 +402,10 @@ form
   background-color: transparent;
   cursor: pointer;
 }
+
+/* edit task */
+.edit-task__form-row {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+}
