@@ -360,3 +360,8 @@ Navigation
 .sidebar__close-btn:hover {
   transform: rotate(180deg);
 }
+
+/* links */
+.sidebar__link {
+  color: var(--clr-secondary-500);
+}
