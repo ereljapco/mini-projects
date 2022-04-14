@@ -330,6 +330,7 @@ Navbar
 
 .navbar__links--show {
   height: 10rem;
+  background-color: var(--clr-secondary-500);
 }
 
 /* social links */
