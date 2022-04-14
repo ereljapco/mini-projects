@@ -327,6 +327,8 @@ Navigation
 }
 
 .sidebar__header {
+  display: flex;
+  justify-content: space-between;
   padding-top: 1.25rem;
   padding-inline: 1.75rem;
 }
