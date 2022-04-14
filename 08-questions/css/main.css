@@ -302,11 +302,6 @@ Questions
   text-align: center;
 }
 
-.question--container {
-  display: grid;
-  row-gap: 2rem;
-}
-
 .question {
   width: 100%;
   max-width: var(--fixed-width);
