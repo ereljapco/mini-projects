@@ -332,4 +332,6 @@ Modal Section
   max-width: var(--fixed-width);
   background-color: var(--clr-tertiary-500);
   border-radius: var(--border-radius);
+  display: grid;
+  place-content: center;
 }
