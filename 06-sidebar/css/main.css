@@ -327,7 +327,8 @@ Navigation
 }
 
 .sidebar__header {
-  padding-block: 1rem;
+  padding-top: 1.25rem;
+  padding-inline: 1.75rem;
 }
 
 .sidebar__logo {
