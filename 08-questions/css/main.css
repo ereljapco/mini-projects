@@ -293,5 +293,6 @@ body {
 Questions
 ===============*/
 .question {
+  width: 100%;
   background-color: var(--clr-tertiary-500);
 }
