@@ -327,6 +327,7 @@ Navbar
   height: 0;
   margin-block: 0;
   overflow: hidden;
+  transition: var(--transition);
 }
 
 .navbar__links--show {
