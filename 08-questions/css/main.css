@@ -340,3 +340,10 @@ Questions
   margin-top: 1.25rem;
   padding-top: 1.25rem;
 }
+
+@media screen and (min-width: 676px) {
+  .question__title,
+  .question__text {
+    font-size: 1rem;
+  }
+}
