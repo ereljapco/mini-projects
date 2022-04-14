@@ -329,4 +329,5 @@ Navigation
 .sidebar__logo {
   color: var(--clr-white);
   font-size: 1.75rem;
+  margin-block: 0;
 }
