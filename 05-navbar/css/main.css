@@ -391,6 +391,11 @@ Navbar
   display: none;
 }
 
+.navbar__social-link {
+  color: var(--clr-primary-500);
+  transition: var(--transition);
+}
+
 @media screen and (min-width: 800px) {
   .navbar__social-links {
     display: grid;
