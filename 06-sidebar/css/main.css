@@ -326,8 +326,13 @@ Navigation
   background-color: var(--clr-tertiary-500);
 }
 
+.sidebar__header {
+  padding-block: 1rem;
+}
+
 .sidebar__logo {
   color: var(--clr-white);
   font-size: 1.75rem;
+  line-height: 1;
   margin-block: 0;
 }
