@@ -325,3 +325,7 @@ Navigation
   height: 100vh;
   background-color: var(--clr-tertiary-500);
 }
+
+.sidebar__logo {
+  color: var(--clr-white);
+}
