@@ -311,6 +311,13 @@ Navbar
   align-items: center;
 }
 
+@media screen and (min-width: 800px) {
+  .navbar--container {
+    max-width: var(--max-width);
+    height: 5rem;
+  }
+}
+
 .navbar__logo {
   font-size: 1.75rem;
   margin-block: 0;
