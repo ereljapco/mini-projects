@@ -372,4 +372,5 @@ Navigation
 .sidebar__link:hover {
   color: var(--clr-tertiary-500);
   background-color: var(--clr-secondary-500);
+  padding-left: 2rem;
 }
