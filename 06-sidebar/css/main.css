@@ -344,6 +344,7 @@ Navigation
 
 .sidebar__close-btn {
   color: var(--clr-red-dark);
+  font-size: 1.75rem;
   border-color: transparent;
   background-color: transparent;
 }
