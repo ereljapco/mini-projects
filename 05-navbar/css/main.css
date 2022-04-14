@@ -334,6 +334,12 @@ Navbar
   transition: var(--transition);
 }
 
+@media screen and (min-width: 800px) {
+  .navbar__links {
+    height: 100%;
+  }
+}
+
 .navbar__links--show {
   height: 10rem;
 }
@@ -370,4 +376,10 @@ Navbar
 .navbar__toggle-btn:hover {
   color: var(--clr-secondary-500);
   transform: rotate(90deg);
+}
+
+@media screen and (min-width: 800px) {
+  .navbar__toggle-btn {
+    display: none;
+  }
 }
