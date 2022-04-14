@@ -294,5 +294,6 @@ Questions
 ===============*/
 .question {
   width: 100%;
+  max-width: var(--fixed-width);
   background-color: var(--clr-tertiary-500);
 }
