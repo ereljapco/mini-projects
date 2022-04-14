@@ -305,3 +305,7 @@ Modal Section
   text-align: center;
   border-radius: var(--border-radius);
 }
+
+.modal__title {
+  color: var(--clr-white);
+}
