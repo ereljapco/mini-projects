@@ -284,3 +284,14 @@ ul {
   margin-inline: auto;
   margin-top: -1rem;
 }
+
+body {
+  background-color: var(--clr-white);
+}
+
+/*===============
+Modal Section
+===============*/
+.modal--container {
+  background-color: var(--clr-tertiary-500);
+}
