@@ -318,5 +318,6 @@ Modal Section
 }
 
 .modal--overlay {
+  position: absolute;
   background-color: rgba(186, 232, 232, 0.5);
 }
