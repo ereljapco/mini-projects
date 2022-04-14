@@ -377,3 +377,8 @@ Navigation
   background-color: var(--clr-secondary-500);
   padding-left: 2rem;
 }
+
+/* social links */
+.sidebar__social-link {
+  color: var(--clr-white);
+}
