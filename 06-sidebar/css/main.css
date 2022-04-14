@@ -327,6 +327,10 @@ Navigation
   transform: translateX(-100%);
 }
 
+.sidebar--show {
+  transform: translateX(0);
+}
+
 @media screen and (min-width: 676px) {
   .sidebar {
     width: 25rem;
