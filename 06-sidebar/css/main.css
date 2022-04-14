@@ -325,6 +325,7 @@ Navigation
   height: 100vh;
   background-color: var(--clr-tertiary-500);
   transform: translateX(-100%);
+  transition: var(--transition);
 }
 
 .sidebar--show {
