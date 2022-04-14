@@ -332,3 +332,8 @@ Questions
   border-color: transparent;
   background-color: transparent;
 }
+
+.question__text {
+  color: var(--clr-grey-100);
+  font-weight: 300;
+}
