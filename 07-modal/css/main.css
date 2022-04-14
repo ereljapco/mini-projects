@@ -338,4 +338,5 @@ Modal Section
 
 .modal__text {
   color: var(--clr-white);
+  font-weight: 400;
 }
