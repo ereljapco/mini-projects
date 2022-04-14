@@ -12,5 +12,5 @@ modalBtn.addEventListener('click', function () {
   modal.classList.add('modal--overlay-open')
 })
 closeBtn.addEventListener('click', function () {
-  modal.classList.remove('open-modal')
+  modal.classList.remove('modal--overlay-open')
 })
