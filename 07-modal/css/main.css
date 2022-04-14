@@ -286,7 +286,7 @@ ul {
 }
 
 body {
-  background-color: var(--clr-white);
+  background: url(../images/background.jpg) center/cover fixed no-repeat;
 }
 
 /*===============
