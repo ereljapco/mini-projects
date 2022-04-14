@@ -397,7 +397,7 @@ Navigation
   width: 12rem;
   margin-inline: auto;
   position: absolute;
-  bottom: 0;
+  bottom: 2rem;
   left: 50%;
   transform: translateX(-50%);
 }
