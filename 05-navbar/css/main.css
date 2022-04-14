@@ -396,6 +396,10 @@ Navbar
   transition: var(--transition);
 }
 
+.navbar__social-link:hover {
+  color: var(--clr-secondary-500);
+}
+
 @media screen and (min-width: 800px) {
   .navbar__social-links {
     display: grid;
