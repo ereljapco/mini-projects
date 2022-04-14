@@ -323,7 +323,7 @@ Questions
 
 .question__title {
   color: var(--clr-white);
-  font-size: 1rem;
+  font-size: 0.875rem;
   font-weight: 300;
   text-transform: none;
   margin-bottom: 0;
