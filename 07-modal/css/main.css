@@ -353,3 +353,7 @@ Modal Section
   background-color: transparent;
   cursor: pointer;
 }
+
+.modal__close-btn:hover {
+  transform: rotate(180deg);
+}
