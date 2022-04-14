@@ -337,6 +337,7 @@ Navbar
 @media screen and (min-width: 800px) {
   .navbar__links {
     position: relative;
+    top: 0;
     height: 100%;
     width: auto;
     background-color: transparent;
