@@ -308,6 +308,11 @@ Questions
   background-color: var(--clr-tertiary-500);
 }
 
+.question__title--container {
+  display: flex;
+  justify-content: space-between;
+}
+
 .question__title {
   color: var(--clr-white);
   font-size: 1.25rem;
