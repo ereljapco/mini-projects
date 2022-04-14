@@ -318,6 +318,7 @@ Questions
   font-size: 1rem;
   font-weight: 400;
   text-transform: none;
+  margin-bottom: 0;
 }
 
 .question__title::first-letter {
