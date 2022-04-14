@@ -325,6 +325,7 @@ Questions
 }
 
 .question__toggle-btn {
+  color: var(--clr-secondary-500);
   border-color: transparent;
   background-color: transparent;
 }
