@@ -306,6 +306,8 @@ Questions
   width: 100%;
   max-width: var(--fixed-width);
   background-color: var(--clr-tertiary-500);
+  padding-block: 1.5rem;
+  padding-inline: 1rem;
 }
 
 .question__title--container {
