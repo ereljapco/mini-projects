@@ -323,5 +323,5 @@ Modal Section
   height: 100%;
   background-color: rgba(186, 232, 232, 0.5);
   display: grid;
-  place-contet: center;
+  place-content: center;
 }
