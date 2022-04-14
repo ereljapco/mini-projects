@@ -329,6 +329,7 @@ Navbar
   left: 0;
   width: 100%;
   height: 0;
+  background-color: var(--clr-white);
   margin-block: 0;
   overflow: hidden;
   transition: var(--transition);
@@ -336,7 +337,6 @@ Navbar
 
 .navbar__links--show {
   height: 10rem;
-  background-color: var(--clr-secondary-500);
 }
 
 .navbar__link {
