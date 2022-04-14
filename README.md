@@ -19,3 +19,7 @@ These mini projects were created from [John Smilga](https://www.johnsmilga.com/)
   - [x] HTML - April 14, 2022
   - [x] CSS - April 14, 2022
   - [ ] Javascript
+- Navbar
+  - [x] HTML - April 14, 2022
+  - [x] CSS - April 14, 2022
+  - [ ] Javascript
