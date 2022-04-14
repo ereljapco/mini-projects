@@ -384,6 +384,9 @@ Navigation
   justify-content: space-between;
   width: 12rem;
   margin-inline: auto;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
 }
 
 .sidebar__social-link {
