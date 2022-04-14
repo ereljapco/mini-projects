@@ -379,6 +379,11 @@ Navigation
 }
 
 /* social links */
+.sidebar__social-links {
+  display: flex;
+  justify-content: space-between;
+}
+
 .sidebar__social-link {
   color: var(--clr-white);
   font-size: 1.5rem;
