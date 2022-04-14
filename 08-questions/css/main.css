@@ -348,7 +348,7 @@ Questions
   display: none;
 }
 
-.question__text--open {
+.question__text--open .question__text {
   display: block;
 }
 
