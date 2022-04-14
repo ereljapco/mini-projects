@@ -341,3 +341,7 @@ Modal Section
   font-size: 1.75rem;
   font-weight: 400;
 }
+
+.modal__close-btn {
+  position: absolute;
+}
