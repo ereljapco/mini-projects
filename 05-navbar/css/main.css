@@ -341,3 +341,7 @@ Navbar
   background-color: transparent;
   cursor: pointer;
 }
+
+.navbar__toggle-btn:hover {
+  color: var(--clr-secondary-500);
+}
