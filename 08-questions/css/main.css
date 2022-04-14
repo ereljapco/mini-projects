@@ -311,6 +311,7 @@ Questions
 .question__title--container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .question__title {
