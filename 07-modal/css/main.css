@@ -312,3 +312,7 @@ Modal Section
   font-size: 2.5rem;
   font-weight: 500;
 }
+
+.modal__open-btn {
+  background-color: var(--clr-secondary-500);
+}
