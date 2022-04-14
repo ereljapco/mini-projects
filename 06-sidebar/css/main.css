@@ -349,6 +349,7 @@ Navigation
   border-color: transparent;
   background-color: transparent;
   cursor: pointer;
+  transition: var(--transition);
 }
 
 .sidebar__close-btn:hover {
