@@ -9,10 +9,10 @@ const sidebar = getElement('.sidebar')
 const closeBtn = getElement('.sidebar__close-btn')
 
 sidebarToggle.addEventListener('click', function () {
-  sidebar.classList.toggle('show-sidebar')
+  sidebar.classList.toggle('sidebar--show')
 })
 
 closeBtn.addEventListener('click',()=>{
-  sidebar.classList.remove('show-sidebar')
+  sidebar.classList.remove('sidebar--show')
 
 })
