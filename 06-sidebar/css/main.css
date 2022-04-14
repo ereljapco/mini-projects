@@ -301,6 +301,7 @@ Navigation
   border-color: transparent;
   background-color: transparent;
   animation: zoomToggleBtn 1.5s infinite;
+  cursor: pointer;
 }
 
 @keyframes zoomToggleBtn {
