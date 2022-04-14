@@ -292,6 +292,12 @@ body {
 /*===============
 Questions
 ===============*/
+.questions {
+  height: 100vh;
+  display: grid;
+  place-content: center;
+}
+
 .question {
   width: 100%;
   max-width: var(--fixed-width);
