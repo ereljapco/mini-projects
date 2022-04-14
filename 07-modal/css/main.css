@@ -344,6 +344,7 @@ Modal Section
 
 .modal__close-btn {
   position: absolute;
+  color: var(--clr-red-dark);
   border-color: transparent;
   background-color: transparent;
 }
