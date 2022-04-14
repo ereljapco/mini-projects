@@ -335,3 +335,7 @@ Modal Section
   display: grid;
   place-content: center;
 }
+
+.modal__text {
+  color: var(--clr-white);
+}
