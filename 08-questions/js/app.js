@@ -14,7 +14,7 @@ const getElement = (selector, list) => {
 
 // traversing the dom
 const btns = getElement('.question__toggle-btn', true);
-const title = getElement('.title');
+const title = getElement('.question__title');
 
 btns.forEach(function (btn) {
   btn.addEventListener('click', function (e) {
