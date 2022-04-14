@@ -370,6 +370,12 @@ Navbar
     padding-block: 0;
     padding-left: 0;
   }
+
+  .navbar__link:hover {
+    color: var(--clr-secondary-500);
+    background-color: transparent;
+    padding-left: 0;
+  }
 }
 
 /* social links */
