@@ -302,4 +302,5 @@ Modal Section
   width: 90vw;
   max-width: var(--fixed-width);
   background-color: var(--clr-tertiary-500);
+  text-align: center;
 }
