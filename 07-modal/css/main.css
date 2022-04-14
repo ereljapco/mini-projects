@@ -328,6 +328,7 @@ Modal Section
 
 .modal__content {
   width: 90vw;
+  height: 17rem;
   max-width: var(--fixed-width);
   background-color: var(--clr-tertiary-500);
   border-radius: var(--border-radius);
