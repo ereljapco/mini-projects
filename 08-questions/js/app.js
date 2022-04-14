@@ -13,7 +13,7 @@ const getElement = (selector, list) => {
 };
 
 // traversing the dom
-const btns = getElement('.question-btn', true);
+const btns = getElement('.question__toggle-btn', true);
 const title = getElement('.title');
 
 btns.forEach(function (btn) {
