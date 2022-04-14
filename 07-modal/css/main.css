@@ -348,6 +348,7 @@ Modal Section
   top: 1rem;
   right: 1rem;
   color: var(--clr-red-dark);
+  font-size: 2rem;
   border-color: transparent;
   background-color: transparent;
 }
