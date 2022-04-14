@@ -366,6 +366,7 @@ Navigation
   display: block;
   color: var(--clr-secondary-500);
   padding-left: 1.75rem;
+  transition: var(--transition);
 }
 
 .sidebar__link:hover {
