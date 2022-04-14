@@ -334,6 +334,7 @@ Navbar
 
 /* toggle button */
 .navbar__toggle-btn {
+  font-size: 1.5rem;
   border: transparent;
   background-color: transparent;
   cursor: pointer;
