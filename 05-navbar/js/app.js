@@ -4,9 +4,9 @@ const getElement = (selector) => {
   throw new Error(`Please check your classes : ${selector} does not exist`)
 }
 
-const navToggle = getElement('.nav-toggle')
-const links = getElement('.links')
+const navToggle = getElement('.navbar__toggle-btn')
+const links = getElement('.navbar__links')
 
 navToggle.addEventListener('click', function () {
-  links.classList.toggle('show-links')
+  links.classList.toggle('.navbar__links--show')
 })
