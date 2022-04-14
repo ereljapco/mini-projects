@@ -307,3 +307,7 @@ Questions
   max-width: var(--fixed-width);
   background-color: var(--clr-tertiary-500);
 }
+
+.question__title {
+  color: var(--clr-white);
+}
