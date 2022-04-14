@@ -343,6 +343,7 @@ Navigation
 }
 
 .sidebar__close-btn {
+  color: var(--clr-red-dark);
   border-color: transparent;
   background-color: transparent;
 }
