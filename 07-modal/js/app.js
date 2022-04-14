@@ -6,7 +6,7 @@ const getElement = (selector) => {
 
 const modalBtn = getElement('.modal__open-btn')
 const modal = getElement('.modal--overlay')
-const closeBtn = getElement('.close-btn')
+const closeBtn = getElement('.modal__close-btn')
 
 modalBtn.addEventListener('click', function () {
   modal.classList.add('open-modal')
