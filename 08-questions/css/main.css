@@ -331,6 +331,7 @@ Questions
   border-color: transparent;
   background-color: transparent;
   cursor: pointer;
+  transition: var(--transition);
 }
 
 .question__toggle-btn:hover {
