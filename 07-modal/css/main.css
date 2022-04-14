@@ -308,4 +308,6 @@ Modal Section
 
 .modal__title {
   color: var(--clr-white);
+  font-size: 2.5rem;
+  font-weight: 500;
 }
