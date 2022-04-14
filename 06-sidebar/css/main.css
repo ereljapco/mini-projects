@@ -326,6 +326,8 @@ Navigation
   background-color: var(--clr-tertiary-500);
 }
 
+/* header */
+
 .sidebar__header {
   display: flex;
   justify-content: space-between;
@@ -338,4 +340,9 @@ Navigation
   font-size: 1.75rem;
   line-height: 1;
   margin-block: 0;
+}
+
+.sidebar__close-btn {
+  border-color: transparent;
+  background-color: transparent;
 }
