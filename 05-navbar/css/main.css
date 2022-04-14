@@ -338,6 +338,7 @@ Navbar
   .navbar__links {
     position: relative;
     height: 100%;
+    width: auto;
   }
 }
 
