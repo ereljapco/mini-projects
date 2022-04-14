@@ -294,6 +294,7 @@ Sidebar
 ===============*/
 .nav__toggle-btn {
   color: var(--clr-secondary-500);
+  font-size: 2rem;
   border-color: transparent;
   background-color: transparent;
 }
