@@ -9,7 +9,7 @@ const modal = getElement('.modal--overlay')
 const closeBtn = getElement('.modal__close-btn')
 
 modalBtn.addEventListener('click', function () {
-  modal.classList.add('open-modal')
+  modal.classList.add('modal--overlay-open')
 })
 closeBtn.addEventListener('click', function () {
   modal.classList.remove('open-modal')
