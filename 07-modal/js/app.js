@@ -5,7 +5,7 @@ const getElement = (selector) => {
 }
 
 const modalBtn = getElement('.modal__open-btn')
-const modal = getElement('.modal-overlay')
+const modal = getElement('.modal--overlay')
 const closeBtn = getElement('.close-btn')
 
 modalBtn.addEventListener('click', function () {
