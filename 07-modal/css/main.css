@@ -327,5 +327,6 @@ Modal Section
 }
 
 .modal__content {
+  width: 90vw;
   background-color: var(--clr-tertiary-500);
 }
