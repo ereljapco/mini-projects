@@ -328,6 +328,10 @@ Navbar
   overflow: hidden;
 }
 
+.navbar__links--show {
+  height: 5rem;
+}
+
 /* social links */
 .navbar__social-links {
   display: none;
