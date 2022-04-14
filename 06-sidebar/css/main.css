@@ -344,6 +344,10 @@ Navigation
   margin-block: 0;
 }
 
+.sidebar__logo--highlight {
+  color: var(--clr-secondary-500);
+}
+
 .sidebar__close-btn {
   color: var(--clr-red-dark);
   font-size: 1.75rem;
