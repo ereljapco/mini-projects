@@ -362,6 +362,13 @@ Navbar
   padding-left: 1.5rem;
 }
 
+@media screen and (min-width: 800px) {
+  .navbar__link {
+    padding-block: 0;
+    padding-left: 0;
+  }
+}
+
 /* social links */
 .navbar__social-links {
   display: none;
