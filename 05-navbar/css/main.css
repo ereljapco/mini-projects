@@ -341,6 +341,9 @@ Navbar
     height: 100%;
     width: auto;
     background-color: transparent;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 1rem;
   }
 }
 
