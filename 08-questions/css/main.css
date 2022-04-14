@@ -333,6 +333,10 @@ Questions
   cursor: pointer;
 }
 
+.question__toggle-btn:hover {
+  transform: rotate(90deg);
+}
+
 .question__text {
   color: var(--clr-grey-100);
   font-size: 0.875rem;
