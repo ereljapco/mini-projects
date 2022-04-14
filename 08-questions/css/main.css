@@ -326,6 +326,7 @@ Questions
 
 .question__toggle-btn {
   color: var(--clr-secondary-500);
+  font-size: 1.25rem;
   border-color: transparent;
   background-color: transparent;
 }
