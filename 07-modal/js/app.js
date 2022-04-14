@@ -4,7 +4,7 @@ const getElement = (selector) => {
   throw new Error(`Please double check the ${selector}`)
 }
 
-const modalBtn = getElement('.modal-btn')
+const modalBtn = getElement('.modal__open-btn')
 const modal = getElement('.modal-overlay')
 const closeBtn = getElement('.close-btn')
 
