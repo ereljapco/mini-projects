@@ -299,11 +299,11 @@ Navbar
 .navbar {
   background-color: var(--clr-white);
   box-shadow: var(--shadow-2);
-  height: 4rem;
 }
 
 .navbar--container {
   width: 90vw;
+  height: 4rem;
   max-width: var(--max-width);
   margin-inline: auto;
   display: flex;
