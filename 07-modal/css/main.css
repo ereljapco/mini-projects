@@ -292,6 +292,12 @@ body {
 /*===============
 Modal Section
 ===============*/
+.modal {
+  height: 100vh;
+  display: grid;
+  place-content: center;
+}
+
 .modal--container {
   width: 90vw;
   max-width: var(--fixed-width);
