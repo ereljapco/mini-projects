@@ -293,5 +293,6 @@ body {
 Modal Section
 ===============*/
 .modal--container {
+  width: 90vw;
   background-color: var(--clr-tertiary-500);
 }
