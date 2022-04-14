@@ -290,7 +290,7 @@ Main
 ===============*/
 .main {
   height: 100vh;
-  background-color: var(--clr-grey-50);
+  background-color: var(--clr-tertiary-400);
 }
 
 /*===============
