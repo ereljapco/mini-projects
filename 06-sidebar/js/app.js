@@ -4,7 +4,7 @@ const getElement = (selector) => {
   throw new Error(`Please check your classes : ${selector} does not exist`)
 }
 
-const sidebarToggle = getElement('.sidebar-toggle')
+const sidebarToggle = getElement('.sidebar__toggle-btn')
 const sidebar = getElement('.sidebar')
 const closeBtn = getElement('.close-btn')
 
