@@ -346,6 +346,11 @@ Navbar
   color: var(--clr-tertiary-500);
 }
 
+.navbar__link:hover {
+  color: var(--clr-secondary-500);
+  background-color: var(--clr-tertiary-500);
+}
+
 /* social links */
 .navbar__social-links {
   display: none;
