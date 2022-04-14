@@ -365,4 +365,5 @@ Navigation
 .sidebar__link {
   display: block;
   color: var(--clr-secondary-500);
+  padding-left: 1.75rem;
 }
