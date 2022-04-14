@@ -373,7 +373,7 @@ Navbar
   }
 
   .navbar__link:hover {
-    color: var(--clr-secondary-500);
+    color: var(--clr-primary-500);
     background-color: transparent;
     padding-left: 0;
   }
