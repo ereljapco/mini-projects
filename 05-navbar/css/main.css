@@ -341,6 +341,7 @@ Navbar
 
 .navbar__link {
   display: block;
+  padding-block: 0.375rem;
   padding-left: 1rem;
 }
 
