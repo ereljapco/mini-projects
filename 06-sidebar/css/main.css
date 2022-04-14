@@ -326,6 +326,12 @@ Navigation
   background-color: var(--clr-tertiary-500);
 }
 
+@media screen and (min-width: 676px) {
+  .sidebar {
+    width: 25rem;
+  }
+}
+
 /* header */
 
 .sidebar__header {
