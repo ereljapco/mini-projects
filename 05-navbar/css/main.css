@@ -340,8 +340,10 @@ Navbar
   border: transparent;
   background-color: transparent;
   cursor: pointer;
+  transition: var(--transition);
 }
 
 .navbar__toggle-btn:hover {
   color: var(--clr-secondary-500);
+  transform: rotate(90deg);
 }
