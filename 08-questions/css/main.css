@@ -298,6 +298,10 @@ Questions
   place-content: center;
 }
 
+.questions__title {
+  text-align: center;
+}
+
 .question {
   width: 100%;
   max-width: var(--fixed-width);
