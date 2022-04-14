@@ -356,5 +356,5 @@ Modal Section
 }
 
 .modal__close-btn:hover {
-  transform: rotate(180deg);
+  transform: rotate(180deg) scale(1.3);
 }
