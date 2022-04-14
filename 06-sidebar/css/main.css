@@ -367,3 +367,7 @@ Navigation
   color: var(--clr-secondary-500);
   padding-left: 1.75rem;
 }
+
+.sidebar__link:hover {
+  background-color: var(--clr-secondary-500);
+}
