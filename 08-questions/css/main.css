@@ -345,4 +345,5 @@ Questions
   font-weight: 300;
   border-top: 1px solid var(--clr-secondary-500);
   margin-top: 1.25rem;
+  padding-top: 1.25rem;
 }
