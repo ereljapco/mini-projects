@@ -352,6 +352,7 @@ Modal Section
   border-color: transparent;
   background-color: transparent;
   cursor: pointer;
+  transition: var(--transition);
 }
 
 .modal__close-btn:hover {
