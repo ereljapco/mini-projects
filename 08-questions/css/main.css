@@ -313,3 +313,7 @@ Questions
   font-size: 1.25rem;
   font-weight: 400;
 }
+
+.question__title::first-letter {
+  text-transform: capitalize;
+}
