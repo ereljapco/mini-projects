@@ -363,5 +363,6 @@ Navigation
 
 /* links */
 .sidebar__link {
+  display: block;
   color: var(--clr-secondary-500);
 }
