@@ -292,9 +292,6 @@ body {
 /*===============
 Questions
 ===============*/
-.questions {
-}
-
 .questions__title {
   text-align: center;
 }
@@ -306,6 +303,7 @@ Questions
   padding-block: 1.5rem;
   padding-inline: 1rem;
   margin-bottom: 2rem;
+  margin-inline: auto;
 }
 
 .question__title--container {
