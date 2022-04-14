@@ -351,4 +351,5 @@ Modal Section
   font-size: 2rem;
   border-color: transparent;
   background-color: transparent;
+  cursor: pointer;
 }
