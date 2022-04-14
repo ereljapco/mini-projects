@@ -383,6 +383,7 @@ Navigation
   display: flex;
   justify-content: space-between;
   width: 12rem;
+  margin-inline: auto;
 }
 
 .sidebar__social-link {
