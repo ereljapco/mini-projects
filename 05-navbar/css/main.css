@@ -299,6 +299,7 @@ Navbar
 .navbar {
   background-color: var(--clr-white);
   box-shadow: var(--shadow-2);
+  padding-block: 0.75rem;
 }
 
 .navbar--container {
