@@ -316,3 +316,7 @@ Modal Section
 .modal__open-btn {
   background-color: var(--clr-secondary-500);
 }
+
+.modal--overlay {
+  background-color: rgba(186, 232, 232, 0.5);
+}
