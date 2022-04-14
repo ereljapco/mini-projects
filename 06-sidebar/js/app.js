@@ -6,7 +6,7 @@ const getElement = (selector) => {
 
 const sidebarToggle = getElement('.sidebar__toggle-btn')
 const sidebar = getElement('.sidebar')
-const closeBtn = getElement('.close-btn')
+const closeBtn = getElement('.sidebar__close-btn')
 
 sidebarToggle.addEventListener('click', function () {
   sidebar.classList.toggle('show-sidebar')
