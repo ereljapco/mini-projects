@@ -327,6 +327,7 @@ Modal Section
 }
 
 .modal__content {
+  position: relative;
   width: 90vw;
   height: 17rem;
   max-width: var(--fixed-width);
