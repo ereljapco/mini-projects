@@ -290,7 +290,7 @@ body {
 }
 
 /*===============
-Sidebar
+Navigation
 ===============*/
 .nav__toggle-btn {
   position: absolute;
@@ -314,4 +314,9 @@ Sidebar
   100% {
     transform: scale(1);
   }
+}
+
+/* --- Sidebar */
+.sidebar {
+  background-color: var(--clr-tertiary-500);
 }
