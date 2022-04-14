@@ -323,3 +323,8 @@ Questions
 .question__title::first-letter {
   text-transform: capitalize;
 }
+
+.question__toggle-btn {
+  border-color: transparent;
+  background-color: transparent;
+}
