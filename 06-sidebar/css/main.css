@@ -293,6 +293,9 @@ body {
 Sidebar
 ===============*/
 .nav__toggle-btn {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
   color: var(--clr-secondary-500);
   font-size: 2rem;
   border-color: transparent;
