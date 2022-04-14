@@ -8,5 +8,5 @@ const navToggle = getElement('.navbar__toggle-btn')
 const links = getElement('.navbar__links')
 
 navToggle.addEventListener('click', function () {
-  links.classList.toggle('.navbar__links--show')
+  links.classList.toggle('navbar__links--show')
 })
