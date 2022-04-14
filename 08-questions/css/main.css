@@ -302,6 +302,11 @@ Questions
   text-align: center;
 }
 
+.question--container {
+  display: grid;
+  row-gap: 2rem;
+}
+
 .question {
   width: 100%;
   max-width: var(--fixed-width);
@@ -338,4 +343,5 @@ Questions
 .question__text {
   color: var(--clr-grey-100);
   font-weight: 300;
+  border-top: 1px solid var(--clr-secondary-500);
 }
