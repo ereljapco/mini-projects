@@ -334,6 +334,7 @@ Navigation
   align-items: center;
   padding-top: 1.25rem;
   padding-inline: 1.75rem;
+  margin-bottom: 4rem;
 }
 
 .sidebar__logo {
@@ -342,7 +343,6 @@ Navigation
   font-weight: 600;
   line-height: 1;
   margin-block: 0;
-  margin-bottom: 4rem;
 }
 
 .sidebar__logo--highlight {
