@@ -339,6 +339,10 @@ Navbar
   background-color: var(--clr-secondary-500);
 }
 
+.navbar__link {
+  display: block;
+}
+
 /* social links */
 .navbar__social-links {
   display: none;
