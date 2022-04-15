@@ -316,3 +316,8 @@ Grocery Bud
 .grocery-bud__form-row {
   display: flex;
 }
+
+.grocery-bud__input {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
