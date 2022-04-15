@@ -319,10 +319,6 @@ Menu Section
 }
 
 /* menu items */
-.menu__items {
-  width: 100%;
-}
-
 .menu__item {
   margin-inline: auto;
   width: 90vw;
