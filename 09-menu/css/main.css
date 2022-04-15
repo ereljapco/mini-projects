@@ -362,4 +362,5 @@ Menu Section
 
 .menu__item-text {
   color: var(--clr-grey-50);
+  margin-bottom: 0;
 }
