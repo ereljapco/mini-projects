@@ -292,6 +292,9 @@ body {
 /*===============
 Menu Section
 ===============*/
+.menu__header {
+  margin-top: 5rem;
+}
 
 /* menu items */
 .menu__items {
