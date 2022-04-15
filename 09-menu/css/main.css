@@ -304,6 +304,7 @@ Menu Section
 }
 
 .menu--btn {
+  background-color: transparent;
   margin-bottom: 4rem;
 }
 
