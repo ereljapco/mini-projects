@@ -350,3 +350,8 @@ Grocery Bud
 .grocery-bud__item-delete-btn {
   color: var(--clr-red-dark);
 }
+
+.grocery-bud__clear-btn {
+  border: none;
+  background-color: transparent;
+}
