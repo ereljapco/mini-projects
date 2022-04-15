@@ -304,6 +304,7 @@ Menu Section
 }
 
 .menu--btn {
+  font-size: 0.875rem;
   background-color: transparent;
   border: 2px solid var(--clr-primary-500);
   margin-bottom: 4rem;
