@@ -336,6 +336,7 @@ Menu Section
 .menu__item-header {
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
 }
 
 .menu__item-title {
