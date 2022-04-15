@@ -293,5 +293,6 @@ Grocery Bud
   width: 90vw;
   max-width: var(--fixed-width);
   background-color: var(--clr-secondary-500);
+  margin-top: 10rem;
   margin-inline: auto;
 }
