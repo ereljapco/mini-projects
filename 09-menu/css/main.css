@@ -298,6 +298,11 @@ Menu Section
   font-size: 2.25rem;
 }
 
+/* filter */
+.menu__filter {
+  text-align: center;
+}
+
 /* menu items */
 .menu__items {
   width: 90vw;
