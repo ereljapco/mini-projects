@@ -337,6 +337,7 @@ Menu Section
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+  border-bottom: 0.25rem dotted var(--clr-secondary-500);
 }
 
 .menu__item-info {
