@@ -342,3 +342,7 @@ Grocery Bud
   border: none;
   background-color: transparent;
 }
+
+.grocery-bud__item-edit-btn {
+  color: var(--clr-green-dark);
+}
