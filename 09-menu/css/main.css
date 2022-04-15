@@ -327,3 +327,7 @@ Menu Section
 .menu__item {
   background-color: var(--clr-white);
 }
+
+.menu__item-img {
+  border-radius: var(--border-radius);
+}
