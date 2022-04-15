@@ -353,6 +353,7 @@ Grocery Bud
 
 .grocery-bud__clear-btn {
   color: var(--clr-red-dark);
+  text-transform: capitalize;
   border: none;
   background-color: transparent;
   cursor: pointer;
