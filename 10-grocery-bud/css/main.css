@@ -303,6 +303,10 @@ Grocery Bud
   margin-top: 0;
 }
 
+.grocery-bud__alert::first-letter {
+  text-transform: capitalize;
+}
+
 .grocery-bud__title {
   font-size: 1.5rem;
   text-align: center;
