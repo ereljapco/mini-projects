@@ -328,6 +328,7 @@ Menu Section
   background-color: var(--clr-tertiary-500);
   border-radius: var(--border-radius);
   padding: 1.25rem;
+  margin-bottom: 2rem;
 }
 
 .menu__item-img {
