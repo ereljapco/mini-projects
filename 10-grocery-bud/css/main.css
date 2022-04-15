@@ -336,6 +336,10 @@ Grocery Bud
   margin-inline: 0.75rem;
 }
 
+.grocery-bud__item:not(:last-child) {
+  margin-bottom: 0.75rem;
+}
+
 .grocery-bud__item-title {
   text-transform: capitalize;
   margin-block: 0;
