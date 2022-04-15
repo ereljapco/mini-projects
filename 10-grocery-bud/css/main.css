@@ -303,6 +303,7 @@ Grocery Bud
 .grocery-bud__alert {
   font-size: 0.75rem;
   margin-top: 0;
+  max-width: 100%;
 }
 
 .grocery-bud__alert::first-letter {
