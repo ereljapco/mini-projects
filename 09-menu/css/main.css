@@ -340,12 +340,6 @@ Menu Section
   border-bottom: 0.25rem dotted var(--clr-secondary-500);
 }
 
-.menu__item-info {
-  background-color: var(--clr-tertiary-500);
-  border-radius: var(--border-radius);
-  padding: 1.25rem;
-}
-
 .menu__item-title {
   color: var(--clr-white);
   font-size: 1.25rem;
