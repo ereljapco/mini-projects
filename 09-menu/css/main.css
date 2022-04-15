@@ -310,6 +310,10 @@ Menu Section
   margin-bottom: 4rem;
 }
 
+.menu--btn:hover {
+  background-color: var(--clr-primary-500);
+}
+
 .menu--btn:not(:last-child) {
   margin-right: 0.5rem;
 }
