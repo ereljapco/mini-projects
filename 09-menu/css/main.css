@@ -342,3 +342,7 @@ Menu Section
   font-size: 1.5rem;
   font-weight: 500;
 }
+
+.menu__item-price {
+  margin-block: 0;
+}
