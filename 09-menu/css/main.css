@@ -295,5 +295,6 @@ Menu Section
 
 /* menu item */
 .menu__item {
+  width: 90vw;
   background-color: var(--clr-white);
 }
