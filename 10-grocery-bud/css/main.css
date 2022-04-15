@@ -298,3 +298,7 @@ Grocery Bud
   border-radius: var(--border-radius);
   padding: 1rem;
 }
+
+.grocery-bud__title {
+  font-size: 1.5rem;
+}
