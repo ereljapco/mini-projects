@@ -284,3 +284,11 @@ ul {
   margin-inline: auto;
   margin-top: -1rem;
 }
+
+body {
+  background-color: var(--clr-secondary-500);
+}
+
+/*===============
+Menu Section
+===============*/
