@@ -337,7 +337,7 @@ Grocery Bud
 .grocery-bud__item {
   display: flex;
   justify-content: space-between;
-  margin-inline: 0.75rem;
+  padding-inline: 0.75rem;
 }
 
 .grocery-bud__item:not(:last-child) {
