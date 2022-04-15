@@ -290,5 +290,6 @@ Grocery Bud
 ===============*/
 
 .grocery-bud {
+  width: 90vw;
   background-color: var(--clr-secondary-500);
 }
