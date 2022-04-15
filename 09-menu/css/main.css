@@ -292,3 +292,8 @@ body {
 /*===============
 Menu Section
 ===============*/
+
+/* menu item */
+.menu__item {
+  background-color: var(--clr-white);
+}
