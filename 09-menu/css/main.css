@@ -329,5 +329,6 @@ Menu Section
 }
 
 .menu__item-img {
+  height: 13rem;
   border-radius: var(--border-radius);
 }
