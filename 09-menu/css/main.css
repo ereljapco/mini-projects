@@ -335,6 +335,12 @@ Menu Section
   row-gap: 1rem;
 }
 
+@media screen and (min-width: 768px) {
+  .menu__item {
+    max-width: 40rem;
+  }
+}
+
 .menu__item-img {
   height: 13rem;
   border-radius: var(--border-radius);
