@@ -305,6 +305,7 @@ Menu Section
 
 .menu--btn {
   background-color: transparent;
+  border: 2px solid var(--clr-primary-500);
   margin-bottom: 4rem;
 }
 
