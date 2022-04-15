@@ -361,6 +361,7 @@ Menu Section
 }
 
 .menu__item-text {
+  font-size: 0.9rem;
   color: var(--clr-grey-50);
   margin-bottom: 0;
 }
