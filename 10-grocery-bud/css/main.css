@@ -346,3 +346,7 @@ Grocery Bud
 .grocery-bud__item-edit-btn {
   color: var(--clr-green-dark);
 }
+
+.grocery-bud__item-delete-btn {
+  color: var(--clr-red-dark);
+}
