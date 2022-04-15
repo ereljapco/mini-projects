@@ -303,6 +303,10 @@ Menu Section
   text-align: center;
 }
 
+.menu--btn {
+  margin-bottom: 4rem;
+}
+
 .menu--btn:not(:last-child) {
   margin-right: 0.5rem;
 }
