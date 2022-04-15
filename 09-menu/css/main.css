@@ -329,6 +329,8 @@ Menu Section
   border-radius: var(--border-radius);
   padding: 1.25rem;
   margin-bottom: 2rem;
+  display: grid;
+  row-gap: 1rem;
 }
 
 .menu__item-img {
