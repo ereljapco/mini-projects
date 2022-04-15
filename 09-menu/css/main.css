@@ -341,6 +341,7 @@ Menu Section
 
 .menu__item-info {
   background-color: var(--clr-tertiary-500);
+  border-radius: var(--border-radius);
 }
 
 .menu__item-title {
