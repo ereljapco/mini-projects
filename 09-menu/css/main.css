@@ -333,6 +333,7 @@ Menu Section
   margin-bottom: 2rem;
   display: grid;
   row-gap: 1rem;
+  box-shadow: var(--shadow-2);
 }
 
 @media screen and (min-width: 768px) {
