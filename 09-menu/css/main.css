@@ -359,3 +359,7 @@ Menu Section
 .menu__item-price {
   margin-block: 0;
 }
+
+.menu__item-text {
+  color: var(--clr-grey-50);
+}
