@@ -295,4 +295,5 @@ Grocery Bud
   background-color: var(--clr-secondary-500);
   margin-top: 10rem;
   margin-inline: auto;
+  border-radius: var(--border-radius);
 }
