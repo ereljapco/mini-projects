@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Default Starter</title>
+    <title>Grocery Bud | Erel Japco</title>
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -25,6 +25,49 @@
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
-    <!-- content -->
+    <main class="main">
+      <!-- grocery bud -->
+      <form class="grocery-bud">
+        <p class="grocery-bud__alert alert alert--danger">please enter value</p>
+        <h1 class="grocery-bud__title">grocery bud</h1>
+        <!-- form row -->
+        <div class="grocery-bud__form-row">
+          <input type="text" class="grocery-bud__input form-input" />
+          <button class="grocery-bud__submit-btn btn">submit</button>
+        </div>
+        <!-- items -->
+        <div class="grocery-bud__items">
+          <!-- item -->
+          <div class="grocery-bud__item">
+            <p class="grocery-bud__item-title">orange</p>
+            <div class="grocery-bud__item-actions">
+              <button class="grocery-bud__item-edit-btn">
+                <i class="fa-solid fa-pen-to-square"></i>
+              </button>
+              <button class="grocery-bud__item-delete-btn">
+                <i class="fa-solid fa-trash"></i>
+              </button>
+            </div>
+          </div>
+          <!-- end of item -->
+          <!-- item -->
+          <div class="grocery-bud__item">
+            <p class="grocery-bud__item-title">lemons</p>
+            <div class="grocery-bud__item-actions">
+              <button class="grocery-bud__item-edit-btn">
+                <i class="fa-solid fa-pen-to-square"></i>
+              </button>
+              <button class="grocery-bud__item-delete-btn">
+                <i class="fa-solid fa-trash"></i>
+              </button>
+            </div>
+          </div>
+          <!-- end of item -->
+        </div>
+        <!-- end of items -->
+        <button class="grocery-bud__clear-btn">clear items</button>
+      </form>
+      <!-- end of grocery bud -->
+    </main>
   </body>
 </html>
