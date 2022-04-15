@@ -332,3 +332,8 @@ Menu Section
   height: 13rem;
   border-radius: var(--border-radius);
 }
+
+.menu__item-header {
+  display: flex;
+  justify-content: space-between;
+}
