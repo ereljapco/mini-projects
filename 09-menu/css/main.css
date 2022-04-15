@@ -337,6 +337,7 @@ Menu Section
 
 @media screen and (min-width: 768px) {
   .menu__item {
+    grid-template-columns: 225px auto;
     max-width: 40rem;
   }
 }
