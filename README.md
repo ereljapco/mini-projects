@@ -31,3 +31,11 @@ These mini projects were created from [John Smilga](https://www.johnsmilga.com/)
   - [x] HTML - April 15, 2022
   - [x] CSS - April 15, 2022
   - [ ] Javascript
+- Questions
+  - [x] HTML - April 15, 2022
+  - [x] CSS - April 15, 2022
+  - [ ] Javascript
+- Menu
+  - [x] HTML - April 15, 2022
+  - [x] CSS - April 15, 2022
+  - [ ] Javascript
