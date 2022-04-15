@@ -338,6 +338,7 @@ Grocery Bud
   display: flex;
   justify-content: space-between;
   padding-inline: 0.75rem;
+  border-radius: var(--border-radius);
 }
 
 .grocery-bud__item:hover {
