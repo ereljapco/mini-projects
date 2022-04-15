@@ -297,6 +297,7 @@ Grocery Bud
   margin-inline: auto;
   border-radius: var(--border-radius);
   padding: 1rem;
+  text-align: center;
 }
 
 .grocery-bud__alert {
