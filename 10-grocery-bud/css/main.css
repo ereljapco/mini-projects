@@ -330,6 +330,10 @@ Grocery Bud
 }
 
 /* items */
+.grocery-bud__items {
+  margin-bottom: 1.5rem;
+}
+
 .grocery-bud__item {
   display: flex;
   justify-content: space-between;
