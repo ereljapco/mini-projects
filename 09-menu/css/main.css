@@ -292,9 +292,14 @@ body {
 /*===============
 Menu Section
 ===============*/
+/* header */
 .menu__header {
   margin-top: 5rem;
   margin-bottom: 2rem;
+}
+
+.menu__title {
+  font-size: 2.25rem;
 }
 
 /* menu items */
