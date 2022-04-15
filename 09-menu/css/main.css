@@ -351,5 +351,9 @@ Menu Section
 }
 
 .menu__item-price {
+  color: var(--clr-secondary-500);
+}
+
+.menu__item-price {
   margin-block: 0;
 }
