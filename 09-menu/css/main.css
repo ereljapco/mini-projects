@@ -288,6 +288,10 @@ ul {
 /*===============
 Menu Section
 ===============*/
+.menu {
+  margin-block: 5rem;
+}
+
 /* header */
 .menu__header {
   margin-bottom: 2rem;
