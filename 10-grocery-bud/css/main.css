@@ -285,6 +285,10 @@ ul {
   margin-top: -1rem;
 }
 
+body {
+  background-color: var(--clr-tertiary-500);
+}
+
 /*===============
 Grocery Bud
 ===============*/
