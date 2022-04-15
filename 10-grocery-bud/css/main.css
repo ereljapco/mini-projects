@@ -337,6 +337,7 @@ Grocery Bud
 }
 
 .grocery-bud__item-title {
+  text-transform: capitalize;
   margin-block: 0;
 }
 
