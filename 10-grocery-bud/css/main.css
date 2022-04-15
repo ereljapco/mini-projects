@@ -340,6 +340,10 @@ Grocery Bud
   padding-inline: 0.75rem;
 }
 
+.grocery-bud__item:hover {
+  background-color: var(--clr-primary-200);
+}
+
 .grocery-bud__item:not(:last-child) {
   margin-bottom: 0.75rem;
 }
