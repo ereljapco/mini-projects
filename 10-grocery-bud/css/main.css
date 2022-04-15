@@ -316,6 +316,7 @@ Grocery Bud
 
 .grocery-bud__form-row {
   display: flex;
+  margin-bottom: 2rem;
 }
 
 .grocery-bud__input {
