@@ -320,11 +320,11 @@ Menu Section
 
 /* menu items */
 .menu__items {
-  width: 90vw;
-  margin-inline: auto;
+  width: 100%;
 }
 
 .menu__item {
+  margin-inline: auto;
   width: 90vw;
   max-width: 25rem;
   background-color: var(--clr-tertiary-500);
