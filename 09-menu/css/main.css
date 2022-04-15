@@ -339,6 +339,10 @@ Menu Section
   align-items: baseline;
 }
 
+.menu__item-info {
+  background-color: var(--clr-tertiary-500);
+}
+
 .menu__item-title {
   font-size: 1.5rem;
   font-weight: 500;
