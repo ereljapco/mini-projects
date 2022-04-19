@@ -9,8 +9,20 @@ const color = document.querySelector('.color-flipper--color');
 // generate random number within 0 to length - 1 of hex array
 function randomNumber() {
   const number = Math.floor(Math.random() * hex.length);
-  console.log(number);
+  
   return number;
 }
 
-randomNumber();
+// generate random hex color and assign it as the background color of main
+// change the text of color to the generated hex color
+
+btn.addEventListener('click', function() {
+  let hexColor = '#';
+  
+  for (let i = 0; i < 6; i++) {  
+    const number = randomNumber();
+    hexColor += hex[number];
+  }
+  
+  console.log(hexColor);
+}); 
