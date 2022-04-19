@@ -1,0 +1,1 @@
+const colorPalette = ['#fffffe', '#2d334a', '#ffd803', '#bae8e8', '#e3f6f5'];
