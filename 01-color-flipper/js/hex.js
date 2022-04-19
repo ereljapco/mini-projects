@@ -25,4 +25,5 @@ btn.addEventListener('click', function() {
   }
   
   main.style.backgroundColor = hexColor;
+  color.innerText = hexColor;
 });
