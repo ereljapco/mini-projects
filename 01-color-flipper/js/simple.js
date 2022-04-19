@@ -13,6 +13,7 @@ btn.addEventListener('click', function () {
   let randomColor = randomNumber();
   
   main.style.backgroundColor = colorPalette[randomColor];
+  color.innerText = colorPalette[randomColor].toUpperCase();
 });
 
 // random number function
