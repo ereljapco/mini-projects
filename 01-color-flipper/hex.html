@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Flipper</title>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- styles -->
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar">
+      <div class="navbar--container">
+        <p class="navbar__logo">
+          <span class="primary">C</span>olor
+          <span class="secondary">F</span>lipper
+        </p>
+        <ul class="navbar__links">
+          <li><a class="navbar__link" href="./index.html">Simple</a></li>
+          <li><a class="navbar__link" href="./hex.html">Hex</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- end of navbar -->
+    <!-- main -->
+    <main class="color-flipper__main">
+      <div class="color-flipper--container">
+        <h1 class="color-flipper__title">
+          background color: <span class="color-flipper--color">#FBFBFB</span>
+        </h1>
+        <button class="btn color-flipper__btn" id="btn">click me</button>
+      </div>
+    </main>
+    <!-- end of main -->
+    <!-- scripts -->
+    <script src="./js/hex.js"></script>
+  </body>
+</html>
