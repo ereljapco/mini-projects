@@ -6,10 +6,19 @@ const main = document.querySelector('.color-flipper__main');
 const btn = document.querySelector('#btn');
 console.log(btn);
 
+
 // add event listener for btn
 btn.addEventListener('click', function () {
   const randomColor = 3;
   
   main.style.backgroundColor = colorPalette[randomColor];
 });
-// get a random color from colorPalette when btn is clicked
+
+// random number function
+randomNumber();
+
+function randomNumber() {
+  const number = Math.floor(Math.random() * colorPalette.length);
+  console.log(number);
+  return number;
+}
