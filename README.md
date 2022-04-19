@@ -10,7 +10,7 @@ These mini projects were created from [John Smilga](https://www.johnsmilga.com/)
 - Color Flipper
   - [x] HTML - April 13, 2022
   - [x] CSS - April 13, 2022
-  - [ ] Javascript
+  - [x] Javascript - April 20, 2022
 - Task Manager
   - [x] HTML - April 13, 2022
   - [x] CSS - April 13, 2022
