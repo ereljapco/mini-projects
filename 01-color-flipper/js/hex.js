@@ -24,5 +24,5 @@ btn.addEventListener('click', function() {
     hexColor += hex[number];
   }
   
-  console.log(hexColor);
-}); 
+  main.style.backgroundColor = hexColor;
+});
