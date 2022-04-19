@@ -9,14 +9,12 @@ console.log(btn);
 
 // add event listener for btn
 btn.addEventListener('click', function () {
-  const randomColor = 3;
+  let randomColor = randomNumber();
   
   main.style.backgroundColor = colorPalette[randomColor];
 });
 
 // random number function
-randomNumber();
-
 function randomNumber() {
   const number = Math.floor(Math.random() * colorPalette.length);
   console.log(number);
