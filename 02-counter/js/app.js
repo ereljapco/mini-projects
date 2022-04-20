@@ -14,7 +14,7 @@ btns.forEach(function(btn) {
     if (currentBtn.contains('increase')) {
       counter++;
     // check if btn has decrease class and is greater than 0
-    } else if (currentBtn.contains('decrease') && counter > 0) {
+    } else if (currentBtn.contains('decrease')) {
       counter--;
     } else {
       counter = 0;
