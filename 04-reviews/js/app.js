@@ -27,6 +27,14 @@ btns.forEach(function(btn) {
       } else {
         index++;
       }
+    } else {
+      let num = randomIndex();
+
+      while (num == index) {
+        num = randomIndex();
+      }
+
+      index = num;
     }
 
     img.src = reviews[index].img;
@@ -40,8 +48,6 @@ btns.forEach(function(btn) {
 // random index from 0 to reviewsLen - 1
 function randomIndex() {
   const indexNum = Math.floor(Math.random() * reviewsLen);
-  console.log(indexNum);
+  
   return indexNum;
 }
-
-randomIndex();
