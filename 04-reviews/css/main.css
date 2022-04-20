@@ -400,10 +400,12 @@ Reviews
 }
 
 .review__random-btn {
+  color: var(--clr-tertiary-500);
   background-color: var(--clr-primary-200);
   border: 2px solid var(--clr-primary-500);
 }
 
 .review__random-btn:hover {
+  color: var(--clr-tertiary-500);
   background-color: var(--clr-primary-500);
 }
