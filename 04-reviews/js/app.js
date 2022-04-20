@@ -15,21 +15,24 @@ btns.forEach(function(btn) {
   btn.addEventListener('click', function(e) {
     const btnClass = e.currentTarget.classList;
 
+    // show previous review
     if (btnClass.contains('review__prev-btn')) {
       if (index == 0) {
         index = reviewsLen - 1;
       } else {
         index--;
       }
-    } else if (btnClass.contains('review__next-btn')) {
-      if (index == 3) {
-        index = 0;
-      } else {
-        index++;
-      }
+    // next previous review
+  } else if (btnClass.contains('review__next-btn')) {
+    if (index == 3) {
+      index = 0;
+    } else {
+      index++;
+    }
+    // random review
     } else {
       let num = randomIndex();
-
+      // generate random number if the generated one is equal to index
       while (num == index) {
         num = randomIndex();
       }
@@ -37,6 +40,7 @@ btns.forEach(function(btn) {
       index = num;
     }
 
+    // change the img, reviewer, job-title, and text
     img.src = reviews[index].img;
     reviewer.textContent = reviews[index].name;
     job.textContent = reviews[index].job;
