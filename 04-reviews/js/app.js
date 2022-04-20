@@ -9,10 +9,10 @@ const btns = document.querySelectorAll('.review--btn');
 
 // change img, reviwer, job-title, and text when a btn is clicked
 let index = 0;
+const reviewsLen = reviews.length;
 
 btns.forEach(function(btn) {
   btn.addEventListener('click', function(e) {
-    const reviewsLen = reviews.length;
     const btnClass = e.currentTarget.classList;
 
     if (btnClass.contains('review__prev-btn')) {
@@ -36,3 +36,12 @@ btns.forEach(function(btn) {
     console.log(index);
   });
 });
+
+// random index from 0 to reviewsLen - 1
+function randomIndex() {
+  const indexNum = Math.floor(Math.random() * reviewsLen);
+  console.log(indexNum);
+  return indexNum;
+}
+
+randomIndex();
