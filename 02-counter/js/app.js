@@ -20,6 +20,17 @@ btns.forEach(function(btn) {
       counter = 0;
     }
 
+    let color = '#ffd803';
+
+    if (counter > 0) {
+      color = '#587246';
+    } else if (counter < 0) {
+      color = '#b44c43';
+    } else {
+      color = '#ffd803';
+    }
+
+    count.style.color = color;
     // change text of count with the value of counter
     count.textContent = counter;
   });
