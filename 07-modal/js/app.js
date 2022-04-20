@@ -9,3 +9,6 @@ openBtn.addEventListener('click', () => {
 });
 
 // hide overlay when closeBtn is clicked
+closeBtn.addEventListener('click', () => {
+  overlay.classList.remove('modal--overlay-open');
+});
