@@ -1,8 +1,38 @@
 // get the img, reviewer, job-title and text elements
 const img = document.querySelector('.review__img');
-const name = document.querySelector('.review__reviewer');
+const reviewer = document.querySelector('.review__reviewer');
 const job = document.querySelector('.review__job-title');
 const text = document.querySelector('.review__text');
 
 // get review--btn and assign to variable
 const btns = document.querySelectorAll('.review--btn');
+
+// change img, reviwer, job-title, and text when a btn is clicked
+let index = 0;
+
+btns.forEach(function(btn) {
+  btn.addEventListener('click', function(e) {
+    const reviewsLen = reviews.length;
+    const btnClass = e.currentTarget.classList;
+
+    if (btnClass.contains('review__prev-btn')) {
+      if (index == 0) {
+        index = reviewsLen - 1;
+      } else {
+        index--;
+      }
+    } else if (btnClass.contains('review__next-btn')) {
+      if (index == 3) {
+        index = 0;
+      } else {
+        index++;
+      }
+    }
+
+    img.src = reviews[index].img;
+    reviewer.textContent = reviews[index].name;
+    job.textContent = reviews[index].job;
+    text.textContent = reviews[index].text;
+    console.log(index);
+  });
+});
