@@ -5,7 +5,7 @@ const closeBtn = document.querySelector('.sidebar__close-btn');
 
 // show sidebar when toggle-btn is clicked
 toggleBtn.addEventListener('click', () => {
-  sidebar.classList.add('sidebar--show');
+  sidebar.classList.toggle('sidebar--show');
 });
 
 // hide sidebar when close-btn is clicked
