@@ -48,7 +48,7 @@ const menu = [
     id: 6,
     category: 'Pizza',
     img: './images/pepperoni-pizza.jpg',
-    title: 'Pesto',
+    title: 'Pepperoni Pizza',
     price: '341.00',
     description: 
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, sint quam. Et reprehenderit fugiat nesciunt inventore laboriosam excepturi! Quo, officia.'
