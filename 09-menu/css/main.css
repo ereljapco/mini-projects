@@ -306,18 +306,18 @@ Menu Section
   text-align: center;
 }
 
-.menu--btn {
+.menu__filter-btn {
   font-size: 0.875rem;
   background-color: transparent;
   border: 2px solid var(--clr-primary-500);
   margin-bottom: 4rem;
 }
 
-.menu--btn:hover {
+.menu__filter-btn:hover {
   background-color: var(--clr-primary-500);
 }
 
-.menu--btn:not(:last-child) {
+.menu__filter-btn:not(:last-child) {
   margin-right: 0.5rem;
 }
 
