@@ -14,13 +14,13 @@ questions.forEach((question) => {
           q.classList.remove('question__text--open');
         }
       });
-      // add .question __text--open on the selected question
+      // add .question __text--open if toggle-btn--plus is clicked
       if (btn.classList.contains('toggle-btn--plus')) {
         question.classList.add('question__text--open');
+      // remove .question __text--open if toggle-btn--plus is clicked
       } else {
         question.classList.remove('question__text--open');
       }
-      console.log(question);
     });
   });
 
