@@ -8,9 +8,11 @@ questions.forEach((question) => {
 
   toggleBtns.forEach((btn) => {
     btn.addEventListener('click', () => {
-      // remove .question__text--open on all question
+      // remove .question__text--open to other questions if current one is clicked
       questions.forEach((q) => {
-        q.classList.remove('question__text--open');
+        if (question != q) {
+          q.classList.remove('question__text--open');
+        }
       });
       // add .question __text--open on the selected question
       if (btn.classList.contains('toggle-btn--plus')) {
