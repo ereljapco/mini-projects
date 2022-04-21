@@ -338,6 +338,10 @@ Questions
   transform: rotate(90deg);
 }
 
+.toggle-btn--minus {
+  display: none;
+}
+
 .question__text {
   color: var(--clr-grey-100);
   font-size: 0.875rem;
@@ -349,6 +353,14 @@ Questions
 }
 
 .question__text--open .question__text {
+  display: block;
+}
+
+.question__text--open .toggle-btn--plus {
+  display: none;
+}
+
+.question__text--open .toggle-btn--minus {
   display: block;
 }
 
