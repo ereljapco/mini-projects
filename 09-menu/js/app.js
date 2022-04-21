@@ -3,8 +3,12 @@ const menuContainer = document.querySelector('.menu__items');
 
 // add event listener of DOMContentLoaded to window
 window.addEventListener('DOMContentLoaded', function() {
+  displayMenuItems(menu);
+});
+
+function displayMenuItems(menuItems) {
   // create a displayMenu array using map method
-  let displayMenu = menu.map(function(item) {
+  let displayMenu = menuItems.map(function(item) {
     return `<!-- menu item -->
             <article class="menu__item">
               <!-- menu item img -->
@@ -30,4 +34,4 @@ window.addEventListener('DOMContentLoaded', function() {
   displayMenu = displayMenu.join('');
 
   menuContainer.innerHTML = displayMenu;
-});
+}
