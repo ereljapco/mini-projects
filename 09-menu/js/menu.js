@@ -38,7 +38,7 @@ const menu = [
   {
     id: 5,
     category: 'Pizza',
-    img: './images/mushroom-cheese.jpg',
+    img: './images/mushroom-cheese-pizza.jpg',
     title: 'Mushroom and Cheese Pizza',
     price: '321.00',
     description: 
