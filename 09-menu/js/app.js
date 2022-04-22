@@ -1,8 +1,26 @@
-// select menu__items
+// select menu__items and menu__filter
 const menuContainer = document.querySelector('.menu__items');
+const menuFilterContainer = document.querySelector('.menu__filter');
 
 // add event listener of DOMContentLoaded to window
 window.addEventListener('DOMContentLoaded', function() {
+  
+  // create a category array
+  let category = menu.reduce(function(menuCategories, cat) {
+    if (!menuCategories.includes(cat.category)) {
+      menuCategories.push(cat.category);
+    }
+    return menuCategories;
+  }, ['all']);
+
+  let displayCategories = category.map(function(category) {
+    return `<button class="menu__filter-btn btn" data-category="${category}">${category}</button>`;
+  });
+
+  displayCategories = displayCategories.join('');
+  
+  menuFilterContainer.innerHTML = displayCategories;
+  
   displayMenuItems(menu);
 });
 
