@@ -320,3 +320,9 @@ Header
   position: absolute;
   font-size: 4rem;
 }
+
+.header__switch-btn {
+  position: absolute;
+  bottom: 3rem;
+  z-index: 2;
+}
