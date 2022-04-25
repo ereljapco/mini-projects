@@ -4,6 +4,7 @@ const navToggleBtn = document.querySelector('.navbar__toggle-btn');
 const navbarListContainer = document.querySelector('.navbar__list--container');
 const navbarList = document.querySelector('.navbar__list');
 const navbar = document.querySelector('.navbar');
+const navbarLinks = document.querySelectorAll('.navbar__link');
 const backToTop = document.querySelector('.back-to-top');
 
 // add current year to date
@@ -37,4 +38,28 @@ window.addEventListener('scroll', function() {
   } else {
     backToTop.classList.remove('back-to-top--show');
   }
+});
+
+// smooth scroll for navbar links
+navbarLinks.forEach(function(link) {
+  link.addEventListener('click', function(e) {
+    e.preventDefault();
+
+    const id = e.currentTarget.getAttribute('href').slice(1); // get value from index 1
+    const element = document.getElementById(id);
+    const navbarHeight = navbar.getBoundingClientRect().height;
+    const navListContainerHeight = navbarListContainer.getBoundingClientRect().height;
+    const position = element.offsetTop - (navbarHeight - navListContainerHeight);
+
+    // close navbarlist when user clicks a link
+    if (navListContainerHeight != 0) {
+      navbarListContainer.style.height = 0;
+    }
+
+    // smooth scroll to the link
+    window.scrollTo({
+      left: 0,
+      top: position
+    });
+  });
 });

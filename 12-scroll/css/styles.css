@@ -49,6 +49,10 @@ Global Styles
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: var(--ff-primary);
   background: var(--clr-white);
