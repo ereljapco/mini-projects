@@ -322,7 +322,21 @@ Header
 }
 
 .header__switch-btn {
-  position: absolute;
+  position: fixed;
   bottom: 3rem;
   z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  width: 10rem;
+}
+
+.header__switch-btn--slider {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background-color: var(--clr-tertiary-500);
+  border-radius: var(--border-radius);
 }
