@@ -884,3 +884,31 @@ Footer
     width: 100%;
   }
 }
+
+/*
+===============
+Back to Top
+===============
+*/
+.back-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  visibility: hidden;
+  z-index: -1000;
+}
+
+.back-to-top__link {
+  color: var(--clr-primary-5);
+  font-size: 2rem;
+  transition: var(--transition);
+}
+
+.back-to-top__link:hover {
+  color: var(--clr-primary-7);
+}
+
+.back-to-top--show {
+  visibility: visible;
+  z-index: 1000;
+}
