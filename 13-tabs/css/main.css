@@ -321,3 +321,7 @@ Features
   padding-block: 1rem;
   border-bottom: 1px solid hsl(229, 8%, 60%);
 }
+
+.features__btn--active {
+  color: hsl(229, 31%, 21%);
+}
