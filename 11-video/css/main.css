@@ -318,6 +318,7 @@ Header
 
 .header__title {
   position: absolute;
+  color: var(--clr-white);
   font-size: 4rem;
 }
 
