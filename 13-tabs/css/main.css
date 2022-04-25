@@ -319,4 +319,5 @@ Features
   font-size: 1rem;
   border-color: transparent;
   background-color: transparent;
+  border-bottom: 1px solid hsl(229, 8%, 60%);
 }
