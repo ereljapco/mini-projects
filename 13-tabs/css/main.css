@@ -323,5 +323,17 @@ Features
 }
 
 .features__btn--active {
+  position: relative;
   color: hsl(229, 31%, 21%);
+}
+
+.features__btn--active::after {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  content: '';
+  width: 45%;
+  height: 0.25rem;
+  background-color: hsl(0, 94%, 66%);
 }
