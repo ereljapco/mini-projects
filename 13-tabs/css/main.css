@@ -311,3 +311,8 @@ Features
   border-bottom: 1px solid hsl(229, 8%, 60%);
   margin-bottom: 5rem;
 }
+
+.features__btn {
+  border-color: transparent;
+  background-color: transparent;
+}
