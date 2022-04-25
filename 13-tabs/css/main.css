@@ -344,6 +344,7 @@ Features
   font-weight: 500;
   text-transform: none;
   letter-spacing: -0.005rem;
+  margin-bottom: 0.75rem;
 }
 
 .features__content-copy {
