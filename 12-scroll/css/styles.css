@@ -185,13 +185,17 @@ Navbar
 ===============
 */
 .navbar {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   background-color: var(--clr-white);
   box-shadow: var(--light-shadow);
   z-index: 2;
+}
+
+.navbar--fixed {
+  position: fixed;
 }
 
 /* navbar header */
@@ -258,6 +262,16 @@ Navbar
 }
 
 @media screen and (min-width: 992px) {
+  .navbar {
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+  .navbar--fixed {
+    background-color: var(--clr-white);
+    box-shadow: var(--light-shadow);
+  }
+
   .navbar--container {
     display: -webkit-box;
     display: flex;
@@ -292,6 +306,11 @@ Navbar
   .navbar__link {
     display: block;
     padding: 0;
+    color: var(--clr-white);
+  }
+
+  .navbar--fixed .navbar__link {
+    color: var(--clr-grey-1);
   }
 
   .navbar__link:hover {
@@ -312,10 +331,18 @@ Navbar
   }
 
   .navbar__social-link {
+    color: var(--clr-white);
+    transition: var(--transition);
+  }
+  .navbar--fixed .navbar__social-link {
     color: var(--clr-primary-5);
   }
 
   .navbar__social-link:hover {
+    color: var(--clr-primary-5);
+  }
+
+  .navbar--fixed .navbar__social-link:hover {
     color: var(--clr-primary-8);
   }
 }
