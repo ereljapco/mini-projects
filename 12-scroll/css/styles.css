@@ -277,8 +277,11 @@ Navbar
   }
 
   /* navbar list */
+  .navbar__list--container {
+    height: auto !important;
+  }
+
   .navbar__list {
-    height: 100%;
     width: 27rem;
     display: -webkit-box;
     display: flex;
