@@ -28,7 +28,7 @@
   --clr-grey-10: hsl(210, 36%, 96%);
   --clr-white: #fff;
   /* FONTS */
-  --ff-primary: "Lato", sans-serif;
+  --ff-primary: 'Lato', sans-serif;
   --transition: all 0.3s linear;
   --spacing: 0.25rem;
   --radius: 0.5rem;
@@ -224,14 +224,14 @@ Navbar
 }
 
 /* navbar menu */
-.navbar__list {
+.navbar__list--container {
   height: 0;
   overflow: hidden;
   -webkit-transition: var(--transition);
   transition: var(--transition);
 }
 
-.show-links {
+.navbar__list--show {
   height: 280px;
 }
 
@@ -432,7 +432,7 @@ About
   }
 
   .about-img--wrapper::before {
-    content: "";
+    content: '';
     position: absolute;
     top: -1.5rem;
     left: -1.5rem;
