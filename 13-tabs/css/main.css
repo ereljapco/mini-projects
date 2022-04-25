@@ -341,6 +341,7 @@ Features
 .features__content-title {
   color: hsl(229, 31%, 21%);
   font-size: 1.5rem;
+  font-weight: 500;
   text-transform: none;
-  letter-spacing: -0.02rem;
+  letter-spacing: -0.005rem;
 }
