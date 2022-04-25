@@ -313,6 +313,8 @@ Features
 }
 
 .features__btn {
+  color: hsl(229, 8%, 60%);
+  font-size: 1rem;
   border-color: transparent;
   background-color: transparent;
 }
