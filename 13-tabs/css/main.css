@@ -308,7 +308,6 @@ Features
 
 .features__btns {
   border-top: 1px solid hsl(229, 8%, 60%);
-  border-bottom: 1px solid hsl(229, 8%, 60%);
   margin-bottom: 5rem;
   display: flex;
   flex-direction: column;
