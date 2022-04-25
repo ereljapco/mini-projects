@@ -330,7 +330,7 @@ Header
   width: 10rem;
 }
 
-.header__switch-btn--slider {
+.header__switch-btn-slider {
   position: absolute;
   content: '';
   top: 0;
@@ -339,4 +339,8 @@ Header
   height: 100%;
   background-color: var(--clr-tertiary-500);
   border-radius: var(--border-radius);
+}
+
+.header__switch-btn--slide .header__switch-btn-slider {
+  left: 50%;
 }
