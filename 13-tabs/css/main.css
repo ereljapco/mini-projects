@@ -337,3 +337,8 @@ Features
   height: 0.25rem;
   background-color: hsl(0, 94%, 66%);
 }
+
+.features__content-title {
+  color: hsl(229, 31%, 21%);
+  font-size: 1.5rem;
+}
