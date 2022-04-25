@@ -345,3 +345,7 @@ Features
   text-transform: none;
   letter-spacing: -0.005rem;
 }
+
+.features__content-copy {
+  margin-block: 0;
+}
