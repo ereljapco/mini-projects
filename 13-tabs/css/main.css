@@ -427,4 +427,12 @@ Features
     grid-template-columns: repeat(2, 1fr);
     text-align: left;
   }
+
+  .features__content-title {
+    font-size: 2rem;
+  }
+
+  .features__content-copy {
+    font-size: 1.1rem;
+  }
 }
