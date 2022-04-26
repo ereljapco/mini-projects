@@ -415,6 +415,7 @@ Features
 
 .features__content-img {
   width: 100%;
+  max-width: 35rem;
 }
 
 .features__content-title {
@@ -456,6 +457,7 @@ Features
 
   .features__content-img--container {
     margin-bottom: 0;
+    justify-self: right;
   }
 
   .features__content-info {
