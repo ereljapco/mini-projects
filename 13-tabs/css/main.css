@@ -351,6 +351,8 @@ Features
     flex-direction: row;
     border-top: none;
     border-bottom: 1px solid var(--clr-grey-100);
+    width: 62%;
+    margin-inline: auto;
   }
 
   .features__btn {
