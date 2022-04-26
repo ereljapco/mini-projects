@@ -361,7 +361,8 @@ Features
   transform-origin: 130% 50%;
   transform: scaleX(150%);
   background-color: hsl(231, 69%, 60%);
-  border-bottom-right-radius: 3.9rem;
+  border-top-right-radius: 10rem;
+  border-bottom-right-radius: 4.25rem;
   z-index: -3;
 }
 
