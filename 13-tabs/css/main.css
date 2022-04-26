@@ -356,6 +356,10 @@ Features
   .features__btn {
     border-bottom: none;
   }
+
+  .features__btn--active::after {
+    width: 100%;
+  }
 }
 
 .features__content {
