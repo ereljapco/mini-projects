@@ -343,6 +343,12 @@ Features
   background-color: transparent;
   padding-block: 1rem 1.22rem;
   border-bottom: 1px solid var(--clr-grey-100);
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.features__btn:hover {
+  color: hsl(0, 94%, 66%);
 }
 
 .features__btn--active {
