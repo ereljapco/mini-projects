@@ -434,6 +434,7 @@ Features
 
 .features__content-btn {
   color: #fff;
+  font-size: 0.875rem;
   background-color: hsl(231, 69%, 60%);
   border: 1px solid transparent;
 }
