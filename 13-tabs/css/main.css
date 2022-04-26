@@ -409,7 +409,7 @@ Features
   transform: scaleX(150%);
   background-color: hsl(231, 69%, 60%);
   border-top-right-radius: 10rem;
-  border-bottom-right-radius: 4.25rem;
+  border-bottom-right-radius: 25%;
   z-index: -3;
 }
 
