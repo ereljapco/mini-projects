@@ -322,6 +322,11 @@ Features
   .features__title {
     font-size: 2rem;
   }
+
+  .features__copy {
+    max-width: 33rem;
+    margin-inline: auto;
+  }
 }
 
 .features__btns {
