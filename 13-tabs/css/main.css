@@ -322,11 +322,11 @@ Features
 }
 
 .features__btn {
-  color: hsl(229, 8%, 60%);
-  font-size: 1rem;
+  color: var(--clr-grey-400);
+  font-size: 1.05rem;
   border-color: transparent;
   background-color: transparent;
-  padding-block: 1rem;
+  padding-block: 1.11rem;
   border-bottom: 1px solid var(--clr-grey-100);
 }
 
