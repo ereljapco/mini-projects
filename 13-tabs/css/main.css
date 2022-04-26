@@ -326,7 +326,7 @@ Features
   font-size: 1.05rem;
   border-color: transparent;
   background-color: transparent;
-  padding-block: 1.11rem;
+  padding-block: 1rem 1.22rem;
   border-bottom: 1px solid var(--clr-grey-100);
 }
 
