@@ -435,6 +435,7 @@ Features
 .features__content-btn {
   color: #fff;
   background-color: hsl(231, 69%, 60%);
+  border: 1px solid transparent;
 }
 
 .features__content-btn:hover {
