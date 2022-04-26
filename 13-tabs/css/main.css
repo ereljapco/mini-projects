@@ -430,6 +430,7 @@ Features
 
   .features__content-info {
     max-width: 27rem;
+    place-self: center;
   }
 
   .features__content-title {
