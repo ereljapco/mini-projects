@@ -349,6 +349,8 @@ Features
 @media screen and (min-width: 768px) {
   .features__btns {
     flex-direction: row;
+    border-top: none;
+    border-bottom: 1px solid var(--clr-grey-100);
   }
 }
 
