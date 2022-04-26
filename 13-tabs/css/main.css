@@ -307,6 +307,10 @@ Features
   text-align: center;
 }
 
+.features__copy {
+  margin-top: 0;
+}
+
 .features__btns {
   border-top: 1px solid hsl(229, 8%, 60%);
   margin-bottom: 5rem;
