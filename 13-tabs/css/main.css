@@ -314,6 +314,16 @@ Features
   margin-bottom: 2.49rem;
 }
 
+@media screen and (min-width: 1440px) {
+  .features {
+    font-size: 1.1rem;
+  }
+
+  .features__title {
+    font-size: 2rem;
+  }
+}
+
 .features__btns {
   border-top: 1px solid var(--clr-grey-100);
   margin-bottom: 4.5rem;
