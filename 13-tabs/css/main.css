@@ -421,9 +421,10 @@ Features
   border: 1px solid hsl(231, 69%, 60%);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1440px) {
   .features__content--active {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     text-align: left;
   }
 }
