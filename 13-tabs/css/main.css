@@ -397,6 +397,12 @@ Features
   background-color: hsl(231, 69%, 60%);
 }
 
+.features__content-btn:hover {
+  color: hsl(231, 69%, 60%);
+  background-color: transparent;
+  border: 1px solid hsl(231, 69%, 60%);
+}
+
 @media screen and (min-width: 768px) {
   .features__content--active {
     display: flex;
