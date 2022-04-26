@@ -395,5 +395,6 @@ Features
 @media screen and (min-width: 768px) {
   .features__content--active {
     display: flex;
+    text-align: left;
   }
 }
