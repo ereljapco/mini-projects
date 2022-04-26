@@ -349,7 +349,8 @@ Features
 
 @media screen and (min-width: 768px) {
   .features__btns {
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     border-top: none;
     border-bottom: 1px solid var(--clr-grey-100);
     width: 62%;
