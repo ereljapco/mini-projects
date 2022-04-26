@@ -292,6 +292,7 @@ Features
   color: hsl(229, 8%, 60%);
   font-size: 0.94rem;
   text-align: center;
+  margin-block: 3rem;
 }
 
 .features--container {
