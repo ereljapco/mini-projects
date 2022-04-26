@@ -408,6 +408,7 @@ Features
 .features__content-copy {
   line-height: 1.65;
   margin-block: 0;
+  margin-bottom: 2rem;
 }
 
 .features__content-btn {
