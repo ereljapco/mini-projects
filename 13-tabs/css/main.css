@@ -429,6 +429,10 @@ Features
     text-align: left;
   }
 
+  .features__content-img--container {
+    margin-bottom: 0;
+  }
+
   .features__content-info {
     max-width: 27rem;
     place-self: center;
