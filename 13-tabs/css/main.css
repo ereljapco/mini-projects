@@ -324,6 +324,7 @@ Features
 .features__btn {
   color: var(--clr-grey-400);
   font-size: 1.05rem;
+  border-width: 0;
   border-color: transparent;
   background-color: transparent;
   padding-block: 1rem 1.22rem;
