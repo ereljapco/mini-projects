@@ -317,8 +317,7 @@ Features
 .features__btns {
   border-top: 1px solid var(--clr-grey-100);
   margin-bottom: 4.5rem;
-  display: flex;
-  flex-direction: column;
+  display: grid;
 }
 
 .features__btn {
@@ -349,7 +348,6 @@ Features
 
 @media screen and (min-width: 768px) {
   .features__btns {
-    display: grid;
     grid-template-columns: repeat(3, 1fr);
     border-top: none;
     border-bottom: 1px solid var(--clr-grey-100);
