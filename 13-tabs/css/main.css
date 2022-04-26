@@ -352,6 +352,10 @@ Features
     border-top: none;
     border-bottom: 1px solid var(--clr-grey-100);
   }
+
+  .features__btn {
+    border-bottom: none;
+  }
 }
 
 .features__content {
