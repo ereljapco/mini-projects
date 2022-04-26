@@ -346,6 +346,12 @@ Features
   background-color: hsl(0, 94%, 66%);
 }
 
+@media screen and (min-width: 768px) {
+  .features__btns {
+    flex-direction: row;
+  }
+}
+
 .features__content {
   display: none;
 }
