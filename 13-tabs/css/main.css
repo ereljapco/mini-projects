@@ -428,6 +428,10 @@ Features
     text-align: left;
   }
 
+  .features__content-info {
+    max-width: 27rem;
+  }
+
   .features__content-title {
     font-size: 2rem;
   }
