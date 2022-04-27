@@ -333,3 +333,9 @@ body {
   background-color: var(--clr-secondary-500);
   border-radius: var(--border-radius);
 }
+
+.giveaway__countdown--left {
+  display: block;
+  font-size: 2rem;
+  font-weight: 600;
+}
