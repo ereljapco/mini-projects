@@ -317,6 +317,11 @@ body {
   .giveaway__img {
     height: 100%;
   }
+
+  .giveaway__info {
+    text-align: left;
+    align-self: center;
+  }
 }
 
 .giveaway__img {
