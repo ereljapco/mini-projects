@@ -306,8 +306,10 @@ body {
   row-gap: 2rem;
 }
 
-.giveaway__img {
-  border-radius: var(--border-radius);
+@media screen and (min-width: 768px) {
+  .giveaway {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .giveaway__title {
