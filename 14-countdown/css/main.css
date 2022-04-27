@@ -313,3 +313,8 @@ body {
 .giveaway__title {
   font-size: 1.75rem;
 }
+
+.giveaway__date-end {
+  color: var(--clr-primary-500);
+  font-weight: 600;
+}
