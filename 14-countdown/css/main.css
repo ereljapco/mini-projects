@@ -387,4 +387,8 @@ body {
   .giveaway__text {
     margin-bottom: 4rem;
   }
+
+  .giveaway__countdown--left {
+    font-size: 2.75rem;
+  }
 }
