@@ -318,3 +318,10 @@ body {
   color: var(--clr-primary-500);
   font-weight: 600;
 }
+
+/* countdown */
+.giveaway__countdown--container {
+  color: var(--clr-tertiary-500);
+  background-color: var(--clr-secondary-500);
+  border-radius: var(--border-radius);
+}
