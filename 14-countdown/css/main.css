@@ -314,6 +314,7 @@ body {
 
 .giveaway__title {
   font-size: 1.75rem;
+  text-transform: uppercase;
 }
 
 .giveaway__date-end {
