@@ -284,3 +284,11 @@ ul {
   margin-inline: auto;
   margin-top: -1rem;
 }
+
+/*===============
+Countdown
+===============*/
+.main {
+  width: 90vw;
+  margin-inline: auto;
+}
