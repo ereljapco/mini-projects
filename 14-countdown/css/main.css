@@ -300,3 +300,7 @@ Countdown
 .giveaway__img {
   border-radius: var(--border-radius);
 }
+
+.giveaway__title {
+  font-size: 1.75rem;
+}
