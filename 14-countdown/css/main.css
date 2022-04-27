@@ -320,6 +320,14 @@ body {
 }
 
 /* countdown */
+.giveaway__countdown {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 1rem;
+  width: 90%;
+  margin-inline: auto;
+}
+
 .giveaway__countdown--container {
   color: var(--clr-tertiary-500);
   background-color: var(--clr-secondary-500);
