@@ -310,6 +310,14 @@ body {
   .giveaway {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .giveaway__img {
+    height: 100%;
+  }
+}
+
+.giveaway__img {
+  border-radius: var(--border-radius);
 }
 
 .giveaway__title {
