@@ -296,3 +296,7 @@ Countdown
 .giveaway {
   margin-block: 3rem;
 }
+
+.giveaway__img {
+  border-radius: var(--border-radius);
+}
