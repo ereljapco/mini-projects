@@ -288,6 +288,10 @@ ul {
 /*===============
 Countdown
 ===============*/
+body {
+  background-color: var(--clr-tertiary-500);
+}
+
 .main {
   width: 90vw;
   margin-inline: auto;
