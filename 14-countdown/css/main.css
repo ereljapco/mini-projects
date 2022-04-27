@@ -292,3 +292,7 @@ Countdown
   width: 90vw;
   margin-inline: auto;
 }
+
+.giveaway {
+  margin-block: 3rem;
+}
