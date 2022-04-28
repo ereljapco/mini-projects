@@ -27,7 +27,15 @@ const hours = document.querySelector('.giveaway__hours-left');
 const mins = document.querySelector('.giveaway__mins-left');
 const secs = document.querySelector('.giveaway__secs-left');
 
-days.textContent = daysLeft;
-hours.textContent = hoursLeft;
-mins.textContent = minsLeft;
-secs.textContent = secsLeft;
+days.textContent = formatNum(daysLeft);
+hours.textContent = formatNum(hoursLeft);
+mins.textContent = formatNum(minsLeft);
+secs.textContent = formatNum(secsLeft);
+
+function formatNum(num) {
+  if (num <= 9) {
+    num = `0${num}`;
+  }
+
+  return num;
+}
