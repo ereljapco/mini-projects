@@ -12,10 +12,7 @@ loremForm.addEventListener('submit', function (e) {
 
   let randomParagraphs = [];
 
-  for (let i = 0; i < paragraphNumValue; i++) {
-    const randomNum = Math.floor(Math.random() * paragraphs.length);
-    randomParagraphs.push(paragraphs[randomNum]);
-  }
+  generateRandomParagraphs(randomParagraphs, paragraphNumValue);
 
   const displayParagraphs = randomParagraphs
     .map(function (paragraph) {
@@ -27,3 +24,20 @@ loremForm.addEventListener('submit', function (e) {
 
   loremParagraphs.innerHTML = displayParagraphs;
 });
+
+function generateRandomParagraphs(parArray, parNum) {
+  let pastNum;
+
+  for (let i = 0; i < parNum; i++) {
+    let num;
+    do {
+      const randomNum = Math.floor(Math.random() * paragraphs.length);
+      num = randomNum;
+    } while (pastNum == num);
+
+    parArray.push(paragraphs[num]);
+    pastNum = num;
+  }
+
+  return parArray;
+}
