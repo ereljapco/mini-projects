@@ -14,21 +14,14 @@ loremForm.addEventListener('submit', function (e) {
 
   generateRandomParagraphs(randomParagraphs, paragraphNumValue);
 
-  const displayParagraphs = randomParagraphs
-    .map(function (paragraph) {
-      return `
-    <p class="lorem-ipsum__paragraph">${paragraph}</p>
-    `;
-    })
-    .join('');
-
-  loremParagraphs.innerHTML = displayParagraphs;
+  displayParagraphs(randomParagraphs);
 });
 
 function generateRandomParagraphs(parArray, parNum) {
   let pastNum;
 
   for (let i = 0; i < parNum; i++) {
+    // generate random number different from the previously generated
     let num;
     do {
       const randomNum = Math.floor(Math.random() * paragraphs.length);
@@ -40,4 +33,16 @@ function generateRandomParagraphs(parArray, parNum) {
   }
 
   return parArray;
+}
+
+function displayParagraphs(parArray) {
+  const displayParagraphs = parArray
+    .map(function (paragraph) {
+      return `
+    <p class="lorem-ipsum__paragraph">${paragraph}</p>
+    `;
+    })
+    .join('');
+
+  loremParagraphs.innerHTML = displayParagraphs;
 }
