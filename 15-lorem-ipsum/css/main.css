@@ -284,3 +284,40 @@ ul {
   margin-inline: auto;
   margin-top: -1rem;
 }
+
+/*===============
+Lorem Ipsum
+===============*/
+.lorem-ipsum {
+  width: 85vw;
+  margin-inline: auto;
+}
+
+.lorem-ipsum__title {
+  font-size: 1.75rem;
+  text-align: center;
+}
+
+.lorem-ipsum__form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(2, auto);
+  column-gap: 1rem;
+  row-gap: 1rem;
+  /* width: 12rem; */
+  margin-inline: auto;
+}
+
+.lorem-ipsum__parnum-label {
+  justify-self: right;
+}
+
+.lorem-ipsum__parnum {
+  width: 6rem;
+}
+
+.lorem-ipsum__submit-btn {
+  grid-column: 1 / span 2;
+  justify-self: center;
+  width: 10rem;
+}
