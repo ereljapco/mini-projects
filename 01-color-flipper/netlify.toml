@@ -1,10 +1,2 @@
-﻿# Settings in the [build] context are global and are applied to 
-# all contexts unless otherwise overridden by more specific contexts.
-[build]
-  base = "01-color-flipper"
-  
-  publish = ""
-
+﻿[build]
   ignore = "git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF ."
-
-  command = "echo 'default context'"
