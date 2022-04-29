@@ -1,19 +1,33 @@
-// display days, hours, mins, and secs left
-function displayRemaining() {
+// set giveaway start date
+const startFullDate = new Date(2022, 3, 28);
 
+// set giveaway end date
+const durationDays = 15;
+
+const startMonth = startFullDate.getMonth();
+const startDate = startFullDate.getDate();
+const startYear = startFullDate.getFullYear();
+
+let endFullDate = new Date(startYear, startMonth, startDate, 23, 59);
+endFullDate.setDate(endFullDate.getDate() + durationDays);
+
+// display remaining time until ending date
+setInterval(displayRemainingTime, 1000, endFullDate);
+
+console.log(startFullDate);
+console.log(endFullDate);
+
+// display days, hours, mins, and secs left
+function displayRemainingTime(endingDate) {
   // get date today and assign to variable dateToday
   const dateToday = new Date();
   const dateTodayMs = dateToday.getTime();
 
-  // set variable dateEndsIn 15 days after dateToday
-  const month = dateToday.getMonth();
-  const date = dateToday.getDate();
-  const year = dateToday.getFullYear();
-  let dateEndsIn = new Date(year, month, date, 23, 59);
-  dateEndsIn.setDate(dateEndsIn.getDate() + 15);
+  // convert date to ms
+  const dateEndsInMs = endingDate;
 
   // subtract dateTodayMs from dateEndsIn and assign to dateDiff
-  const dateDiff = dateEndsIn - dateTodayMs;
+  const dateDiff = dateEndsInMs - dateTodayMs;
 
   // get days, hours, mins, and secs left before dateEndsIn
   const dayMs = 24 * 60 * 60 * 1000;
@@ -43,5 +57,3 @@ function formatNum(num) {
 
   return num;
 }
-
-setInterval(displayRemaining, 1000);
