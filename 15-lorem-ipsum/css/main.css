@@ -304,8 +304,8 @@ Lorem Ipsum
   grid-template-rows: repeat(2, auto);
   column-gap: 1rem;
   row-gap: 1rem;
-  /* width: 12rem; */
   margin-inline: auto;
+  margin-bottom: 3rem;
 }
 
 .lorem-ipsum__parnum-label {
