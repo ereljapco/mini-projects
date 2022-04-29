@@ -18,6 +18,12 @@ loremForm.addEventListener('submit', function (e) {
 });
 
 function generateRandomParagraphs(parArray, parNum) {
+  const randomNum = Math.floor(Math.random() * paragraphs.length);
+
+  if (isNaN(parNum) || parNum < 1) {
+    parArray.push(paragraphs[randomNum]);
+  }
+
   let pastNum;
 
   for (let i = 0; i < parNum; i++) {
