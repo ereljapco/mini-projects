@@ -288,6 +288,10 @@ ul {
 /*===============
 Lorem Ipsum
 ===============*/
+.main {
+  margin-block: 5rem;
+}
+
 .lorem-ipsum {
   width: 85vw;
   margin-inline: auto;
