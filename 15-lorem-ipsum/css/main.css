@@ -326,5 +326,6 @@ Lorem Ipsum
   color: var(--clr-white);
   font-size: 0.875rem;
   background-color: var(--clr-tertiary-500);
+  padding: 1.5rem;
   border-radius: var(--border-radius);
 }
