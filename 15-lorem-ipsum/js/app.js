@@ -9,11 +9,11 @@ loremForm.addEventListener('submit', function (e) {
 
   // assign value of paragraphNum to paragraphNumValue
   const paragraphNumValue = parseInt(paragraphNum.value);
-  const randomNum = Math.floor(Math.random() * paragraphs.length);
 
   let randomParagraphs = [];
 
   for (let i = 0; i < paragraphNumValue; i++) {
+    const randomNum = Math.floor(Math.random() * paragraphs.length);
     randomParagraphs.push(paragraphs[randomNum]);
   }
 
