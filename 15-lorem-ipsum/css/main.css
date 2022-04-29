@@ -334,4 +334,17 @@ Lorem Ipsum
   padding: 1.5rem;
   border-radius: var(--border-radius);
   margin-inline: auto;
+  animation: displayPar 1.5s;
+}
+
+@keyframes displayPar {
+  0% {
+    transform: scale(75%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(100%);
+    opacity: 100;
+  }
 }
