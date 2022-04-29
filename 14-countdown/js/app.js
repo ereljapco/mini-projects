@@ -14,8 +14,8 @@ endFullDate.setDate(endFullDate.getDate() + durationDays);
 // display remaining time until ending date
 setInterval(displayRemainingTime, 1000, endFullDate);
 
-console.log(startFullDate);
-console.log(endFullDate);
+// display ending date and time for the giveaway
+displayEndingDate(endFullDate);
 
 // display days, hours, mins, and secs left
 function displayRemainingTime(endingDate) {
@@ -56,4 +56,33 @@ function formatNum(num) {
   }
 
   return num;
+}
+
+// display ending date and time for the giveaway
+function displayEndingDate(endingDate) {
+  let endMonth = endingDate.getMonth();
+  const endDate = endingDate.getDate();
+  const endYear = endingDate.getFullYear();
+  const endHour = endingDate.getHours();
+  const endMins = endingDate.getMinutes();
+  let endDay = endingDate.getDay();
+  endDay = weekDays[endDay];
+
+  // convert endMonth into month
+  endMonth = months[endMonth];
+
+  // display dynamically on the page
+  const date = document.querySelector('#date-date');
+  const month = document.querySelector('#date-month');
+  const year = document.querySelector('#date-year');
+  const hour = document.querySelector('#date-hour');
+  const mins = document.querySelector('#date-mins');
+  const day = document.querySelector('#date-day');
+
+  date.textContent = endDate;
+  month.textContent = endMonth;
+  year.textContent = endYear;
+  hour.textContent = endHour;
+  mins.textContent = endMins;
+  day.textContent = endDay;
 }
