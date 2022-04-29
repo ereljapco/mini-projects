@@ -321,3 +321,9 @@ Lorem Ipsum
   justify-self: center;
   width: 10rem;
 }
+
+.lorem-ipsum__paragraph {
+  color: var(--clr-white);
+  background-color: var(--clr-tertiary-500);
+  border-radius: var(--border-radius);
+}
