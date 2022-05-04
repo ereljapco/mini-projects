@@ -21,6 +21,7 @@ groceryForm.addEventListener('submit', addGroceryItem);
 groceryClearBtn.addEventListener('click', function () {
   localStorage.clear();
   groceryItemsContainer.classList.remove('grocery-bud__items--container--show');
+  alertMessage('Removed all items.', 'danger');
 });
 
 function displayGroceryItems() {
