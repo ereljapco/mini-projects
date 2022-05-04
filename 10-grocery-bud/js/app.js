@@ -25,25 +25,42 @@ groceryClearBtn.addEventListener('click', function () {
 
 function displayGroceryItems() {
   const groceryList = getItemsFromLocalStorage();
-
-  console.log(groceryList);
-
   if (groceryList.length > 0) {
     // show grocery items container
     groceryItemsContainer.classList.add('grocery-bud__items--container--show');
 
     // display each item
     groceryList.forEach(function (groceryListItem) {
-      console.log(groceryListItem.id);
-      console.log(groceryListItem.value);
-
       addGroceryItemElement(groceryListItem.id, groceryListItem.value);
     });
   }
+
+  // delete item
+  const groceryDeleteBtns = document.querySelectorAll(
+    '.grocery-bud__item-delete-btn'
+  );
+
+  groceryDeleteBtns.forEach(function (deleteBtn) {
+    deleteBtn.addEventListener('click', function (e) {
+      const element = e.currentTarget.parentElement.parentElement;
+      const id = element.dataset.id;
+      let groceryItems = getItemsFromLocalStorage();
+
+      const groceryItem = groceryItems.find(function (item) {
+        return item.id === id;
+      });
+
+      groceryItems.pop(groceryItem);
+      localStorage.setItem('groceryList', JSON.stringify(groceryItems));
+
+      element.style.display = 'none';
+    });
+  });
 }
 
 function addGroceryItem(e) {
   e.preventDefault();
+
   let groceryItem = groceryItemInput.value;
   if (groceryItem && !editFlag) {
     groceryItemsContainer.classList.add('grocery-bud__items--container--show');
@@ -77,26 +94,6 @@ function addGroceryItemElement(id, value) {
     </div>
     `;
   groceryItems.appendChild(groceryItem);
-
-  // delete item
-  const groceryDeleteBtn = groceryItem.querySelector(
-    '.grocery-bud__item-delete-btn'
-  );
-
-  groceryDeleteBtn.addEventListener('click', function (e) {
-    const element = e.currentTarget.parentElement.parentElement;
-    const id = element.dataset.id;
-    let groceryItems = getItemsFromLocalStorage();
-
-    const groceryItem = groceryItems.find(function (item) {
-      return item.id === id;
-    });
-
-    groceryItems.pop(groceryItem);
-    localStorage.setItem('groceryList', JSON.stringify(groceryItems));
-
-    element.style.display = 'none';
-  });
 }
 
 function editGroceryItem(id, value) {
