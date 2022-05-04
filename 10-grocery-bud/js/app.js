@@ -7,6 +7,38 @@ const groceryForm = document.querySelector('.grocery-bud');
 const groceryAlert = document.querySelector('.grocery-bud__alert');
 groceryAlert.textContent = `message`;
 
+window.addEventListener('load', function () {
+  const groceryList = getItemsFromLocalStorage();
+
+  console.log(groceryList);
+
+  if (groceryList.length > 0) {
+    // show grocery items container
+    groceryItemsContainer.classList.add('grocery-bud__items--container--show');
+
+    // display each item
+    groceryList.forEach(function (groceryListItem) {
+      console.log(groceryListItem.id);
+      console.log(groceryListItem.value);
+      const groceryItem = document.createElement('div');
+      groceryItem.classList.add('grocery-bud__item');
+      groceryItem.setAttribute('data-id', groceryListItem.id);
+      groceryItem.innerHTML = `
+      <p class="grocery-bud__item-title">${groceryListItem.value}</p>
+      <div class="grocery-bud__item-actions">
+      <button class="grocery-bud__item-edit-btn">
+      <i class="fa-solid fa-pen-to-square"></i>
+      </button>
+      <button class="grocery-bud__item-delete-btn">
+      <i class="fa-solid fa-trash"></i>
+      </button>
+      </div>
+      `;
+      groceryItems.appendChild(groceryItem);
+    });
+  }
+});
+
 groceryForm.addEventListener('submit', addGroceryItem);
 
 function addGroceryItem(e) {
