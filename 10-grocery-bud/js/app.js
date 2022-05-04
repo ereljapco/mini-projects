@@ -12,6 +12,8 @@ const groceryItemsContainer = document.querySelector(
 );
 const groceryItems = document.querySelector('.grocery-bud__items');
 const groceryForm = document.querySelector('.grocery-bud');
+// alert
+const groceryAlert = document.querySelector('.grocery-bud__alert');
 
 groceryForm.addEventListener('submit', function (e) {
   e.preventDefault();
@@ -30,6 +32,9 @@ groceryForm.addEventListener('submit', function (e) {
     </div>
     `;
     groceryItems.appendChild(groceryItem);
+    groceryAlert.textContent = `Added an item to the list.`;
+    groceryAlert.classList.add('alert--success', 'grocery-bud__alert--show');
+    console.log(groceryAlert);
     newItem.value = '';
   } else {
     console.log(`You didn't enter an item.`);
