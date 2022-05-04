@@ -12,8 +12,8 @@ const groceryItemsContainer = document.querySelector(
 );
 const groceryItems = document.querySelector('.grocery-bud__items');
 const groceryForm = document.querySelector('.grocery-bud');
-// alert
 const groceryAlert = document.querySelector('.grocery-bud__alert');
+groceryAlert.textContent = `message`;
 
 groceryForm.addEventListener('submit', function (e) {
   e.preventDefault();
@@ -32,12 +32,18 @@ groceryForm.addEventListener('submit', function (e) {
     </div>
     `;
     groceryItems.appendChild(groceryItem);
-    groceryAlert.textContent = `Added an item to the list!`;
-    groceryAlert.classList.add('alert--success', 'grocery-bud__alert--show');
-    console.log(groceryAlert);
+    alertMessage('Added an item to the list!', 'success');
     newItem.value = '';
   } else {
-    groceryAlert.textContent = `You didn't enter an item.`;
-    groceryAlert.classList.add('alert--danger', 'grocery-bud__alert--show');
+    alertMessage(`You didn't enter an item.`, 'danger');
   }
 });
+
+function alertMessage(message, alert) {
+  groceryAlert.textContent = message;
+  groceryAlert.classList.add(`alert--${alert}`, 'grocery-bud__alert--show');
+
+  setTimeout(function () {
+    groceryAlert.classList.remove(`alert-${alert}`, 'grocery-bud__alert--show');
+  }, 2000);
+}
