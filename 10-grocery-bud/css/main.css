@@ -193,11 +193,13 @@ ul {
 .alert--danger {
   color: var(--clr-red-dark);
   background-color: var(--clr-red-light);
+  border: 1px solid var(--clr-red-dark);
 }
 
 .alert--success {
   color: var(--clr-green-dark);
   background-color: var(--clr-green-light);
+  border: 1px solid var(--clr-green-dark);
 }
 
 /* form */
@@ -308,7 +310,11 @@ Grocery Bud
   font-size: 0.75rem;
   margin-top: 0;
   max-width: 100%;
-  border: 1px solid var(--clr-red-dark);
+  visibility: hidden;
+}
+
+.grocery-bud__alert--show {
+  visibility: visible;
 }
 
 .grocery-bud__alert::first-letter {
