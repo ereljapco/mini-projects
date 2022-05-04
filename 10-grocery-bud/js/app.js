@@ -39,6 +39,9 @@ function alertMessage(message, alert) {
   groceryAlert.classList.add(`alert--${alert}`, 'grocery-bud__alert--show');
 
   setTimeout(function () {
-    groceryAlert.classList.remove(`alert-${alert}`, 'grocery-bud__alert--show');
+    groceryAlert.classList.remove(
+      `alert--${alert}`,
+      'grocery-bud__alert--show'
+    );
   }, 2000);
 }
