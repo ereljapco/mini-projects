@@ -52,19 +52,9 @@ function addGroceryItem(e) {
     groceryItemInput.value = '';
   } else if (groceryItem && editFlag) {
     editElement.textContent = groceryItemInput.value;
-
     const id = editElement.parentElement.dataset.id;
-    let groceryItems = getItemsFromLocalStorage();
 
-    editId = id;
-
-    const groceryItemIndex = groceryItems.findIndex(function (item) {
-      return item.id === id;
-    });
-
-    groceryItems[groceryItemIndex].value = groceryItemInput.value;
-
-    localStorage.setItem('groceryList', JSON.stringify(groceryItems));
+    editGroceryItem(id, groceryItemInput.value);
 
     groceryItemInput.value = '';
     grocerySubmitBtn.textContent = 'Submit';
@@ -135,14 +125,15 @@ function addGroceryItemElement(id, value) {
 }
 
 function editGroceryItem(id, value) {
-  // console.log(id);
-  // console.log(value);
   let groceryItems = getItemsFromLocalStorage();
-  groceryItem = groceryItems.find(function (item) {
+
+  const groceryItemIndex = groceryItems.findIndex(function (item) {
     return item.id === id;
   });
 
-  groceryItems.value = value;
+  groceryItems[groceryItemIndex].value = value;
+
+  localStorage.setItem('groceryList', JSON.stringify(groceryItems));
 }
 
 // display alert message
