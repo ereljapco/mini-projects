@@ -120,6 +120,8 @@ function addGroceryItemElement(id, value) {
       localStorage.setItem('groceryList', JSON.stringify(groceryItems));
 
       element.style.display = 'none';
+
+      alertMessage('Item deleted.', 'danger');
     });
   });
 }
