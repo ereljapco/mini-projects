@@ -1,4 +1,4 @@
-const newItem = document.querySelector('.grocery-bud__input');
+const groceryItemInput = document.querySelector('.grocery-bud__input');
 const groceryItemsContainer = document.querySelector(
   '.grocery-bud__items--container'
 );
@@ -11,25 +11,29 @@ groceryForm.addEventListener('submit', addGroceryItem);
 
 function addGroceryItem(e) {
   e.preventDefault();
-  if (newItem.value) {
+  let newItem = groceryItemInput.value;
+  if (newItem) {
     const groceryItemId = new Date().getTime().toString();
     const groceryItem = document.createElement('div');
     groceryItem.classList.add('grocery-bud__item');
-    groceryItem.setAttribute('id', groceryItemId);
+    groceryItem.setAttribute('data-id', groceryItemId);
     groceryItem.innerHTML = `
-    <p class="grocery-bud__item-title">${newItem.value}</p>
+    <p class="grocery-bud__item-title">${newItem}</p>
     <div class="grocery-bud__item-actions">
-      <button class="grocery-bud__item-edit-btn">
-        <i class="fa-solid fa-pen-to-square"></i>
-      </button>
-      <button class="grocery-bud__item-delete-btn">
-        <i class="fa-solid fa-trash"></i>
-      </button>
+    <button class="grocery-bud__item-edit-btn">
+    <i class="fa-solid fa-pen-to-square"></i>
+    </button>
+    <button class="grocery-bud__item-delete-btn">
+    <i class="fa-solid fa-trash"></i>
+    </button>
     </div>
     `;
     groceryItems.appendChild(groceryItem);
     alertMessage('Added an item to the list!', 'success');
-    newItem.value = '';
+
+    addToLocalStorage(groceryItemId, newItem);
+
+    groceryItemInput.value = '';
   } else {
     alertMessage(`You didn't enter an item.`, 'danger');
   }
@@ -46,4 +50,15 @@ function alertMessage(message, alert) {
       'grocery-bud__alert--show'
     );
   }, 2000);
+}
+
+function addToLocalStorage(id, value) {
+  const groceryItem = { id, value };
+  let groceryItems = localStorage.getItem('groceryList')
+    ? JSON.parse(localStorage.getItem('groceryList'))
+    : [];
+
+  groceryItems.push(groceryItem);
+  localStorage.setItem('groceryList', JSON.stringify(groceryItems));
+  console.log(groceryItems);
 }
