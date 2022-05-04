@@ -6,10 +6,17 @@ const groceryItems = document.querySelector('.grocery-bud__items');
 const groceryForm = document.querySelector('.grocery-bud');
 const groceryAlert = document.querySelector('.grocery-bud__alert');
 groceryAlert.textContent = `message`;
+const groceryClearBtn = document.querySelector('.grocery-bud__clear-btn');
 
 window.addEventListener('load', displayGroceryItems);
 
 groceryForm.addEventListener('submit', addGroceryItem);
+
+// clear all items
+groceryClearBtn.addEventListener('click', function () {
+  localStorage.clear();
+  groceryItemsContainer.classList.remove('grocery-bud__items--container--show');
+});
 
 function displayGroceryItems() {
   const groceryList = getItemsFromLocalStorage();
