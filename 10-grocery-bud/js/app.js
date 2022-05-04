@@ -34,6 +34,82 @@ function displayGroceryItems() {
       addGroceryItemElement(groceryListItem.id, groceryListItem.value);
     });
   }
+}
+
+function addGroceryItem(e) {
+  e.preventDefault();
+  let groceryItem = groceryItemInput.value;
+  if (groceryItem && !editFlag) {
+    groceryItemsContainer.classList.add('grocery-bud__items--container--show');
+    const groceryItemId = new Date().getTime().toString();
+
+    addGroceryItemElement(groceryItemId, groceryItem);
+
+    alertMessage('Added an item to the list!', 'success');
+
+    addToLocalStorage(groceryItemId, groceryItem);
+
+    groceryItemInput.value = '';
+  } else if (groceryItem && editFlag) {
+    editElement.textContent = groceryItemInput.value;
+
+    const id = editElement.parentElement.dataset.id;
+    let groceryItems = getItemsFromLocalStorage();
+
+    editId = id;
+
+    const groceryItemIndex = groceryItems.findIndex(function (item) {
+      return item.id === id;
+    });
+
+    groceryItems[groceryItemIndex].value = groceryItemInput.value;
+
+    localStorage.setItem('groceryList', JSON.stringify(groceryItems));
+
+    groceryItemInput.value = '';
+    grocerySubmitBtn.textContent = 'Submit';
+    editFlag = false;
+  } else {
+    alertMessage(`You didn't enter an item.`, 'danger');
+  }
+}
+
+function addGroceryItemElement(id, value) {
+  const groceryItem = document.createElement('div');
+  groceryItem.classList.add('grocery-bud__item');
+  groceryItem.setAttribute('data-id', id);
+  groceryItem.innerHTML = `
+    <p class="grocery-bud__item-title">${value}</p>
+    <div class="grocery-bud__item-actions">
+    <button class="grocery-bud__item-edit-btn">
+    <i class="fa-solid fa-pen-to-square"></i>
+    </button>
+    <button class="grocery-bud__item-delete-btn">
+    <i class="fa-solid fa-trash"></i>
+    </button>
+    </div>
+    `;
+  groceryItems.appendChild(groceryItem);
+
+  // edit item
+  const groceryEditBtns = document.querySelectorAll(
+    '.grocery-bud__item-edit-btn'
+  );
+
+  groceryEditBtns.forEach(function (editBtn) {
+    editBtn.addEventListener('click', function (e) {
+      editFlag = true;
+
+      const element = e.currentTarget.parentElement.parentElement;
+      editElement = element.querySelector('.grocery-bud__item-title');
+
+      grocerySubmitBtn.textContent = 'edit';
+
+      groceryItemInput.value = editElement.textContent;
+
+      groceryForm.addEventListener('submit', addGroceryItem);
+    });
+  });
 
   // delete item
   const groceryDeleteBtns = document.querySelectorAll(
@@ -56,44 +132,6 @@ function displayGroceryItems() {
       element.style.display = 'none';
     });
   });
-}
-
-function addGroceryItem(e) {
-  e.preventDefault();
-
-  let groceryItem = groceryItemInput.value;
-  if (groceryItem && !editFlag) {
-    groceryItemsContainer.classList.add('grocery-bud__items--container--show');
-    const groceryItemId = new Date().getTime().toString();
-
-    addGroceryItemElement(groceryItemId, groceryItem);
-
-    alertMessage('Added an item to the list!', 'success');
-
-    addToLocalStorage(groceryItemId, groceryItem);
-
-    groceryItemInput.value = '';
-  } else {
-    alertMessage(`You didn't enter an item.`, 'danger');
-  }
-}
-
-function addGroceryItemElement(id, value) {
-  const groceryItem = document.createElement('div');
-  groceryItem.classList.add('grocery-bud__item');
-  groceryItem.setAttribute('data-id', id);
-  groceryItem.innerHTML = `
-    <p class="grocery-bud__item-title">${value}</p>
-    <div class="grocery-bud__item-actions">
-    <button class="grocery-bud__item-edit-btn">
-    <i class="fa-solid fa-pen-to-square"></i>
-    </button>
-    <button class="grocery-bud__item-delete-btn">
-    <i class="fa-solid fa-trash"></i>
-    </button>
-    </div>
-    `;
-  groceryItems.appendChild(groceryItem);
 }
 
 function editGroceryItem(id, value) {
