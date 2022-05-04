@@ -7,7 +7,11 @@ const groceryForm = document.querySelector('.grocery-bud');
 const groceryAlert = document.querySelector('.grocery-bud__alert');
 groceryAlert.textContent = `message`;
 
-window.addEventListener('load', function () {
+window.addEventListener('load', displayGroceryItems);
+
+groceryForm.addEventListener('submit', addGroceryItem);
+
+function displayGroceryItems() {
   const groceryList = getItemsFromLocalStorage();
 
   console.log(groceryList);
@@ -37,9 +41,7 @@ window.addEventListener('load', function () {
       groceryItems.appendChild(groceryItem);
     });
   }
-});
-
-groceryForm.addEventListener('submit', addGroceryItem);
+}
 
 function addGroceryItem(e) {
   e.preventDefault();
