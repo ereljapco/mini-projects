@@ -32,11 +32,12 @@ groceryForm.addEventListener('submit', function (e) {
     </div>
     `;
     groceryItems.appendChild(groceryItem);
-    groceryAlert.textContent = `Added an item to the list.`;
+    groceryAlert.textContent = `Added an item to the list!`;
     groceryAlert.classList.add('alert--success', 'grocery-bud__alert--show');
     console.log(groceryAlert);
     newItem.value = '';
   } else {
-    console.log(`You didn't enter an item.`);
+    groceryAlert.textContent = `You didn't enter an item.`;
+    groceryAlert.classList.add('alert--danger', 'grocery-bud__alert--show');
   }
 });
