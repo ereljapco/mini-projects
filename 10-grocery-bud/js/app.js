@@ -55,11 +55,14 @@ function alertMessage(message, alert) {
 
 function addToLocalStorage(id, value) {
   const groceryItem = { id, value };
-  let groceryItems = localStorage.getItem('groceryList')
-    ? JSON.parse(localStorage.getItem('groceryList'))
-    : [];
+  let groceryItems = getItemsFromLocalStorage();
 
   groceryItems.push(groceryItem);
   localStorage.setItem('groceryList', JSON.stringify(groceryItems));
-  console.log(groceryItems);
+}
+
+function getItemsFromLocalStorage() {
+  return localStorage.getItem('groceryList')
+    ? JSON.parse(localStorage.getItem('groceryList'))
+    : [];
 }
