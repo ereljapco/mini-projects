@@ -112,16 +112,25 @@ function addGroceryItemElement(id, value) {
       const id = element.dataset.id;
       let groceryItems = getItemsFromLocalStorage();
 
-      const groceryItem = groceryItems.find(function (item) {
+      const groceryItemIndex = groceryItems.findIndex(function (item) {
         return item.id === id;
       });
 
-      groceryItems.pop(groceryItem);
+      if (groceryItemIndex > -1) {
+        groceryItems.splice(groceryItemIndex, 1);
+      }
+
       localStorage.setItem('groceryList', JSON.stringify(groceryItems));
 
-      element.style.display = 'none';
+      element.remove();
 
       alertMessage('Item deleted.', 'danger');
+
+      if (groceryItems.length < 1) {
+        groceryItemsContainer.classList.remove(
+          'grocery-bud__items--container--show'
+        );
+      }
     });
   });
 }
