@@ -7,6 +7,11 @@ const groceryForm = document.querySelector('.grocery-bud');
 const groceryAlert = document.querySelector('.grocery-bud__alert');
 groceryAlert.textContent = `message`;
 const groceryClearBtn = document.querySelector('.grocery-bud__clear-btn');
+const grocerySubmitBtn = document.querySelector('.grocery-bud__submit-btn');
+
+let editElement;
+let editFlag = false;
+let editId = '';
 
 window.addEventListener('load', displayGroceryItems);
 
@@ -39,16 +44,16 @@ function displayGroceryItems() {
 
 function addGroceryItem(e) {
   e.preventDefault();
-  let newItem = groceryItemInput.value;
-  if (newItem) {
+  let groceryItem = groceryItemInput.value;
+  if (groceryItem && !editFlag) {
     groceryItemsContainer.classList.add('grocery-bud__items--container--show');
     const groceryItemId = new Date().getTime().toString();
 
-    addGroceryItemElement(groceryItemId, newItem);
+    addGroceryItemElement(groceryItemId, groceryItem);
 
     alertMessage('Added an item to the list!', 'success');
 
-    addToLocalStorage(groceryItemId, newItem);
+    addToLocalStorage(groceryItemId, groceryItem);
 
     groceryItemInput.value = '';
   } else {
@@ -72,6 +77,37 @@ function addGroceryItemElement(id, value) {
     </div>
     `;
   groceryItems.appendChild(groceryItem);
+
+  // delete item
+  const groceryDeleteBtn = groceryItem.querySelector(
+    '.grocery-bud__item-delete-btn'
+  );
+
+  groceryDeleteBtn.addEventListener('click', function (e) {
+    const element = e.currentTarget.parentElement.parentElement;
+    const id = element.dataset.id;
+    let groceryItems = getItemsFromLocalStorage();
+
+    const groceryItem = groceryItems.find(function (item) {
+      return item.id === id;
+    });
+
+    groceryItems.pop(groceryItem);
+    localStorage.setItem('groceryList', JSON.stringify(groceryItems));
+
+    element.style.display = 'none';
+  });
+}
+
+function editGroceryItem(id, value) {
+  // console.log(id);
+  // console.log(value);
+  let groceryItems = getItemsFromLocalStorage();
+  groceryItem = groceryItems.find(function (item) {
+    return item.id === id;
+  });
+
+  groceryItems.value = value;
 }
 
 // display alert message
