@@ -49,16 +49,14 @@ function addGroceryItem(e) {
 
     addToLocalStorage(groceryItemId, groceryItem);
 
-    groceryItemInput.value = '';
+    setDefault();
   } else if (groceryItem && editFlag) {
     editElement.textContent = groceryItemInput.value;
     const id = editElement.parentElement.dataset.id;
 
     editGroceryItem(id, groceryItemInput.value);
 
-    groceryItemInput.value = '';
-    grocerySubmitBtn.textContent = 'Submit';
-    editFlag = false;
+    setDefault();
   } else {
     alertMessage(`You didn't enter an item.`, 'danger');
   }
@@ -161,4 +159,10 @@ function getItemsFromLocalStorage() {
   return localStorage.getItem('groceryList')
     ? JSON.parse(localStorage.getItem('groceryList'))
     : [];
+}
+
+function setDefault() {
+  groceryItemInput.value = '';
+  grocerySubmitBtn.textContent = 'Submit';
+  editFlag = false;
 }
