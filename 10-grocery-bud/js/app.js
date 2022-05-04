@@ -56,6 +56,8 @@ function addGroceryItem(e) {
 
     editGroceryItem(id, groceryItemInput.value);
 
+    alertMessage('Item updated!', 'success');
+
     setDefault();
   } else {
     alertMessage(`You didn't enter an item.`, 'danger');
