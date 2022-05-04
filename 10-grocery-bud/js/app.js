@@ -7,7 +7,9 @@ const groceryForm = document.querySelector('.grocery-bud');
 const groceryAlert = document.querySelector('.grocery-bud__alert');
 groceryAlert.textContent = `message`;
 
-groceryForm.addEventListener('submit', function (e) {
+groceryForm.addEventListener('submit', addGroceryItem);
+
+function addGroceryItem(e) {
   e.preventDefault();
   if (newItem.value) {
     const groceryItemId = new Date().getTime().toString();
@@ -31,7 +33,7 @@ groceryForm.addEventListener('submit', function (e) {
   } else {
     alertMessage(`You didn't enter an item.`, 'danger');
   }
-});
+}
 
 // display alert message
 function alertMessage(message, alert) {
