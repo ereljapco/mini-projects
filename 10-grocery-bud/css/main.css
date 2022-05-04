@@ -342,6 +342,14 @@ Grocery Bud
 }
 
 /* items */
+.grocery-bud__items--container {
+  display: none;
+}
+
+.grocery-bud__items--container--show {
+  display: block;
+}
+
 .grocery-bud__items {
   margin-bottom: 1.5rem;
 }

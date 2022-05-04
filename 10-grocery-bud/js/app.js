@@ -13,6 +13,7 @@ function addGroceryItem(e) {
   e.preventDefault();
   let newItem = groceryItemInput.value;
   if (newItem) {
+    groceryItemsContainer.classList.add('grocery-bud__items--container--show');
     const groceryItemId = new Date().getTime().toString();
     const groceryItem = document.createElement('div');
     groceryItem.classList.add('grocery-bud__item');
