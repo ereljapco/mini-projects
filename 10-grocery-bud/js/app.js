@@ -24,21 +24,8 @@ function displayGroceryItems() {
     groceryList.forEach(function (groceryListItem) {
       console.log(groceryListItem.id);
       console.log(groceryListItem.value);
-      const groceryItem = document.createElement('div');
-      groceryItem.classList.add('grocery-bud__item');
-      groceryItem.setAttribute('data-id', groceryListItem.id);
-      groceryItem.innerHTML = `
-      <p class="grocery-bud__item-title">${groceryListItem.value}</p>
-      <div class="grocery-bud__item-actions">
-      <button class="grocery-bud__item-edit-btn">
-      <i class="fa-solid fa-pen-to-square"></i>
-      </button>
-      <button class="grocery-bud__item-delete-btn">
-      <i class="fa-solid fa-trash"></i>
-      </button>
-      </div>
-      `;
-      groceryItems.appendChild(groceryItem);
+
+      addGroceryItemElement(groceryListItem.id, groceryListItem.value);
     });
   }
 }
@@ -49,11 +36,25 @@ function addGroceryItem(e) {
   if (newItem) {
     groceryItemsContainer.classList.add('grocery-bud__items--container--show');
     const groceryItemId = new Date().getTime().toString();
-    const groceryItem = document.createElement('div');
-    groceryItem.classList.add('grocery-bud__item');
-    groceryItem.setAttribute('data-id', groceryItemId);
-    groceryItem.innerHTML = `
-    <p class="grocery-bud__item-title">${newItem}</p>
+
+    addGroceryItemElement(groceryItemId, newItem);
+
+    alertMessage('Added an item to the list!', 'success');
+
+    addToLocalStorage(groceryItemId, newItem);
+
+    groceryItemInput.value = '';
+  } else {
+    alertMessage(`You didn't enter an item.`, 'danger');
+  }
+}
+
+function addGroceryItemElement(id, value) {
+  const groceryItem = document.createElement('div');
+  groceryItem.classList.add('grocery-bud__item');
+  groceryItem.setAttribute('data-id', id);
+  groceryItem.innerHTML = `
+    <p class="grocery-bud__item-title">${value}</p>
     <div class="grocery-bud__item-actions">
     <button class="grocery-bud__item-edit-btn">
     <i class="fa-solid fa-pen-to-square"></i>
@@ -63,15 +64,7 @@ function addGroceryItem(e) {
     </button>
     </div>
     `;
-    groceryItems.appendChild(groceryItem);
-    alertMessage('Added an item to the list!', 'success');
-
-    addToLocalStorage(groceryItemId, newItem);
-
-    groceryItemInput.value = '';
-  } else {
-    alertMessage(`You didn't enter an item.`, 'danger');
-  }
+  groceryItems.appendChild(groceryItem);
 }
 
 // display alert message
