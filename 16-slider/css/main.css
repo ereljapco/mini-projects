@@ -296,6 +296,12 @@ body {
   color: var(--clr-primary-500);
 }
 
+.slider {
+  width: 85vw;
+  max-width: 1170px;
+  margin-inline: auto;
+}
+
 .slider__img {
   width: 100%;
 }
