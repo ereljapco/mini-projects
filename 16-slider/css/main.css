@@ -377,4 +377,5 @@ body {
   background-color: transparent;
   border: 0.15rem solid var(--clr-secondary-500);
   border-radius: 0.25rem;
+  cursor: pointer;
 }
