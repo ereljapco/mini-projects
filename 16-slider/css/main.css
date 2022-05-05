@@ -295,3 +295,7 @@ body {
 .slider__title {
   color: var(--clr-primary-500);
 }
+
+.slider__img {
+  width: 100%;
+}
