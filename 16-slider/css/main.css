@@ -324,9 +324,10 @@ body {
 .slider__img-03--container,
 .slider__img-04--container,
 .slider__img-05--container {
+  position: absolute;
   width: 100%;
   height: 100%;
-  position: absolute;
+  transition: var(--transition);
 }
 
 .slider__img-01--container {
