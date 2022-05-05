@@ -284,3 +284,10 @@ ul {
   margin-inline: auto;
   margin-top: -1rem;
 }
+
+/*===============
+Slider
+===============*/
+body {
+  background-color: var(--clr-tertiary-500);
+}
