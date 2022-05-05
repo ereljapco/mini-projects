@@ -291,3 +291,7 @@ Slider
 body {
   background-color: var(--clr-tertiary-500);
 }
+
+.slider__title {
+  color: var(--clr-primary-500);
+}
