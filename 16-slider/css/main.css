@@ -302,6 +302,32 @@ body {
   margin-inline: auto;
 }
 
+.slider__imgs--container {
+  position: relative;
+}
+
+.slider__imgs--container::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 15%;
+  height: 15%;
+  border-top: 2vw solid var(--clr-secondary-500);
+  border-left: 2vw solid var(--clr-secondary-500);
+}
+
+.slider__imgs--container::after {
+  position: absolute;
+  content: '';
+  right: 0;
+  bottom: 0;
+  width: 15%;
+  height: 15%;
+  border-right: 2vw solid var(--clr-secondary-500);
+  border-bottom: 2vw solid var(--clr-secondary-500);
+}
+
 .slider__imgs {
   width: 90%;
   margin-inline: auto;
