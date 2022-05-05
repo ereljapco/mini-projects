@@ -370,3 +370,11 @@ body {
   width: 5rem;
   margin-inline: auto;
 }
+
+.slider__prev-btn,
+.slider__next-btn {
+  color: var(--clr-secondary-500);
+  background-color: transparent;
+  border: 0.15rem solid var(--clr-secondary-500);
+  border-radius: 0.25rem;
+}
