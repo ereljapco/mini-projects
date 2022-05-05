@@ -302,6 +302,11 @@ body {
   margin-inline: auto;
 }
 
+.slider__imgs {
+  width: 90%;
+  margin-inline: auto;
+}
+
 .slider__img {
   width: 100%;
 }
