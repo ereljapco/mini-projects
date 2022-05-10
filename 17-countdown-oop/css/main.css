@@ -333,6 +333,8 @@ Counter
 .counter__second-increase-btn {
   color: var(--clr-secondary-500);
   text-transform: uppercase;
-  border: 0.13rem solid var(--clr-secondary-500);
   background-color: transparent;
+  border: 0.13rem solid var(--clr-secondary-500);
+  border-radius: var(--border-radius);
+  padding: 0.5rem 0.75rem;
 }
