@@ -348,3 +348,13 @@ Counter
   padding: 0.5rem 0.75rem;
   cursor: pointer;
 }
+
+.counter__first-decrease-btn:hover,
+.counter__first-reset-btn:hover,
+.counter__first-increase-btn:hover,
+.counter__second-decrease-btn:hover,
+.counter__second-reset-btn:hover,
+.counter__second-increase-btn:hover {
+  color: var(--clr-tertiary-500);
+  background-color: var(--clr-secondary-500);
+}
