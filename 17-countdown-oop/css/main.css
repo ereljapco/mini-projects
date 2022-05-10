@@ -302,6 +302,7 @@ Counter
 .counter__second--container {
   background-color: var(--clr-tertiary-500);
   border-radius: var(--border-radius);
+  padding: 3rem;
 }
 
 .counter__first--container {
