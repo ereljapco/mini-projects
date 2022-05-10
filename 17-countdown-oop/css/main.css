@@ -307,3 +307,9 @@ Counter
 .counter__first--container {
   margin-bottom: 2rem;
 }
+
+.counter__first-title,
+.counter__second-title {
+  color: var(--clr-primary-500);
+  text-align: center;
+}
