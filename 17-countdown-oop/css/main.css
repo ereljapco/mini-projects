@@ -318,5 +318,7 @@ Counter
 .counter__first-value,
 .counter__second-value {
   color: var(--clr-white);
+  font-size: 6rem;
+  text-align: center;
   margin: 0;
 }
