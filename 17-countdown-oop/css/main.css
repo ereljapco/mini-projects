@@ -293,4 +293,5 @@ Counter
   background-color: var(--clr-tertiary-500);
   width: 90vw;
   max-width: 30rem;
+  border-radius: var(--border-radius);
 }
