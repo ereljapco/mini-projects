@@ -8,16 +8,37 @@ function Counter(element, value) {
 
   this.decreaseBtn.addEventListener('click', this.decrease.bind(this));
   this.resetBtn.addEventListener('click', this.reset.bind(this));
+  this.increaseBtn.addEventListener('click', this.increase.bind(this));
+
+  this.style();
 }
 
 Counter.prototype.decrease = function () {
   this.value--;
   this.valueDOM.textContent = this.value;
+  this.style();
 };
 
 Counter.prototype.reset = function () {
   this.value = 0;
   this.valueDOM.textContent = this.value;
+  this.style();
+};
+
+Counter.prototype.increase = function () {
+  this.value++;
+  this.valueDOM.textContent = this.value;
+  this.style();
+};
+
+Counter.prototype.style = function () {
+  if (this.value < 0) {
+    this.valueDOM.style.color = '#ffd803';
+  } else if (this.value > 0) {
+    this.valueDOM.style.color = '#bae8e8';
+  } else {
+    this.valueDOM.style.color = '#fffffe';
+  }
 };
 
 const firstCounter = new Counter(
