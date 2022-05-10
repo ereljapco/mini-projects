@@ -312,13 +312,14 @@ Counter
 .counter__first-title,
 .counter__second-title {
   color: var(--clr-primary-500);
+  font-size: 1.75rem;
   text-align: center;
 }
 
 .counter__first-value,
 .counter__second-value {
   color: var(--clr-white);
-  font-size: 5rem;
+  font-size: 4.5rem;
   text-align: center;
   line-height: 1.5;
   margin: 0;
