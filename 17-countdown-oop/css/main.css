@@ -331,5 +331,7 @@ Counter
 .counter__second-decrease-btn,
 .counter__second-reset-btn,
 .counter__second-increase-btn {
+  color: var(--clr-secondary-500);
+  border: 0.15rem solid var(--clr-secondary-500);
   background-color: transparent;
 }
