@@ -325,6 +325,15 @@ Counter
   margin: 0;
 }
 
+.counter__first-btns,
+.counter__second-btns {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 1rem;
+  width: 80%;
+  margin-inline: auto;
+}
+
 .counter__first-decrease-btn,
 .counter__first-reset-btn,
 .counter__first-increase-btn,
