@@ -303,3 +303,7 @@ Counter
   background-color: var(--clr-tertiary-500);
   border-radius: var(--border-radius);
 }
+
+.counter__first--container {
+  margin-bottom: 2rem;
+}
