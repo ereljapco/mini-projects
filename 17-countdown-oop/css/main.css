@@ -324,3 +324,12 @@ Counter
   line-height: 1.5;
   margin: 0;
 }
+
+.counter__first-decrease-btn,
+.counter__first-reset-btn,
+.counter__first-increase-btn,
+.counter__second-decrease-btn,
+.counter__second-reset-btn,
+.counter__second-increase-btn {
+  background-color: transparent;
+}
