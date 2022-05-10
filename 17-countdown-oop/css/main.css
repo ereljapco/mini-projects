@@ -288,6 +288,10 @@ ul {
 /*===============
 Counter
 ===============*/
+.main {
+  margin-block: 5rem;
+}
+
 .counter {
   width: 90vw;
   max-width: 30rem;
