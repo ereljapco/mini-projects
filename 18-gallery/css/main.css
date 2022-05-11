@@ -338,3 +338,9 @@ Gallery Modal
   min-height: 100vh;
   background-color: var(--clr-tertiary-500);
 }
+
+.gallery-modal__close-btn {
+  color: var(--clr-white);
+  background-color: transparent;
+  border-color: transparent;
+}
