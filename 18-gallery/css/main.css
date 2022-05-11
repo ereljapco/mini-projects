@@ -370,6 +370,11 @@ Gallery Modal
   object-fit: cover;
 }
 
+.gallery-modal__title {
+  color: var(--clr-white);
+  font-size: 1.5rem;
+}
+
 .gallery-modal__prev-btn,
 .gallery-modal__next-btn {
   width: 2rem;
