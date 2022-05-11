@@ -371,6 +371,8 @@ Gallery Modal
 }
 
 .gallery-modal__title {
+  grid-column: 1 / 4;
+  justify-self: center;
   color: var(--clr-white);
   font-size: 1.5rem;
 }
