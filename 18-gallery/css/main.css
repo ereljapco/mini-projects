@@ -399,3 +399,8 @@ Gallery Modal
   object-fit: cover;
   opacity: 0.75;
 }
+
+.gallery-modal__img--selected,
+.gallery-modal__img:hover {
+  opacity: 1;
+}
