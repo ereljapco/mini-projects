@@ -315,6 +315,7 @@ Global Variables
   box-shadow: var(--shadow-2);
   object-fit: cover;
   transition: var(--transition);
+  cursor: pointer;
 }
 
 .gallery__img:hover {
