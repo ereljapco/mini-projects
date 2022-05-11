@@ -14,25 +14,25 @@ class Counter {
     this.style();
   }
 
-  decrease = function () {
+  decrease() {
     this.value--;
     this.valueDOM.textContent = this.value;
     this.style();
-  };
+  }
 
-  reset = function () {
+  reset() {
     this.value = 0;
     this.valueDOM.textContent = this.value;
     this.style();
-  };
+  }
 
-  increase = function () {
+  increase() {
     this.value++;
     this.valueDOM.textContent = this.value;
     this.style();
-  };
+  }
 
-  style = function () {
+  style() {
     if (this.value < 0) {
       this.valueDOM.style.color = '#ffd803';
     } else if (this.value > 0) {
@@ -40,7 +40,7 @@ class Counter {
     } else {
       this.valueDOM.style.color = '#fffffe';
     }
-  };
+  }
 }
 
 function checkSelect(select) {
