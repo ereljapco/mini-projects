@@ -292,6 +292,8 @@ Global Variables
   width: 90vw;
   max-width: 1170px;
   margin-inline: auto;
+  display: grid;
+  row-gap: 2rem;
 }
 
 .gallery__img {
