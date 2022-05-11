@@ -374,3 +374,9 @@ Gallery Modal
   background-color: transparent;
   border-color: transparent;
 }
+
+.gallery-modal__img {
+  width: 100%;
+  height: 5rem;
+  object-fit: cover;
+}
