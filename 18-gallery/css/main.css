@@ -285,8 +285,12 @@ ul {
   margin-top: -1rem;
 }
 
+.main {
+  margin-block: 5rem;
+}
+
 /*===============
-Global Variables
+Gallery
 ===============*/
 .gallery {
   width: 90vw;
