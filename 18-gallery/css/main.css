@@ -302,6 +302,12 @@ Global Variables
   }
 }
 
+@media screen and (min-width: 992px) {
+  .gallery {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
 .gallery__img {
   width: 100%;
   height: 15rem;
