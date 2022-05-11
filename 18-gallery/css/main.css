@@ -350,3 +350,13 @@ Gallery Modal
   border-color: transparent;
   cursor: pointer;
 }
+
+.gallery-modal__main {
+  width: 80%;
+}
+
+.gallery-modal__main-img {
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+}
