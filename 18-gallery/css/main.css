@@ -299,5 +299,7 @@ Global Variables
 .gallery__img {
   width: 100%;
   height: 15rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-1);
   object-fit: cover;
 }
