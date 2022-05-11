@@ -361,6 +361,7 @@ Gallery Modal
   gap: 0.5rem;
   align-items: center;
   width: 100%;
+  margin-bottom: 2rem;
 }
 
 .gallery-modal__main-img {
