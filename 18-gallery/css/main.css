@@ -337,7 +337,7 @@ Gallery Modal
   height: 100%;
   min-height: 100vh;
   background-color: var(--clr-tertiary-500);
-  padding: 1rem;
+  padding-inline: 1rem;
   overflow: scroll;
 }
 
@@ -349,6 +349,10 @@ Gallery Modal
   background-color: transparent;
   border-color: transparent;
   cursor: pointer;
+}
+
+.gallery-modal__content {
+  margin-block: 5rem;
 }
 
 .gallery-modal__main {
