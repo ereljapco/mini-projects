@@ -293,7 +293,13 @@ Global Variables
   max-width: 1170px;
   margin-inline: auto;
   display: grid;
-  row-gap: 2rem;
+  gap: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .gallery {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .gallery__img {
