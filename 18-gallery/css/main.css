@@ -338,6 +338,7 @@ Gallery Modal
   min-height: 100vh;
   background-color: var(--clr-tertiary-500);
   padding: 1rem;
+  overflow: scroll;
 }
 
 .gallery-modal__close-btn {
