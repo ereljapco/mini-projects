@@ -325,3 +325,10 @@ Gallery
 .gallery__img:hover {
   box-shadow: var(--shadow-3);
 }
+
+/*===============
+Gallery Modal
+===============*/
+.gallery-modal {
+  background-color: var(--clr-tertiary-500);
+}
