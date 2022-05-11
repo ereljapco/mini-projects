@@ -340,6 +340,8 @@ Gallery Modal
 }
 
 .gallery-modal__close-btn {
+  position: absolute;
+  right: 0;
   color: var(--clr-white);
   font-size: 2rem;
   background-color: transparent;
