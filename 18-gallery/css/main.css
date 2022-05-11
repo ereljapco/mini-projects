@@ -337,11 +337,12 @@ Gallery Modal
   height: 100%;
   min-height: 100vh;
   background-color: var(--clr-tertiary-500);
+  padding: 1rem;
 }
 
 .gallery-modal__close-btn {
   position: absolute;
-  right: 0;
+  right: 1rem;
   color: var(--clr-white);
   font-size: 2rem;
   background-color: transparent;
