@@ -369,4 +369,7 @@ Gallery Modal
   width: 2rem;
   height: 2.5rem;
   font-size: 2rem;
+  color: var(--clr-white);
+  background-color: transparent;
+  border-color: transparent;
 }
