@@ -339,6 +339,13 @@ Gallery Modal
   background-color: var(--clr-tertiary-500);
   padding-inline: 1rem;
   overflow: scroll;
+  opacity: 0;
+  z-index: -1;
+}
+
+.galler-modal--open {
+  opacity: 1;
+  z-index: 999;
 }
 
 .gallery-modal__close-btn {
