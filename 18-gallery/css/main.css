@@ -343,7 +343,7 @@ Gallery Modal
   z-index: -1;
 }
 
-.galler-modal--open {
+.gallery-modal--open {
   opacity: 1;
   z-index: 999;
 }
