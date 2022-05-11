@@ -398,6 +398,8 @@ Gallery Modal
   height: 5rem;
   object-fit: cover;
   opacity: 0.75;
+  transition: var(--transition);
+  cursor: pointer;
 }
 
 .gallery-modal__img--selected,
