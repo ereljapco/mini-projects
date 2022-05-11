@@ -363,3 +363,10 @@ Gallery Modal
   height: 20rem;
   object-fit: cover;
 }
+
+.gallery-modal__prev-btn,
+.gallery-modal__next-btn {
+  width: 2rem;
+  height: 2.5rem;
+  font-size: 2rem;
+}
