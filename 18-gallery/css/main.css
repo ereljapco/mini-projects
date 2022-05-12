@@ -336,7 +336,7 @@ Gallery
 /*===============
 Gallery Modal
 ===============*/
-.gallery-modal {
+.gallery__modal {
   position: fixed;
   top: 0;
   left: 0;
@@ -350,12 +350,12 @@ Gallery Modal
   z-index: -1;
 }
 
-.gallery-modal--open {
+.gallery__modal--open {
   opacity: 1;
   z-index: 999;
 }
 
-.gallery-modal__close-btn {
+.gallery__modal-close-btn {
   position: absolute;
   right: 1rem;
   color: var(--clr-white);
@@ -365,11 +365,11 @@ Gallery Modal
   cursor: pointer;
 }
 
-.gallery-modal__content {
+.gallery__modal-content {
   margin-block: 5rem;
 }
 
-.gallery-modal__main {
+.gallery__modal-main {
   display: grid;
   grid-template-columns: 2rem auto 2rem;
   column-gap: 0.5rem;
@@ -379,21 +379,21 @@ Gallery Modal
   margin-bottom: 2rem;
 }
 
-.gallery-modal__main-img {
+.gallery__modal-main-img {
   width: 100%;
   height: 20rem;
   object-fit: cover;
 }
 
-.gallery-modal__title {
+.gallery__modal-title {
   grid-column: 1 / 4;
   justify-self: center;
   color: var(--clr-white);
   font-size: 1.5rem;
 }
 
-.gallery-modal__prev-btn,
-.gallery-modal__next-btn {
+.gallery__modal-prev-btn,
+.gallery__modal-next-btn {
   width: 2rem;
   height: 2.5rem;
   font-size: 2rem;
@@ -402,12 +402,12 @@ Gallery Modal
   border-color: transparent;
 }
 
-.gallery-modal__imgs {
+.gallery__modal-imgs {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
 }
 
-.gallery-modal__img {
+.gallery__modal-img {
   width: 100%;
   height: 5rem;
   object-fit: cover;
@@ -416,7 +416,7 @@ Gallery Modal
   cursor: pointer;
 }
 
-.gallery-modal__img--selected,
-.gallery-modal__img:hover {
+.gallery__modal-img--selected,
+.gallery__modal-img:hover {
   opacity: 1;
 }
