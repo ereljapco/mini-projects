@@ -17,6 +17,9 @@ function Gallery(element) {
   console.log(this.imgs);
 
   this.modal = getElement('.gallery__modal');
+  this.modalMainImg = this.modal.querySelector('.gallery__modal-main-img');
+  this.modalTitle = this.modal.querySelector('.gallery__modal-title');
+  this.modalImgsContainer = this.modal.querySelector('.gallery__modal-imgs');
 
   this.openModal = this.openModal.bind(this);
   this.closeModal = this.closeModal.bind(this);
@@ -25,33 +28,21 @@ function Gallery(element) {
     'click',
     function (e) {
       if (e.target.src) {
-        this.openModal();
-        this.displayModalImgs(e.target);
+        this.openModal(e.target, this.imgs);
       }
     }.bind(this)
   );
 }
 
-Gallery.prototype.openModal = function () {
+Gallery.prototype.openModal = function (imgSelected, imgs) {
+  console.log(imgs);
+  console.log(imgSelected);
   this.modal.classList.add('gallery__modal--open');
-
-  this.closeBtn = this.modal.querySelector('.gallery__modal-close-btn');
-  this.closeBtn.addEventListener('click', this.closeModal);
-};
-
-Gallery.prototype.closeModal = function () {
-  this.modal.classList.remove('gallery__modal--open');
-};
-
-Gallery.prototype.displayModalImgs = function (imgSelected) {
-  this.modalMainImg = this.modal.querySelector('.gallery__modal-main-img');
-  this.modalTitle = this.modal.querySelector('.gallery__modal-title');
-  this.modalImgsContainer = this.modal.querySelector('.gallery__modal-imgs');
 
   this.modalMainImg.src = imgSelected.src;
   this.modalTitle.textContent = imgSelected.title;
 
-  this.modalImgs = this.imgs
+  this.modalImgsContainer.innerHTML = imgs
     .map(function (img) {
       if (imgSelected === img) {
         return `<img class="gallery__modal-img gallery__modal-img--selected" title="${img.title}" data-id="${img.dataset['id']}" src="${img.src}" alt="${img.alt}"/>`;
@@ -61,7 +52,12 @@ Gallery.prototype.displayModalImgs = function (imgSelected) {
     })
     .join('');
 
-  this.modalImgsContainer.innerHTML = this.modalImgs;
+  this.closeBtn = this.modal.querySelector('.gallery__modal-close-btn');
+  this.closeBtn.addEventListener('click', this.closeModal);
+};
+
+Gallery.prototype.closeModal = function () {
+  this.modal.classList.remove('gallery__modal--open');
 };
 
 const montessori = new Gallery(getElement('.gallery__montessori'));
