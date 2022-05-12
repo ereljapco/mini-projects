@@ -405,6 +405,7 @@ Gallery Modal
   color: var(--clr-white);
   background-color: transparent;
   border-color: transparent;
+  cursor: pointer;
 }
 
 .gallery__modal-imgs {
