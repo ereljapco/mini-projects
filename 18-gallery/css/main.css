@@ -305,6 +305,10 @@ Gallery
   gap: 2rem;
 }
 
+.gallery__montessori {
+  margin-bottom: 4rem;
+}
+
 @media screen and (min-width: 768px) {
   .gallery__montessori,
   .gallery__home {
