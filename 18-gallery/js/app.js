@@ -12,15 +12,30 @@ function getElement(select) {
 
 function Gallery(element) {
   this.container = element;
+  this.imgs = [...element.querySelectorAll('.gallery__img')];
+
+  console.log(this.imgs);
 
   this.modal = getElement('.gallery__modal');
 
   this.openModal = this.openModal.bind(this);
   this.closeModal = this.closeModal.bind(this);
+
   this.container.addEventListener(
     'click',
-    function () {
-      this.openModal();
+    function (e) {
+      if (e.target.src) {
+        this.openModal();
+        this.imgSrc = e.target.src;
+        this.imgTitle = e.target.title;
+        this.modalMainImg = this.modal.querySelector(
+          '.gallery__modal-main-img'
+        );
+        this.modalTitle = this.modal.querySelector('.gallery__modal-title');
+
+        this.modalMainImg.src = this.imgSrc;
+        this.modalTitle.textContent = this.imgTitle;
+      }
     }.bind(this)
   );
 }
