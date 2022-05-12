@@ -348,6 +348,7 @@ Gallery Modal
   overflow: scroll;
   opacity: 0;
   z-index: -1;
+  transition: var(--transition);
 }
 
 .gallery__modal--open {
