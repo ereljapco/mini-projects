@@ -44,15 +44,13 @@ Gallery.prototype.closeModal = function () {
 };
 
 Gallery.prototype.displayModalImgs = function (imgSelected) {
-  this.imgSrc = imgSelected.src;
-  this.imgTitle = imgSelected.title;
   this.modalMainImg = this.modal.querySelector('.gallery__modal-main-img');
   this.modalTitle = this.modal.querySelector('.gallery__modal-title');
-
-  this.modalMainImg.src = this.imgSrc;
-  this.modalTitle.textContent = this.imgTitle;
-
   this.modalImgsContainer = this.modal.querySelector('.gallery__modal-imgs');
+
+  this.modalMainImg.src = imgSelected.src;
+  this.modalTitle.textContent = imgSelected.title;
+
   this.modalImgs = this.imgs
     .map(function (img) {
       if (imgSelected === img) {
