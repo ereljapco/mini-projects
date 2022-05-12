@@ -26,15 +26,7 @@ function Gallery(element) {
     function (e) {
       if (e.target.src) {
         this.openModal();
-        this.imgSrc = e.target.src;
-        this.imgTitle = e.target.title;
-        this.modalMainImg = this.modal.querySelector(
-          '.gallery__modal-main-img'
-        );
-        this.modalTitle = this.modal.querySelector('.gallery__modal-title');
-
-        this.modalMainImg.src = this.imgSrc;
-        this.modalTitle.textContent = this.imgTitle;
+        this.displayModalImgs(e.target);
       }
     }.bind(this)
   );
@@ -49,6 +41,29 @@ Gallery.prototype.openModal = function () {
 
 Gallery.prototype.closeModal = function () {
   this.modal.classList.remove('gallery__modal--open');
+};
+
+Gallery.prototype.displayModalImgs = function (imgClicked) {
+  this.imgSrc = imgClicked.src;
+  this.imgTitle = imgClicked.title;
+  this.modalMainImg = this.modal.querySelector('.gallery__modal-main-img');
+  this.modalTitle = this.modal.querySelector('.gallery__modal-title');
+
+  this.modalMainImg.src = this.imgSrc;
+  this.modalTitle.textContent = this.imgTitle;
+
+  this.modalImgsContainer = this.modal.querySelector('.gallery__modal-imgs');
+  this.modalImgs = this.imgs
+    .map(function (img) {
+      if (imgClicked === img) {
+        return `<img class="gallery__modal-img gallery__modal-img--selected" title="${img.title}" data-id="${img.dataset['id']}" src="${img.src}" alt="${img.alt}"/>`;
+      }
+
+      return `<img class="gallery__modal-img" title="${img.title}" data-id="${img.dataset['id']}" src="${img.src}" alt="${img.alt}"/>`;
+    })
+    .join('');
+
+  this.modalImgsContainer.innerHTML = this.modalImgs;
 };
 
 const montessori = new Gallery(getElement('.gallery__montessori'));
