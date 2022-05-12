@@ -292,7 +292,11 @@ ul {
 /*===============
 Gallery
 ===============*/
-.gallery {
+.gallery__title {
+  text-align: center;
+}
+
+.gallery__montessori {
   width: 90vw;
   max-width: 1170px;
   margin-inline: auto;
@@ -301,19 +305,15 @@ Gallery
 }
 
 @media screen and (min-width: 768px) {
-  .gallery {
+  .gallery__montessori {
     grid-template-columns: 1fr 1fr;
   }
 }
 
 @media screen and (min-width: 992px) {
-  .gallery {
+  .gallery__montessori {
     grid-template-columns: 1fr 1fr 1fr;
   }
-}
-
-.gallery__title {
-  text-align: center;
 }
 
 .gallery__img {
