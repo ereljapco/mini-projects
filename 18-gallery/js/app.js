@@ -65,3 +65,4 @@ Gallery.prototype.displayModalImgs = function (imgSelected) {
 };
 
 const montessori = new Gallery(getElement('.gallery__montessori'));
+const home = new Gallery(getElement('.gallery__home'));
