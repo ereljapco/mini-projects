@@ -21,6 +21,7 @@ function Gallery(element) {
   this.modalTitle = this.modal.querySelector('.gallery__modal-title');
   this.modalImgsContainer = this.modal.querySelector('.gallery__modal-imgs');
   this.nextBtn = this.modal.querySelector('.gallery__modal-next-btn');
+  this.prevBtn = this.modal.querySelector('.gallery__modal-prev-btn');
 
   this.openModal = this.openModal.bind(this);
   this.closeModal = this.closeModal.bind(this);
@@ -55,6 +56,8 @@ Gallery.prototype.openModal = function (imgSelected, imgs) {
 
   this.nextImg = this.nextImg.bind(this);
   this.nextBtn.addEventListener('click', this.nextImg);
+  this.prevImg = this.prevImg.bind(this);
+  this.prevBtn.addEventListener('click', this.prevImg);
 
   this.closeBtn = this.modal.querySelector('.gallery__modal-close-btn');
   this.closeBtn.addEventListener('click', this.closeModal);
@@ -64,7 +67,33 @@ Gallery.prototype.openModal = function (imgSelected, imgs) {
 
 Gallery.prototype.closeModal = function () {
   this.modal.classList.remove('gallery__modal--open');
+  this.prevBtn.removeEventListener('click', this.prevImg);
   this.nextBtn.removeEventListener('click', this.nextImg);
+};
+
+Gallery.prototype.prevImg = function () {
+  const imgSelected = this.modalMainImg;
+  let imgSelectedId = imgSelected.dataset['id'];
+  // console.log(imgSelected);
+  imgSelectedId--;
+
+  if (imgSelectedId < 1) {
+    imgSelectedId = 1;
+  }
+
+  const prevImg = this.imgs.filter(function (img) {
+    return img.dataset['id'] == imgSelectedId;
+  });
+
+  // console.log(nextImg[0]);
+  this.modalMainImg.src = prevImg[0].src;
+  this.modalMainImg.dataset['id'] = imgSelectedId;
+  this.modalTitle.textContent = prevImg[0].title;
+
+  // console.log(this.modalMainImg.src);
+  // console.log(imgSelected.src);
+
+  // console.log(imgSelectedId);
 };
 
 Gallery.prototype.nextImg = function () {
