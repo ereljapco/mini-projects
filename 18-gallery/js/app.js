@@ -54,6 +54,27 @@ Gallery.prototype.openModal = function (imgSelected, imgs) {
     })
     .join('');
 
+  this.modalImgs = [
+    ...this.modalImgsContainer.querySelectorAll('.gallery__modal-img'),
+  ];
+
+  console.log(this.modalImgs);
+
+  this.modalImgs.forEach(
+    function (img) {
+      img.addEventListener(
+        'click',
+        function () {
+          console.log(img);
+          this.modalMainImg.src = img.src;
+          this.modalTitle.textContent = img.title;
+
+          this.highlightImageSelected(img);
+        }.bind(this)
+      );
+    }.bind(this)
+  );
+
   this.nextImg = this.nextImg.bind(this);
   this.nextBtn.addEventListener('click', this.nextImg);
   this.prevImg = this.prevImg.bind(this);
