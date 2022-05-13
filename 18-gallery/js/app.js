@@ -16,6 +16,9 @@ class Gallery {
     this.imgs = [...element.querySelectorAll('.gallery__img')];
 
     this.modal = getElement('.gallery__modal');
+    this.modalMainImgContainer = this.modal.querySelector(
+      '.gallery__modal-main-img--container'
+    );
     this.modalMainImg = this.modal.querySelector('.gallery__modal-main-img');
     this.modalTitle = this.modal.querySelector('.gallery__modal-title');
     this.modalImgsContainer = this.modal.querySelector('.gallery__modal-imgs');
@@ -36,11 +39,11 @@ class Gallery {
       }.bind(this)
     );
   }
+
   openModal(imgSelected, imgs) {
     this.modal.classList.add('gallery__modal--open');
 
-    this.modalMainImg.src = imgSelected.src;
-    this.modalTitle.textContent = imgSelected.title;
+    this.setMainImg(imgSelected);
 
     this.modalImgsContainer.innerHTML = imgs
       .map(function (img) {
@@ -61,10 +64,7 @@ class Gallery {
         img.addEventListener(
           'click',
           function () {
-            this.modalMainImg.src = img.src;
-            this.modalTitle.textContent = img.title;
-
-            this.highlightImageSelected(img);
+            this.setMainImg(img);
           }.bind(this)
         );
       }.bind(this)
@@ -75,8 +75,30 @@ class Gallery {
 
     this.closeBtn = this.modal.querySelector('.gallery__modal-close-btn');
     this.closeBtn.addEventListener('click', this.closeModal);
+  }
 
-    this.modalMainImg.dataset['id'] = imgSelected.dataset['id'];
+  setMainImg(imgSelected) {
+    const imgs = [
+      ...this.modalImgsContainer.querySelectorAll('.gallery__modal-img'),
+    ];
+
+    this.modalMainImgContainer.innerHTML = `<img
+            class="gallery__modal-main-img"
+            title="${imgSelected.title}"
+            data-id="${imgSelected.dataset['id']}"
+            src="${imgSelected.src}"
+            alt="${imgSelected.alt}"
+          />`;
+    this.modalMainImg = imgSelected;
+    this.modalTitle.textContent = imgSelected.title;
+
+    imgs.forEach(function (img) {
+      if (imgSelected.dataset['id'] !== img.dataset['id']) {
+        img.classList.remove('gallery__modal-img--selected');
+      } else {
+        img.classList.add('gallery__modal-img--selected');
+      }
+    });
   }
 
   closeModal() {
@@ -86,57 +108,16 @@ class Gallery {
   }
 
   prevImg() {
-    const imgSelected = this.modalMainImg;
-    let imgSelectedId = imgSelected.dataset['id'];
-    imgSelectedId--;
-
-    if (imgSelectedId < this.imgs[0].dataset['id']) {
-      imgSelectedId = this.imgs[this.imgs.length - 1].dataset['id'];
-    }
-
-    const prevImg = this.imgs.filter(function (img) {
-      return img.dataset['id'] == imgSelectedId;
-    });
-
-    this.modalMainImg.src = prevImg[0].src;
-    this.modalMainImg.dataset['id'] = imgSelectedId;
-    this.modalTitle.textContent = prevImg[0].title;
-
-    this.highlightImageSelected(prevImg[0]);
+    const imgSelected =
+      this.modalMainImg.previousElementSibling ||
+      this.modalImgs[this.modalImgs.length - 1];
+    this.setMainImg(imgSelected);
   }
 
   nextImg() {
-    const imgSelected = this.modalMainImg;
-    let imgSelectedId = imgSelected.dataset['id'];
-    imgSelectedId++;
-
-    if (imgSelectedId > this.imgs.length) {
-      imgSelectedId = this.imgs[0].dataset['id'];
-    }
-
-    const nextImg = this.imgs.filter(function (img) {
-      return img.dataset['id'] == imgSelectedId;
-    });
-
-    this.modalMainImg.src = nextImg[0].src;
-    this.modalMainImg.dataset['id'] = imgSelectedId;
-    this.modalTitle.textContent = nextImg[0].title;
-
-    this.highlightImageSelected(nextImg[0]);
-  }
-
-  highlightImageSelected(imgSelected) {
-    const imgs = [
-      ...this.modalImgsContainer.querySelectorAll('.gallery__modal-img'),
-    ];
-
-    imgs.forEach(function (img) {
-      if (imgSelected.dataset['id'] !== img.dataset['id']) {
-        img.classList.remove('gallery__modal-img--selected');
-      } else {
-        img.classList.add('gallery__modal-img--selected');
-      }
-    });
+    const imgSelected =
+      this.modalMainImg.nextElementSibling || this.modalImgs[0];
+    this.setMainImg(imgSelected);
   }
 }
 
