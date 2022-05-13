@@ -14,8 +14,6 @@ function Gallery(element) {
   this.container = element;
   this.imgs = [...element.querySelectorAll('.gallery__img')];
 
-  // console.log(this.imgs);
-
   this.modal = getElement('.gallery__modal');
   this.modalMainImg = this.modal.querySelector('.gallery__modal-main-img');
   this.modalTitle = this.modal.querySelector('.gallery__modal-title');
@@ -37,8 +35,6 @@ function Gallery(element) {
 }
 
 Gallery.prototype.openModal = function (imgSelected, imgs) {
-  // console.log(imgs);
-  // console.log(imgSelected);
   this.modal.classList.add('gallery__modal--open');
 
   this.modalMainImg.src = imgSelected.src;
@@ -58,14 +54,11 @@ Gallery.prototype.openModal = function (imgSelected, imgs) {
     ...this.modalImgsContainer.querySelectorAll('.gallery__modal-img'),
   ];
 
-  console.log(this.modalImgs);
-
   this.modalImgs.forEach(
     function (img) {
       img.addEventListener(
         'click',
         function () {
-          console.log(img);
           this.modalMainImg.src = img.src;
           this.modalTitle.textContent = img.title;
 
@@ -93,85 +86,43 @@ Gallery.prototype.closeModal = function () {
 };
 
 Gallery.prototype.prevImg = function () {
-  // const imgs = [
-  //   ...this.modalImgsContainer.querySelectorAll('.gallery__modal-img'),
-  // ];
-  // console.log(imgs);
   const imgSelected = this.modalMainImg;
   let imgSelectedId = imgSelected.dataset['id'];
-  // console.log(imgSelected);
   imgSelectedId--;
 
-  if (imgSelectedId < 1) {
-    imgSelectedId = 1;
+  if (imgSelectedId < this.imgs[0].dataset['id']) {
+    imgSelectedId = this.imgs[this.imgs.length - 1].dataset['id'];
   }
 
   const prevImg = this.imgs.filter(function (img) {
     return img.dataset['id'] == imgSelectedId;
   });
 
-  // console.log(prevImg[0]);
-
-  // console.log(prevImg[0]);
-
-  // console.log(nextImg[0]);
   this.modalMainImg.src = prevImg[0].src;
   this.modalMainImg.dataset['id'] = imgSelectedId;
   this.modalTitle.textContent = prevImg[0].title;
 
-  // imgs.forEach(function (img) {
-  //   if (prevImg[0].dataset['id'] !== img.dataset['id']) {
-  //     img.classList.remove('gallery__modal-img--selected');
-  //   } else {
-  //     img.classList.add('gallery__modal-img--selected');
-  //   }
-  // });
-
   this.highlightImageSelected(prevImg[0]);
-
-  // console.log(this.modalMainImg.src);
-  // console.log(imgSelected.src);
-
-  // console.log(imgSelectedId);
 };
 
 Gallery.prototype.nextImg = function () {
-  // const imgs = [
-  // ...this.modalImgsContainer.querySelectorAll('.gallery__modal-img'),
-  // ];
-
   const imgSelected = this.modalMainImg;
   let imgSelectedId = imgSelected.dataset['id'];
-  // console.log(imgSelected);
   imgSelectedId++;
 
-  if (imgSelectedId > 5) {
-    imgSelectedId = 5;
+  if (imgSelectedId > this.imgs.length) {
+    imgSelectedId = this.imgs[0].dataset['id'];
   }
 
   const nextImg = this.imgs.filter(function (img) {
     return img.dataset['id'] == imgSelectedId;
   });
 
-  // console.log(nextImg[0]);
   this.modalMainImg.src = nextImg[0].src;
   this.modalMainImg.dataset['id'] = imgSelectedId;
   this.modalTitle.textContent = nextImg[0].title;
 
-  // imgs.forEach(function (img) {
-  //   if (nextImg[0].dataset['id'] !== img.dataset['id']) {
-  //     img.classList.remove('gallery__modal-img--selected');
-  //   } else {
-  //     img.classList.add('gallery__modal-img--selected');
-  //   }
-  // });
-
   this.highlightImageSelected(nextImg[0]);
-
-  // console.log(this.modalMainImg.src);
-  // console.log(imgSelected.src);
-
-  // console.log(imgSelectedId);
 };
 
 Gallery.prototype.highlightImageSelected = function (imgSelected) {
