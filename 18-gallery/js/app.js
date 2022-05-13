@@ -72,6 +72,10 @@ Gallery.prototype.closeModal = function () {
 };
 
 Gallery.prototype.prevImg = function () {
+  const imgs = [
+    ...this.modalImgsContainer.querySelectorAll('.gallery__modal-img'),
+  ];
+  // console.log(imgs);
   const imgSelected = this.modalMainImg;
   let imgSelectedId = imgSelected.dataset['id'];
   // console.log(imgSelected);
@@ -81,15 +85,26 @@ Gallery.prototype.prevImg = function () {
     imgSelectedId = 1;
   }
 
-  const prevImg = this.imgs.filter(function (img) {
+  const prevImg = imgs.filter(function (img) {
     return img.dataset['id'] == imgSelectedId;
   });
+
+  // console.log(prevImg[0]);
+
+  // console.log(prevImg[0]);
 
   // console.log(nextImg[0]);
   this.modalMainImg.src = prevImg[0].src;
   this.modalMainImg.dataset['id'] = imgSelectedId;
   this.modalTitle.textContent = prevImg[0].title;
 
+  imgs.forEach(function (img) {
+    if (prevImg[0].dataset['id'] !== img.dataset['id']) {
+      img.classList.remove('gallery__modal-img--selected');
+    } else {
+      img.classList.add('gallery__modal-img--selected');
+    }
+  });
   // console.log(this.modalMainImg.src);
   // console.log(imgSelected.src);
 
@@ -97,6 +112,10 @@ Gallery.prototype.prevImg = function () {
 };
 
 Gallery.prototype.nextImg = function () {
+  const imgs = [
+    ...this.modalImgsContainer.querySelectorAll('.gallery__modal-img'),
+  ];
+
   const imgSelected = this.modalMainImg;
   let imgSelectedId = imgSelected.dataset['id'];
   // console.log(imgSelected);
@@ -115,6 +134,13 @@ Gallery.prototype.nextImg = function () {
   this.modalMainImg.dataset['id'] = imgSelectedId;
   this.modalTitle.textContent = nextImg[0].title;
 
+  imgs.forEach(function (img) {
+    if (nextImg[0].dataset['id'] !== img.dataset['id']) {
+      img.classList.remove('gallery__modal-img--selected');
+    } else {
+      img.classList.add('gallery__modal-img--selected');
+    }
+  });
   // console.log(this.modalMainImg.src);
   // console.log(imgSelected.src);
 
