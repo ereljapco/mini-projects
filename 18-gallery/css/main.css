@@ -355,6 +355,12 @@ Gallery Modal
   transition: var(--transition);
 }
 
+.gallery__modal--container {
+  width: 90%;
+  max-width: 800px;
+  margin-inline: auto;
+}
+
 .gallery__modal--open {
   opacity: 1;
   z-index: 999;
