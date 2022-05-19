@@ -296,3 +296,10 @@ Numbers
   width: 90%;
   margin-inline: auto;
 }
+
+/* number */
+.number--container {
+  color: var(--clr-white);
+  background-color: var(--clr-tertiary-500);
+  border-radius: var(--border-radius);
+}
