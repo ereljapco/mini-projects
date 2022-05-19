@@ -299,7 +299,12 @@ Navbar
   padding: 0.25rem 0.5rem;
   border-color: transparent;
   border-radius: var(--border-radius);
+  transition: var(--transition);
   cursor: pointer;
+}
+
+.navbar__toggle-btn:hover {
+  background-color: var(--clr-primary-500);
 }
 
 /*===============
