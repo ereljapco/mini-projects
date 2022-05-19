@@ -284,3 +284,14 @@ ul {
   margin-inline: auto;
   margin-top: -1rem;
 }
+
+/*===============
+Navbar
+===============*/
+.navbar__blog-name {
+  font-size: 2rem;
+}
+
+/*===============
+Blog Posts
+===============*/
