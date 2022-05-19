@@ -308,6 +308,7 @@ Navbar
   height: 1.875rem;
   color: var(--clr-tertiary-500);
   font-size: 0.875rem;
+  font-weight: 500;
   background-color: var(--clr-secondary-500);
   padding: 0.25rem 0.5rem;
   border-color: transparent;
