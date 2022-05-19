@@ -298,16 +298,13 @@ Numbers
 }
 
 /* number */
-.number--container {
-  color: var(--clr-white);
-  background-color: var(--clr-tertiary-500);
-  padding: 3rem;
-  border-radius: var(--border-radius);
-}
-
 .number__projects,
 .number__hours,
 .number__clients {
+  color: var(--clr-white);
+  background-color: var(--clr-tertiary-500);
+  padding: 1.75rem 2.5rem 2rem 2.5rem;
+  border-radius: var(--border-radius);
   margin-bottom: 2rem;
 }
 
