@@ -1,45 +1,7 @@
 # Mini Projects
 
-These mini projects were created from [John Smilga](https://www.johnsmilga.com/)'s [HTML&CSS Course](https://www.udemy.com/course/in-depth-html-css-course-build-responsive-websites/?referralCode=40C89DF13A25C5EC2CCF) on Udemy.
+<span align="center">![Udemy] (https://img.shields.io/badge/Udemy-EC5252?style=for-the-badge&logo=Udemy&logoColor=white)</span>
 
-## Mini Projects
+<span align="center">![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white) ![Javascript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)</span>
 
-- Default Starter
-  - [x] HTML - April 12, 2022
-  - [x] CSS - April 12, 2022
-- Color Flipper
-  - [x] HTML - April 13, 2022
-  - [x] CSS - April 13, 2022
-  - [x] Javascript - April 20, 2022
-- Task Manager
-  - [x] HTML - April 13, 2022
-  - [x] CSS - April 13, 2022
-  - [ ] Javascript
-- Reviews
-  - [x] HTML - April 14, 2022
-  - [x] CSS - April 14, 2022
-  - [x] Javascript - April 20, 2022
-- Navbar
-  - [x] HTML - April 14, 2022
-  - [x] CSS - April 14, 2022
-  - [x] Javascript - April 20, 2022
-- Sidebar
-  - [x] HTML - April 15, 2022
-  - [x] CSS - April 15, 2022
-  - [ ] Javascript
-- Modal
-  - [x] HTML - April 15, 2022
-  - [x] CSS - April 15, 2022
-  - [ ] Javascript
-- Questions
-  - [x] HTML - April 15, 2022
-  - [x] CSS - April 15, 2022
-  - [ ] Javascript
-- Menu
-  - [x] HTML - April 15, 2022
-  - [x] CSS - April 15, 2022
-  - [ ] Javascript
-- Grocery Bud
-  - [x] HTML - April 15, 2022
-  - [x] CSS - April 15, 2022
-  - [ ] Javascript
+These mini projects were created from [John Smilga](https://www.johnsmilga.com/)'s [HTML&CSS Course](https://www.udemy.com/course/in-depth-html-css-course-build-responsive-websites/?referralCode=40C89DF13A25C5EC2CCF) and [Javascript Tutorial and Projects Course](https://www.udemy.com/course/javascript-tutorial-for-beginners-w/?referralCode=DD9FA6C0D976918D3E1C) on Udemy.
