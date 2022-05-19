@@ -304,3 +304,10 @@ Numbers
   padding: 3rem;
   border-radius: var(--border-radius);
 }
+
+.number__projects-text,
+.number__hours-text,
+.number__clients-text {
+  font-size: 1.4rem;
+  margin-block: 0;
+}
