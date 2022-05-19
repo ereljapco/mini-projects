@@ -297,7 +297,7 @@ Navbar
   justify-content: space-between;
   align-items: center;
   width: 90%;
-  max-width: var(--max-width);
+  max-width: 650px;
   margin-inline: auto;
 }
 
@@ -327,7 +327,7 @@ Blog Posts
 ===============*/
 .blog-posts--container {
   width: 90%;
-  max-width: var(--max-width);
+  max-width: 650px;
   margin-inline: auto;
 }
 
