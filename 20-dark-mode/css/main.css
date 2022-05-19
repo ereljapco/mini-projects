@@ -299,6 +299,7 @@ Navbar
   padding: 0.25rem 0.5rem;
   border-color: transparent;
   border-radius: var(--border-radius);
+  cursor: pointer;
 }
 
 /*===============
