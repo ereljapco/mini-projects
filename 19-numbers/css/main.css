@@ -288,6 +288,10 @@ ul {
 /*===============
 Numbers
 ===============*/
+.numbers {
+  margin-block: 5rem;
+}
+
 .numbers--container {
   width: 90%;
   margin-inline: auto;
