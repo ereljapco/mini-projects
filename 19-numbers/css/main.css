@@ -338,7 +338,7 @@ Numbers
 }
 
 .number__clients::after {
-  background-color: var(--clr-primary-500);
+  background-color: #e16162;
 }
 
 .number__projects-number,
