@@ -284,3 +284,11 @@ ul {
   margin-inline: auto;
   margin-top: -1rem;
 }
+
+/*===============
+Numbers
+===============*/
+.numbers--container {
+  width: 90%;
+  margin-inline: auto;
+}
