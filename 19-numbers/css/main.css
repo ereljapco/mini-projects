@@ -305,6 +305,12 @@ Numbers
   }
 }
 
+@media screen and (min-width: 992px) {
+  .numbers--container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
 /* number */
 .number__projects,
 .number__hours,
