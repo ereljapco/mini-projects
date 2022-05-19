@@ -305,6 +305,12 @@ Numbers
   border-radius: var(--border-radius);
 }
 
+.number__projects,
+.number__hours,
+.number__clients {
+  margin-bottom: 2rem;
+}
+
 .number__projects-number,
 .number__hours-number,
 .number__clients-number {
