@@ -289,6 +289,9 @@ ul {
 Navbar
 ===============*/
 .navbar--container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 90%;
   margin-inline: auto;
 }
@@ -298,6 +301,7 @@ Navbar
 }
 
 .navbar__toggle-btn {
+  height: 1.875rem;
   color: var(--clr-tertiary-500);
   font-size: 0.875rem;
   background-color: var(--clr-secondary-500);
