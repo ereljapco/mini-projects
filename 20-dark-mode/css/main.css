@@ -288,6 +288,10 @@ ul {
 /*===============
 Navbar
 ===============*/
+.navbar {
+  margin-block: 2rem 5rem;
+}
+
 .navbar--container {
   display: flex;
   justify-content: space-between;
