@@ -292,6 +292,12 @@ Navbar
   font-size: 2rem;
 }
 
+.navbar__toggle-btn {
+  background-color: var(--clr-secondary-500);
+  border-color: transparent;
+  border-radius: var(--border-radius);
+}
+
 /*===============
 Blog Posts
 ===============*/
