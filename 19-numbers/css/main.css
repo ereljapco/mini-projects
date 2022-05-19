@@ -307,6 +307,7 @@ Numbers
   border-radius: var(--border-radius);
   margin-bottom: 2rem;
   position: relative;
+  overflow: hidden;
 }
 
 .number__projects::after,
