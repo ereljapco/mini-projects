@@ -337,3 +337,8 @@ Blog Posts
   font-size: 1.75rem;
   margin-bottom: 0;
 }
+
+.blog-post__info {
+  color: var(--clr-tertiary-300);
+  font-style: italic;
+}
