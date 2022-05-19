@@ -288,6 +288,11 @@ ul {
 /*===============
 Navbar
 ===============*/
+.navbar--container {
+  width: 90%;
+  margin-inline: auto;
+}
+
 .navbar__blog-name {
   font-size: 2rem;
 }
