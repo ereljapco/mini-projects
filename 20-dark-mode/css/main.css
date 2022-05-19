@@ -325,6 +325,10 @@ Navbar
 /*===============
 Blog Posts
 ===============*/
+.blog-posts {
+  margin-bottom: 8rem;
+}
+
 .blog-posts--container {
   width: 90%;
   max-width: 650px;
