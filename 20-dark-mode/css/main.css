@@ -324,3 +324,7 @@ Navbar
 /*===============
 Blog Posts
 ===============*/
+.blog-posts--container {
+  width: 90%;
+  margin-inline: auto;
+}
