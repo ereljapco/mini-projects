@@ -297,6 +297,14 @@ Numbers
   margin-inline: auto;
 }
 
+@media screen and (min-width: 768px) {
+  .numbers--container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+  }
+}
+
 /* number */
 .number__projects,
 .number__hours,
