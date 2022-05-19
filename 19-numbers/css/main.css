@@ -301,5 +301,6 @@ Numbers
 .number--container {
   color: var(--clr-white);
   background-color: var(--clr-tertiary-500);
+  padding: 3rem;
   border-radius: var(--border-radius);
 }
