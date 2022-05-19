@@ -335,4 +335,5 @@ Blog Posts
 .blog-post__title {
   color: var(--clr-primary-500);
   font-size: 1.75rem;
+  margin-bottom: 0;
 }
