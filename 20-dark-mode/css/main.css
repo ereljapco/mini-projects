@@ -293,6 +293,8 @@ Navbar
 }
 
 .navbar__toggle-btn {
+  color: var(--clr-tertiary-500);
+  font-size: 0.875rem;
   background-color: var(--clr-secondary-500);
   border-color: transparent;
   border-radius: var(--border-radius);
