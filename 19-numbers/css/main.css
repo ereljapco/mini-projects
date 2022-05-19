@@ -305,6 +305,13 @@ Numbers
   border-radius: var(--border-radius);
 }
 
+.number__projects-number,
+.number__hours-number,
+.number__clients-number {
+  font-size: 3.5rem;
+  font-weight: 600;
+}
+
 .number__projects-text,
 .number__hours-text,
 .number__clients-text {
