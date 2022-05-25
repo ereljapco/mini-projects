@@ -306,6 +306,10 @@ Products
   margin-bottom: 1.5rem;
 }
 
+.products__company {
+  font-size: 0.85rem;
+}
+
 /* product */
 
 .product__image {
