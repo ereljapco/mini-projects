@@ -297,6 +297,7 @@ Products
 
 /* filter */
 .products__search-input {
+  background-color: var(--clr-grey-50);
   border-radius: 0.25rem;
   border-color: transparent;
 }
