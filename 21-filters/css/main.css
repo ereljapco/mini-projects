@@ -286,5 +286,8 @@ ul {
 }
 
 /*===============
-Global Variables
+Products
 ===============*/
+.product__image {
+  width: 100%;
+}
