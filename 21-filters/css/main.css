@@ -288,6 +288,11 @@ ul {
 /*===============
 Products
 ===============*/
+.products-container {
+  width: 90vw;
+  margin-inline: auto;
+}
+
 .product__image {
   width: 100%;
 }
