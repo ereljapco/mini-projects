@@ -295,6 +295,14 @@ Products
   margin-inline: auto;
 }
 
+/* filter */
+.products__search-input {
+  border-radius: 0.25rem;
+  border-color: transparent;
+}
+
+/* product */
+
 .product__image {
   width: 100%;
 }
