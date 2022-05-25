@@ -290,6 +290,7 @@ Products
 ===============*/
 .products-container {
   width: 90vw;
+  max-width: 1120px;
   padding-block: 4rem;
   margin-inline: auto;
 }
