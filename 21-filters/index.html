@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filter</title>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- styles -->
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <main class="main">
+      <!-- products section -->
+      <section class="products">
+        <!-- products filter -->
+        <div class="products__filter">
+          <!-- products filter form -->
+          <form class="products__form">
+            <input class="products__search-input" type="text" />
+          </form>
+          <!-- products filter company -->
+          <span class="products__company"> Company </span>
+          <!-- products filter category -->
+          <div class="products__category">
+            <button class="products__all-btn">All</button>
+            <button class="products__ikea-btn">Ikea</button>
+            <button class="products__marcos-btn">Marcos</button>
+            <button class="products__caressa-btn">Caressa</button>
+            <button class="products__liddy-btn">Liddy</button>
+          </div>
+        </div>
+        <!-- end of products filter -->
+        <!-- products main -->
+        <div class="products__main">
+          <!-- product -->
+          <article class="product">
+            <img
+              class="product__image"
+              src="https://dl.airtable.com/.attachments/14ac9e946e1a02eb9ce7d632c83f742f/4fd98e64/product-1.jpeg"
+              alt=""
+            />
+            <div class="product__info">
+              <h1 class="product__title">High-back Bench</h1>
+              <span class="product__price">9.99</span>
+            </div>
+          </article>
+          <!-- end of product -->
+        </div>
+        <!-- end of products main -->
+      </section>
+      <!-- end of products section -->
+    </main>
+  </body>
+</html>
