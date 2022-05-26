@@ -336,6 +336,10 @@ Products
   cursor: pointer;
 }
 
+.products__category-btn:hover {
+  color: var(--clr-grey-500);
+}
+
 /* product */
 
 .product__image {
