@@ -350,6 +350,9 @@ Products
 }
 
 .product__title {
+  color: var(--clr-grey-400);
+  font-size: 1.25rem;
+  font-weight: 400;
   text-align: center;
 }
 
