@@ -321,7 +321,9 @@ Products
   font-size: 0.85rem;
   text-align: left;
   background-color: transparent;
+  padding: 0.25rem;
   border-color: transparent;
+  cursor: pointer;
 }
 
 /* product */
