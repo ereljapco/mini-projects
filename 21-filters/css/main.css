@@ -315,6 +315,9 @@ Products
 }
 
 .products__category-btn {
+  color: var(--clr-grey-400);
+  font-size: 0.85rem;
+  text-align: left;
   background-color: transparent;
   border-color: transparent;
 }
