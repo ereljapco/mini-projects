@@ -348,3 +348,12 @@ Products
   object-fit: cover;
   border-radius: 0.25rem;
 }
+
+.product__title {
+  text-align: center;
+}
+
+.product__price {
+  display: block;
+  text-align: center;
+}
