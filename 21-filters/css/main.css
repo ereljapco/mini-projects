@@ -295,6 +295,14 @@ Products
   margin-inline: auto;
 }
 
+@media screen and (min-width: 768px) {
+  .products-container {
+    display: grid;
+    grid-template-columns: 11.5rem auto;
+    column-gap: 2rem;
+  }
+}
+
 /* filter */
 .products__search-input {
   width: 11.5rem;
