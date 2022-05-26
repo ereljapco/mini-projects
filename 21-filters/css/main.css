@@ -312,6 +312,8 @@ Products
 
 .products__category {
   display: grid;
+  row-gap: 0.5rem;
+  margin-bottom: 2rem;
 }
 
 .products__category-btn {
