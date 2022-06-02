@@ -71,6 +71,20 @@ Global Variables
     0 4px 6px -2px rgba(0, 0, 0, 0.05);
   --shadow-4: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
     0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  /* color assignment */
+  --clr-bg: var(--clr-white);
+  --clr-primary: var(--clr-primary-500);
+  --clr-secondary: var(--clr-secondary-500);
+  --clr-text: var(--clr-tertiary-500);
+  --clr-text-light: var(--clr-tertiary-300);
+}
+
+.dark-mode {
+  --clr-bg: var(--clr-tertiary-500);
+  --clr-text: var(--clr-white);
+  --clr-text-light: var(--clr-tertiary-200);
+  --clr-primary: var(--clr-primary-300);
+  --clr-secondary: var(--clr-secondary-300);
 }
 
 html {
@@ -78,11 +92,11 @@ html {
 } /*16px*/
 
 body {
-  background: var(--clr-white);
+  background: var(--clr-bg);
   font-family: var(--ff-primary);
   font-weight: 400;
   line-height: 1.75;
-  color: var(--clr-grey-500);
+  color: var(--clr-text);
 }
 
 p {
@@ -311,7 +325,7 @@ Navbar
   font-size: 0.875rem;
   font-weight: 500;
   letter-spacing: 0.05rem;
-  background-color: var(--clr-secondary-500);
+  background-color: var(--clr-secondary);
   padding: 0.25rem 0.5rem;
   border-color: transparent;
   border-radius: var(--border-radius);
@@ -320,7 +334,7 @@ Navbar
 }
 
 .navbar__toggle-btn:hover {
-  background-color: var(--clr-primary-500);
+  background-color: var(--clr-primary);
 }
 
 /*===============
@@ -342,12 +356,12 @@ Blog Posts
 }
 
 .blog-post__title {
-  color: var(--clr-primary-500);
+  color: var(--clr-primary);
   font-size: 1.75rem;
   margin-bottom: 0;
 }
 
 .blog-post__info {
-  color: var(--clr-tertiary-300);
+  color: var(--clr-text-light);
   font-style: italic;
 }
