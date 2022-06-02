@@ -292,13 +292,13 @@ Numbers
   margin-block: 5rem;
 }
 
-.numbers--container {
+.numbers-container {
   width: 90%;
   margin-inline: auto;
 }
 
 @media screen and (min-width: 768px) {
-  .numbers--container {
+  .numbers-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 2rem;
@@ -306,15 +306,12 @@ Numbers
 }
 
 @media screen and (min-width: 992px) {
-  .numbers--container {
+  .numbers-container {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
-/* number */
-.number__projects,
-.number__hours,
-.number__clients {
+.number {
   color: var(--clr-white);
   background-color: var(--clr-tertiary-500);
   padding: 1.75rem 2.5rem 2rem 2.5rem;
@@ -324,9 +321,7 @@ Numbers
   overflow: hidden;
 }
 
-.number__projects::after,
-.number__hours::after,
-.number__clients::after {
+.number::after {
   content: '';
   position: absolute;
   left: 0;
@@ -335,28 +330,24 @@ Numbers
   height: 0.25rem;
 }
 
-.number__projects::after {
+.number--primary-border::after {
   background-color: var(--clr-primary-500);
 }
 
-.number__hours::after {
+.number--secondary-border::after {
   background-color: var(--clr-secondary-500);
 }
 
-.number__clients::after {
+.number--red-border::after {
   background-color: #e16162;
 }
 
-.number__projects-number,
-.number__hours-number,
-.number__clients-number {
+.number__value {
   font-size: 3.5rem;
   font-weight: 600;
 }
 
-.number__projects-text,
-.number__hours-text,
-.number__clients-text {
+.number__text {
   font-size: 1.4rem;
   margin-block: 0;
 }
