@@ -344,7 +344,7 @@ Blog Posts
   margin-bottom: 8rem;
 }
 
-.blog-posts--container {
+.blog-posts-container {
   width: 90%;
   max-width: 600px;
   margin-inline: auto;
