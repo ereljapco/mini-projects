@@ -7,6 +7,8 @@ displayProductsFromSearch();
 
 displayProductsCategories();
 
+displayProductsFromCategory();
+
 displayProducts();
 
 function displayProductsFromSearch() {
@@ -36,11 +38,9 @@ function displayProductsCategories() {
       return `<button class="products__category-btn" data-category="${category}">${category}</button>`;
     })
     .join('');
-
-  displayProductsByCategory();
 }
 
-function displayProductsByCategory() {
+function displayProductsFromCategory() {
   const categoriesBtns = document.querySelectorAll('.products__category-btn');
 
   categoriesBtns.forEach((categoryBtn) => {
