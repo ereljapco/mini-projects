@@ -78,7 +78,7 @@ function displayProducts() {
               />
               <div class="product__info">
                 <h1 class="product__title">${title}</h1>
-                <span class="product__price">${price}</span>
+                <span class="product__price">$${price}</span>
               </div>
             </article>
             <!-- end of product -->`;
