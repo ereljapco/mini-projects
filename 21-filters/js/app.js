@@ -1,7 +1,18 @@
 const productsContainer = document.querySelector('.products__main');
+const productsSearchInput = document.querySelector('.products__search-input');
 let filteredProducts = [...products];
 
 displayProducts();
+
+productsSearchInput.addEventListener('keyup', () => {
+  const filterSearchValue = productsSearchInput.value;
+
+  filteredProducts = products.filter((product) => {
+    return product.title.toLowerCase().includes(filterSearchValue);
+  });
+
+  displayProducts();
+});
 
 function displayProducts() {
   productsContainer.innerHTML = filteredProducts
