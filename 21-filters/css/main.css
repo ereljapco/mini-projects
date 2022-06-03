@@ -342,6 +342,9 @@ Products
 }
 
 /* product */
+.product {
+  margin-bottom: 3rem;
+}
 
 .product__image {
   width: 100%;
