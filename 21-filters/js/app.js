@@ -2,11 +2,24 @@ const productsContainer = document.querySelector('.products__main');
 const productsSearchInput = document.querySelector('.products__search-input');
 const productsCategoryContainer = document.querySelector('.products__category');
 let filteredProducts = [...products];
+
 searchProducts();
 
 displayProductsCategories();
 
 displayProducts();
+
+function searchProducts() {
+  productsSearchInput.addEventListener('keyup', () => {
+    const filterSearchValue = productsSearchInput.value;
+
+    filteredProducts = products.filter((product) => {
+      return product.title.toLowerCase().includes(filterSearchValue);
+    });
+
+    displayProducts();
+  });
+}
 
 function displayProductsCategories() {
   const categories = [
@@ -20,20 +33,30 @@ function displayProductsCategories() {
 
   productsCategoryContainer.innerHTML = categories
     .map((category) => {
-      return `<button class="products__category-btn">${category}</button>`;
+      return `<button class="products__category-btn" data-category="${category}">${category}</button>`;
     })
     .join('');
+
+  displayProductsByCategory();
 }
 
-function searchProducts() {
-  productsSearchInput.addEventListener('keyup', () => {
-    const filterSearchValue = productsSearchInput.value;
+function displayProductsByCategory() {
+  const categoriesBtns = document.querySelectorAll('.products__category-btn');
 
-    filteredProducts = products.filter((product) => {
-      return product.title.toLowerCase().includes(filterSearchValue);
+  categoriesBtns.forEach((categoryBtn) => {
+    categoryBtn.addEventListener('click', () => {
+      const category = categoryBtn.dataset.category;
+
+      if (category === 'all') {
+        filteredProducts = [...products];
+      } else {
+        filteredProducts = products.filter((product) => {
+          return product.company === categoryBtn.dataset.category;
+        });
+      }
+
+      displayProducts();
     });
-
-    displayProducts();
   });
 }
 
