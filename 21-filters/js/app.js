@@ -1,6 +1,22 @@
 const productsContainer = document.querySelector('.products__main');
 const productsSearchInput = document.querySelector('.products__search-input');
+const productsCategoryContainer = document.querySelector('.products__category');
 let filteredProducts = [...products];
+
+const categories = [
+  'all',
+  ...new Set(
+    products.map((product) => {
+      return product.company;
+    })
+  ),
+];
+
+productsCategoryContainer.innerHTML = categories
+  .map((category) => {
+    return `<button class="products__category-btn">${category}</button>`;
+  })
+  .join('');
 
 displayProducts();
 
