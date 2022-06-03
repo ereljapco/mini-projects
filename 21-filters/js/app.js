@@ -2,6 +2,7 @@ const productsContainer = document.querySelector('.products__main');
 const productsSearchInput = document.querySelector('.products__search-input');
 const productsCategoryContainer = document.querySelector('.products__category');
 let filteredProducts = [...products];
+searchProducts();
 
 displayProductsCategories();
 
@@ -24,15 +25,17 @@ function displayProductsCategories() {
     .join('');
 }
 
-productsSearchInput.addEventListener('keyup', () => {
-  const filterSearchValue = productsSearchInput.value;
+function searchProducts() {
+  productsSearchInput.addEventListener('keyup', () => {
+    const filterSearchValue = productsSearchInput.value;
 
-  filteredProducts = products.filter((product) => {
-    return product.title.toLowerCase().includes(filterSearchValue);
+    filteredProducts = products.filter((product) => {
+      return product.title.toLowerCase().includes(filterSearchValue);
+    });
+
+    displayProducts();
   });
-
-  displayProducts();
-});
+}
 
 function displayProducts() {
   if (filteredProducts.length < 1) {
