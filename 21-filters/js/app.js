@@ -47,6 +47,8 @@ function displayProductsFromCategory() {
     categoryBtn.addEventListener('click', () => {
       const category = categoryBtn.dataset.category;
 
+      productsSearchInput.value = '';
+
       if (category === 'all') {
         filteredProducts = [...products];
       } else {
