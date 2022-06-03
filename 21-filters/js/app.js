@@ -15,6 +15,12 @@ productsSearchInput.addEventListener('keyup', () => {
 });
 
 function displayProducts() {
+  if (filteredProducts.length < 1) {
+    productsContainer.innerHTML = `<p class="products__no-match-message">Sorry, no products matched your search.</p>`;
+
+    return;
+  }
+
   productsContainer.innerHTML = filteredProducts
     .map(({ id, title, image, price }) => {
       return `<!-- product -->
