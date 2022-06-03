@@ -3,13 +3,13 @@ const productsSearchInput = document.querySelector('.products__search-input');
 const productsCategoryContainer = document.querySelector('.products__category');
 let filteredProducts = [...products];
 
-searchProducts();
+displayProductsFromSearch();
 
 displayProductsCategories();
 
 displayProducts();
 
-function searchProducts() {
+function displayProductsFromSearch() {
   productsSearchInput.addEventListener('keyup', () => {
     const filterSearchValue = productsSearchInput.value;
 
