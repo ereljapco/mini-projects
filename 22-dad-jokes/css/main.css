@@ -290,6 +290,10 @@ body {
   background-color: var(--clr-tertiary-600);
 }
 
+.dad-jokes {
+  margin-block: 5rem;
+}
+
 .dad-jokes__title {
   color: var(--clr-secondary-500);
   text-transform: uppercase;
