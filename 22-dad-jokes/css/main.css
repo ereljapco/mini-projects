@@ -297,6 +297,7 @@ body {
 }
 
 .dad-jokes__card {
+  position: relative;
   width: 90vw;
   max-width: 600px;
   background-color: var(--clr-tertiary-500);
@@ -306,6 +307,10 @@ body {
 }
 
 .dad-jokes__random-btn {
+  position: absolute;
+  top: -1.25rem;
+  left: 50%;
+  transform: translateX(-50%);
   color: var(--clr-tertiary-500);
   font-weight: 500;
   background-color: var(--clr-primary-500);
