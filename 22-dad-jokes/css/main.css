@@ -319,3 +319,8 @@ body {
 .dad-jokes__random-btn:hover {
   background-color: var(--clr-primary-300);
 }
+
+.dad-jokes__joke {
+  color: var(--clr-white);
+  text-align: center;
+}
