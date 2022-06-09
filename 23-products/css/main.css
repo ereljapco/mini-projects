@@ -60,6 +60,17 @@ Global Variables
   --border-radius: 0.25rem;
 }
 
+html {
+  font: 100%;
+}
+
+body {
+  color: var(--clr-white);
+  font-family: var(--ft-primary);
+  font-weight: 400;
+  background-color: var(--clr-tertiary-600);
+}
+
 /* =============
 Products
 ============= */
