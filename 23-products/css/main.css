@@ -117,5 +117,10 @@ Products
 }
 
 .product__title {
+  font-weight: 400;
   margin-bottom: 0.875rem;
+}
+
+.product__price {
+  font-weight: 600;
 }
