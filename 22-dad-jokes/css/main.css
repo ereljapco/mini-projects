@@ -289,3 +289,9 @@ ul {
 body {
   background-color: var(--clr-tertiary-600);
 }
+
+.dad-jokes__title {
+  color: var(--clr-secondary-500);
+  text-transform: uppercase;
+  text-align: center;
+}
