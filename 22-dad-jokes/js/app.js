@@ -9,16 +9,24 @@ dadJokesRandomBtn.addEventListener('click', () => {
 });
 
 async function fetchDadJoke() {
-  dadJokesContainer.textContent = `Coming up with a Dad joke...`;
+  try {
+    dadJokesContainer.textContent = `Coming up with a Dad joke...`;
 
-  const response = await fetch(dadJokesURL, {
-    headers: {
-      Accept: 'application/json',
-      'User-Agent':
-        'JS Mini-Projects (https://github.com/ereljapco/mini-projects)',
-    },
-  });
-  const data = await response.json();
+    const response = await fetch(dadJokesURL, {
+      headers: {
+        Accept: 'application/json',
+        'User-Agent':
+          'JS Mini-Projects (https://github.com/ereljapco/mini-projects)',
+      },
+    });
+    const data = await response.json();
 
-  dadJokesContainer.innerHTML = data.joke;
+    if (!response.ok) {
+      console.log('Ooops. There was an error.');
+    }
+
+    dadJokesContainer.textContent = data.joke;
+  } catch (error) {
+    dadJokesContainer.textContent = `Ooops. There was an error.`;
+  }
 }
