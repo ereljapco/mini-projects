@@ -77,11 +77,13 @@ Products
 .products {
   width: 90%;
   max-width: 1120px;
+  margin-block: 3rem;
   margin-inline: auto;
 }
 
 .products__title-container {
   text-align: center;
+  margin-bottom: 2rem;
 }
 
 .products__title {
