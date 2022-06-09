@@ -99,6 +99,14 @@ Products
   background-color: var(--clr-primary-500);
 }
 
+@media screen and (min-width: 768px) {
+  .products-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+    row-gap: 2.5rem;
+  }
+}
 /* product */
 .product {
   margin-bottom: 2.5rem;
@@ -123,4 +131,18 @@ Products
 
 .product__price {
   font-weight: 600;
+}
+
+@media screen and (min-width: 768px) {
+  .product {
+    margin-bottom: 0;
+  }
+
+  .product__img {
+    height: 10rem;
+  }
+
+  .product__info {
+    font-size: 0.875rem;
+  }
 }
