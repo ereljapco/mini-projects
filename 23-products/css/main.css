@@ -74,6 +74,12 @@ body {
 /* =============
 Products
 ============= */
+.products {
+  width: 90%;
+  max-width: 1120px;
+  margin-inline: auto;
+}
+
 /* products */
 .product__img {
   width: 100%;
