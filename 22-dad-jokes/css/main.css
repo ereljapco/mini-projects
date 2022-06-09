@@ -301,7 +301,8 @@ body {
   width: 90vw;
   max-width: 600px;
   background-color: var(--clr-tertiary-500);
-  padding: 1.25rem;
+  padding-block: 3rem;
+  padding-inline: 1.25rem;
   border-radius: 0.25rem;
   margin-inline: auto;
 }
