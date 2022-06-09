@@ -56,4 +56,15 @@ Global Variables
   /* other colors */
   --clr-white: #fffffe;
   --clr-black: #222;
+  /* other */
+  --border-radius: 0.25rem;
+}
+
+/* =============
+Products
+============= */
+/* products */
+.product__img {
+  width: 100%;
+  border-radius: var(--border-radius);
 }
