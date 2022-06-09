@@ -284,3 +284,8 @@ ul {
   margin-inline: auto;
   margin-top: -1rem;
 }
+
+/* s-dad-jokes */
+body {
+  background-color: var(--clr-tertiary-600);
+}
