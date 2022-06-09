@@ -80,6 +80,23 @@ Products
   margin-inline: auto;
 }
 
+.products__title-container {
+  text-align: center;
+}
+
+.products__title {
+  color: var(--clr-secondary-500);
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.products__title-underline {
+  display: inline-block;
+  width: 7.5rem;
+  height: 0.25rem;
+  background-color: var(--clr-primary-500);
+}
+
 /* products */
 .product__img {
   width: 100%;
