@@ -102,5 +102,7 @@ Products
 /* products */
 .product__img {
   width: 100%;
+  height: 15rem;
+  object-fit: cover;
   border-radius: var(--border-radius);
 }
