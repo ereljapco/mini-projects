@@ -296,6 +296,15 @@ body {
   text-align: center;
 }
 
+.dad-jokes__card {
+  width: 90vw;
+  max-width: 600px;
+  background-color: var(--clr-tertiary-500);
+  padding: 1.25rem;
+  border-radius: 0.25rem;
+  margin-inline: auto;
+}
+
 .dad-jokes__random-btn {
   color: var(--clr-tertiary-500);
   font-weight: 500;
