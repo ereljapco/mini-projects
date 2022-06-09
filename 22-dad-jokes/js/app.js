@@ -18,9 +18,7 @@ async function fetchDadJoke(url) {
 
   const data = await response.json();
 
-  const dadJokesContainer = document.querySelector(
-    '.dad-jokes__joke-container'
-  );
+  const dadJokesContainer = document.querySelector('.dad-jokes__joke');
 
   dadJokesContainer.innerHTML = data.joke;
 }
