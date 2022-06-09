@@ -1,24 +1,24 @@
 const dadJokesURL = 'https://icanhazdadjoke.com/';
 const dadJokesRandomBtn = document.querySelector('.dad-jokes__random-btn');
+const dadJokesContainer = document.querySelector('.dad-jokes__joke');
 
-fetchDadJoke(dadJokesURL);
+fetchDadJoke();
 
 dadJokesRandomBtn.addEventListener('click', () => {
-  fetchDadJoke(dadJokesURL);
+  fetchDadJoke();
 });
 
-async function fetchDadJoke(url) {
-  const response = await fetch(url, {
+async function fetchDadJoke() {
+  dadJokesContainer.textContent = `Coming up with a Dad joke...`;
+
+  const response = await fetch(dadJokesURL, {
     headers: {
       Accept: 'application/json',
       'User-Agent':
         'JS Mini-Projects (https://github.com/ereljapco/mini-projects)',
     },
   });
-
   const data = await response.json();
-
-  const dadJokesContainer = document.querySelector('.dad-jokes__joke');
 
   dadJokesContainer.innerHTML = data.joke;
 }
