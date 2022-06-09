@@ -313,6 +313,7 @@ body {
 }
 
 .dad-jokes__random-btn {
+  min-width: 12rem;
   position: absolute;
   top: -1.25rem;
   left: 50%;
