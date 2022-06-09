@@ -295,3 +295,18 @@ body {
   text-transform: uppercase;
   text-align: center;
 }
+
+.dad-jokes__random-btn {
+  color: var(--clr-tertiary-500);
+  font-weight: 500;
+  background-color: var(--clr-primary-500);
+  padding: 0.5rem 0.75rem;
+  border-color: transparent;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+}
+
+.dad-jokes__random-btn:hover {
+  background-color: var(--clr-primary-300);
+}
