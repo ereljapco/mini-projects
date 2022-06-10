@@ -231,6 +231,7 @@ Single Product
 }
 
 .single-product__title {
+  color: var(--clr-secondary-500);
   font-size: 2rem;
   font-weight: 400;
   text-transform: capitalize;
@@ -244,6 +245,7 @@ Single Product
 }
 
 .single-product__price {
+  font-size: 1.15rem;
   margin-bottom: 0.5rem;
 }
 
