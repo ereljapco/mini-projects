@@ -246,3 +246,17 @@ Single Product
   border-radius: 50%;
   margin-right: 0.25rem;
 }
+
+.single-product__cart-btn {
+  font-size: 0.875rem;
+  background-color: var(--clr-primary-500);
+  padding: 0.5rem 1rem;
+  border-color: transparent;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+}
+
+.single-product__cart-btn:hover {
+  background-color: var(--clr-primary-300);
+}
