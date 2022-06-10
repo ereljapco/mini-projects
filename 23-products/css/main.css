@@ -227,3 +227,9 @@ Single Product
 .single-product__img {
   width: 100%;
 }
+
+.single-product__title {
+  font-size: 2rem;
+  font-weight: 400;
+  text-transform: capitalize;
+}
