@@ -233,3 +233,8 @@ Single Product
   font-weight: 400;
   text-transform: capitalize;
 }
+
+.single-product__company {
+  color: var(--clr-tertiary-100);
+  font-size: 1.25rem;
+}
