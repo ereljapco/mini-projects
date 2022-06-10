@@ -4,6 +4,8 @@ const productsURL = 'https://course-api.com/javascript-store-products';
 displayProducts();
 
 async function displayProducts() {
+  productsContainer.innerHTML = `<div class="loading"></div>`;
+
   const productsList = await fetchProducts();
 
   const products = productsList
