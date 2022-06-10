@@ -217,6 +217,13 @@ Single Product
   background-color: var(--clr-secondary-400);
 }
 
+.single-product {
+  width: 90vw;
+  max-width: 1120px;
+  margin-inline: auto;
+  margin-bottom: 5rem;
+}
+
 .single-product__img {
   width: 100%;
 }
