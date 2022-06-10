@@ -195,3 +195,10 @@ Products
     font-size: 0.875rem;
   }
 }
+
+/* =============
+Single Product
+============= */
+.single-product__img {
+  width: 100%;
+}
