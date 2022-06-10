@@ -199,6 +199,24 @@ Products
 /* =============
 Single Product
 ============= */
+.home-link {
+  display: block;
+  width: 10rem;
+  color: var(--clr-tertiary-500);
+  text-decoration: none;
+  text-align: center;
+  background-color: var(--clr-secondary-500);
+  padding: 0.75rem 1rem;
+  border-radius: var(--border-radius);
+  margin-block: 2rem 5rem;
+  margin-inline: auto;
+  transition: all 0.25s ease-in-out;
+}
+
+.home-link:hover {
+  background-color: var(--clr-secondary-400);
+}
+
 .single-product__img {
   width: 100%;
 }
