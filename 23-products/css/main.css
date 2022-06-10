@@ -262,6 +262,7 @@ Single Product
 .single-product__company {
   color: var(--clr-tertiary-100);
   font-size: 1.25rem;
+  text-transform: capitalize;
   margin-bottom: 0.5rem;
 }
 
