@@ -234,11 +234,21 @@ Single Product
   font-size: 2rem;
   font-weight: 400;
   text-transform: capitalize;
+  margin-bottom: 0.5rem;
 }
 
 .single-product__company {
   color: var(--clr-tertiary-100);
   font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.single-product__price {
+  margin-bottom: 0.5rem;
+}
+
+.single-product__colors {
+  margin-bottom: 0.5rem;
 }
 
 .single-product__color {
@@ -247,6 +257,10 @@ Single Product
   height: 1.15rem;
   border-radius: 50%;
   margin-right: 0.25rem;
+}
+
+.single-product__text {
+  margin-bottom: 1.5rem;
 }
 
 .single-product__cart-btn {
