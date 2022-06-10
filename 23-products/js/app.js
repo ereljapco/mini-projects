@@ -18,7 +18,7 @@ async function displayProducts() {
       return `<article class="product">
             <a
               class="product__link"
-              href="https://course-api.com/javascript-store-single-product?id=${id}"
+              href="./product.html?id=${id}"
             >
               <img
                 class="product__img"
