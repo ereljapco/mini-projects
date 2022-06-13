@@ -1,0 +1,21 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* =============
+Global Variables
+============= */
+:root {
+  --ft-primary: 'Poppins', sans-serif;
+  --clr-base-500: hsl(249, 22%, 12%);
+  --clr-surface-500: hsl(247, 23%, 15%);
+  --clr-overlay-500: hsl(248, 25%, 18%);
+  --clr-muted-500: hsl(249, 12%, 47%);
+  --clr-subtle-500: hsl(248, 15%, 61%);
+  --clr-primary-500: hsl(197, 49%, 38%);
+  --clr-text-500: hsl(245, 50%, 91%);
+}
