@@ -19,3 +19,11 @@ Global Variables
   --clr-primary-500: hsl(197, 49%, 38%);
   --clr-text-500: hsl(245, 50%, 91%);
 }
+
+/* =============
+Random User
+============= */
+
+.random-user__img {
+  width: 100%;
+}
