@@ -27,3 +27,8 @@ Random User
 .random-user__img {
   width: 100%;
 }
+
+.random-user__info-btns {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
