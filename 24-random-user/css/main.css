@@ -11,20 +11,20 @@ Global Variables
 ============= */
 :root {
   --ft-primary: 'Poppins', sans-serif;
-  --clr-base-500: hsl(249, 22%, 12%);
-  --clr-surface-500: hsl(247, 23%, 15%);
-  --clr-overlay-500: hsl(248, 25%, 18%);
-  --clr-muted-500: hsl(249, 12%, 47%);
-  --clr-subtle-500: hsl(248, 15%, 61%);
-  --clr-primary-500: hsl(197, 49%, 38%);
-  --clr-text-500: hsl(245, 50%, 91%);
+  --clr-primary-200: hsl(245, 50%, 91%);
+  --clr-primary-400: hsl(248, 15%, 61%);
+  --clr-primary-500: hsl(249, 12%, 47%);
+  --clr-primary-700: hsl(248, 25%, 18%);
+  --clr-primary-800: hsl(247, 23%, 15%);
+  --clr-primary-900: hsl(249, 22%, 12%);
+  --clr-secondary-500: hsl(197, 49%, 38%);
 }
 
 .main {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--clr-subtle-500);
+  background-color: var(--clr-primary-400);
   height: 100vh;
 }
 
@@ -33,8 +33,7 @@ Global Variables
   content: '';
   width: 100%;
   height: 50%;
-  background-color: var(--clr-base-500);
-  z-index: -1;
+  background-color: var(--clr-primary-900);
 }
 
 /* =============
@@ -44,7 +43,16 @@ Random User
 .random-user {
   width: 90vw;
   height: 25rem;
-  background-color: var(--clr-text-500);
+  background-color: var(--clr-primary-200);
+  z-index: 1;
+}
+
+.random-user__img-container {
+  width: 9rem;
+  height: 9rem;
+  outline: 0.5rem solid var(--clr-text-500);
+  border-radius: 50%;
+  overflow: hidden;
 }
 
 .random-user__img {
