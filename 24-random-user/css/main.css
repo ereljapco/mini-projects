@@ -44,8 +44,8 @@ Random User
 
 .random-user {
   width: 90vw;
-  height: 25rem;
   background-color: var(--clr-primary-200);
+  border-radius: 0.5rem;
   z-index: 1;
 }
 
