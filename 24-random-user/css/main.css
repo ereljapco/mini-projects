@@ -99,6 +99,16 @@ Random User
   margin-bottom: 1.5rem;
 }
 
+.random-user__info-btn {
+  width: 100%;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.random-user__info-btn svg {
+  height: 1.5rem;
+}
+
 .random-user__random-btn {
   margin-bottom: 1.5rem;
 }
