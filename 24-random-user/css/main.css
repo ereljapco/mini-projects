@@ -61,7 +61,7 @@ Random User
   border-bottom: 1px solid var(--clr-primary-500);
 }
 
-.random-user__img-container {
+.random-user__img {
   position: absolute;
   top: 20%;
   left: 50%;
@@ -73,10 +73,6 @@ Random User
   border-radius: 50%;
   box-shadow: 0 0 3rem 0.75rem var(--clr-primary-400);
   overflow: hidden;
-}
-
-.random-user__img {
-  width: 100%;
 }
 
 .random-user__info-btns {
