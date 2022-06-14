@@ -51,16 +51,23 @@ Random User
 }
 
 .random-user__header {
+  position: relative;
   height: 8rem;
   background-color: var(--clr-primary-400);
   border-bottom: 1px solid var(--clr-primary-500);
 }
 
 .random-user__img-container {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
   width: 9rem;
   height: 9rem;
-  outline: 0.5rem solid var(--clr-text-500);
+  border: 0.35rem solid var(--clr-primary-200);
+  outline: 1px solid var(--clr-primary-500);
   border-radius: 50%;
+  box-shadow: 0 0 3rem 0.75rem var(--clr-primary-400);
   overflow: hidden;
 }
 
