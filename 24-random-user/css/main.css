@@ -20,6 +20,20 @@ Global Variables
   --clr-text-500: hsl(245, 50%, 91%);
 }
 
+.main {
+  background-color: var(--clr-subtle-500);
+  height: 100vh;
+}
+
+.main::before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 50%;
+  background-color: var(--clr-base-500);
+  z-index: -1;
+}
+
 /* =============
 Random User
 ============= */
