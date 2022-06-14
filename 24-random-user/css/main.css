@@ -21,6 +21,9 @@ Global Variables
 }
 
 .main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: var(--clr-subtle-500);
   height: 100vh;
 }
@@ -37,6 +40,12 @@ Global Variables
 /* =============
 Random User
 ============= */
+
+.random-user {
+  width: 90vw;
+  height: 25rem;
+  background-color: var(--clr-text-500);
+}
 
 .random-user__img {
   width: 100%;
