@@ -81,6 +81,17 @@ Random User
   margin-bottom: 1.5rem;
 }
 
+.random-user__title {
+  color: var(--clr-primary-500);
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.random-user__value {
+  color: var(--clr-primary-800);
+  font-size: 1.4rem;
+}
+
 .random-user__info-btns {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
