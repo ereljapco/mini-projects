@@ -48,6 +48,7 @@ Random User
 
 .random-user {
   width: 90vw;
+  text-align: center;
   background-color: var(--clr-primary-200);
   border-radius: 0.5rem;
   z-index: 1;
@@ -75,8 +76,7 @@ Random User
   overflow: hidden;
 }
 .random-user__info {
-  text-align: center;
-  padding-inline: 1.5rem;
+  padding-inline: 1.5srem;
 }
 
 .random-user__info-btns {
