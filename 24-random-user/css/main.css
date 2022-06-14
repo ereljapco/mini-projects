@@ -74,6 +74,10 @@ Random User
   box-shadow: 0 0 3rem 0.75rem var(--clr-primary-400);
   overflow: hidden;
 }
+.random-user__info {
+  text-align: center;
+  padding-inline: 1.5rem;
+}
 
 .random-user__info-btns {
   display: grid;
