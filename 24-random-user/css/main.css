@@ -51,6 +51,7 @@ Random User
   text-align: center;
   background-color: var(--clr-primary-200);
   border-radius: 0.5rem;
+  box-shadow: 0 0 1rem 0.5rem hsla(249, 22%, 12%, 0.25);
   z-index: 1;
   overflow: hidden;
 }
