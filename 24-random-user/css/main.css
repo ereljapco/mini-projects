@@ -128,4 +128,9 @@ Random User
   border-radius: 0.5rem;
   margin-bottom: 1.5rem;
   cursor: pointer;
+  transition: all 0.35s ease-in-out;
+}
+
+.random-user__random-btn:hover {
+  background-color: var(--clr-primary-500);
 }
