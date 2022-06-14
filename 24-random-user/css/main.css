@@ -60,6 +60,7 @@ Random User
   height: 8rem;
   background-color: var(--clr-primary-400);
   border-bottom: 1px solid var(--clr-primary-500);
+  margin-bottom: 5rem;
 }
 
 .random-user__img {
@@ -75,11 +76,18 @@ Random User
   box-shadow: 0 0 3rem 0.75rem var(--clr-primary-400);
   overflow: hidden;
 }
+
 .random-user__info {
-  padding-inline: 1.5srem;
+  margin-bottom: 1.5rem;
 }
 
 .random-user__info-btns {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
+  padding-inline: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.random-user__random-btn {
+  margin-bottom: 1.5rem;
 }
