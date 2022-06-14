@@ -103,9 +103,10 @@ Random User
   width: 100%;
   background-color: transparent;
   border-color: transparent;
+  cursor: pointer;
 }
 
-.random-user__info-btn svg {
+.random-user__btn-icon {
   height: 1.5rem;
 }
 
