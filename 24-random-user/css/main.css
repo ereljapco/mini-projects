@@ -108,6 +108,12 @@ Random User
 
 .random-user__btn-icon {
   height: 1.5rem;
+  fill: var(--clr-primary-500);
+  transition: all 0.25s ease-in-out;
+}
+
+.random-user__info-btn:hover .random-user__btn-icon {
+  fill: var(--clr-secondary-500);
 }
 
 .random-user__random-btn {
