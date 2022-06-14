@@ -24,10 +24,11 @@ async function fetchUser() {
   const password = login.password;
 
   const userImg = document.querySelector('.random-user__img');
-  const infoBtnsContainer = document.querySelector('.random-user__info-btns');
 
   userImg.src = img;
   userImg.alt = fullName;
+
+  const infoBtnsContainer = document.querySelector('.random-user__info-btns');
 
   infoBtnsContainer.innerHTML = `<button
             class="random-user__info-btn random-user__info-btn--active" data-title="name"
@@ -123,7 +124,6 @@ async function fetchUser() {
 
       infoTitle.textContent = `My ${btn.dataset['title']} is`;
       infoValue.textContent = btn.dataset['info'];
-      console.log(btn.dataset['info']);
     });
   });
 }
