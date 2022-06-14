@@ -116,6 +116,10 @@ Random User
   fill: var(--clr-secondary-500);
 }
 
+.random-user__info-btn--active .random-user__btn-icon {
+  fill: var(--clr-secondary-500);
+}
+
 .random-user__random-btn {
   color: var(--clr-primary-200);
   background-color: var(--clr-secondary-500);
