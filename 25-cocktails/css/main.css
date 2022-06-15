@@ -43,6 +43,11 @@ cocktails section
 }
 
 /* search form */
+.cocktails__search-form {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
 .cocktails__search-input {
   width: 90vw;
   color: var(--clr-primary-400);
