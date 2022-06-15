@@ -64,11 +64,12 @@ cocktails section
 .cocktails-container {
   display: grid;
   row-gap: 2.5rem;
-  width: 90vw;
+  width: 85vw;
   margin-inline: auto;
 }
 
 .cocktail {
+  position: relative;
   background-color: var(--clr-primary-700);
   padding: 0.5rem;
   border-radius: var(--border-02);
@@ -80,6 +81,9 @@ cocktails section
 }
 
 .cocktail__name {
+  position: absolute;
+  bottom: -1rem;
+  right: -1rem;
   color: var(--clr-secondary-500);
   font-size: 1.5rem;
   background-color: var(--clr-primary-800);
