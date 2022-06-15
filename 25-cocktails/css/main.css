@@ -29,5 +29,10 @@ body {
 }
 
 /* =============
-Cocktails Section
+cocktails section
 =============*/
+
+/* cocktail */
+.cocktail__img {
+  width: 100%;
+}
