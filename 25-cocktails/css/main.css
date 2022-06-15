@@ -25,4 +25,9 @@ Global Variables
 
 body {
   font-family: var(--ft-primary);
+  background-color: var(--clr-primary-900);
 }
+
+/* =============
+Cocktails Section
+=============*/
