@@ -89,6 +89,22 @@ cocktails section
   border-radius: var(--border-02);
 }
 
+.cocktail__img-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: hsl(248, 25%, 18%);
+  border-radius: var(--border-02);
+  opacity: 0.4;
+  transition: all 0.35s ease-in-out;
+}
+
+.cocktail:hover .cocktail__img-overlay {
+  opacity: 0;
+}
+
 .cocktail__name {
   position: absolute;
   bottom: -1rem;
