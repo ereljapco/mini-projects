@@ -73,10 +73,19 @@ cocktails section
   background-color: var(--clr-primary-700);
   padding: 0.5rem;
   border-radius: var(--border-02);
+  height: 16.75rem;
+}
+
+.cocktail__img-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
 }
 
 .cocktail__img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
   border-radius: var(--border-02);
 }
 
