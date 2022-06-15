@@ -56,8 +56,14 @@ cocktails section
   font-size: 0.875rem;
   background-color: var(--clr-primary-800);
   padding: 0.25rem 1rem;
-  border-color: transparent;
+  border: 0.15rem solid transparent;
   border-radius: 3rem;
+  outline: none;
+  transition: all 0.35s ease-in-out;
+}
+
+.cocktails__search-input:focus {
+  border: 0.15rem solid var(--clr-primary-400);
 }
 
 /* cocktail */
