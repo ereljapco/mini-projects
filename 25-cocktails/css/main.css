@@ -51,7 +51,8 @@ cocktails section
 }
 
 .cocktails__search-input {
-  width: 90vw;
+  width: 85vw;
+  max-width: 30rem;
   color: var(--clr-primary-400);
   font-size: 0.875rem;
   background-color: var(--clr-primary-800);
@@ -73,6 +74,7 @@ cocktails section
   column-gap: 2.5rem;
   row-gap: 2.5rem;
   width: 85vw;
+  max-width: 1150px;
   margin-inline: auto;
 }
 
