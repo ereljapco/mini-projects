@@ -59,6 +59,12 @@ cocktails section
 }
 
 /* cocktail */
+.cocktails-container {
+  display: grid;
+  width: 90vw;
+  margin-inline: auto;
+}
+
 .cocktail__img {
   width: 100%;
 }
