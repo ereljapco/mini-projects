@@ -32,6 +32,11 @@ body {
 /* =============
 cocktails section
 =============*/
+
+.cocktails {
+  margin-block: 5rem;
+}
+
 .cocktails__title {
   color: var(--clr-tertiary-500);
   text-align: center;
