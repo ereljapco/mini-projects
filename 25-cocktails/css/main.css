@@ -21,6 +21,7 @@ Global Variables
   --clr-primary-800: hsl(247, 23%, 15%);
   --clr-primary-900: hsl(249, 22%, 12%);
   --clr-secondary-500: hsl(267, 57%, 78%);
+  --clr-tertiary-500: hsl(35, 88%, 72%);
 }
 
 body {
@@ -31,6 +32,10 @@ body {
 /* =============
 cocktails section
 =============*/
+.cocktails__title {
+  color: var(--clr-tertiary-500);
+  text-align: center;
+}
 
 /* cocktail */
 .cocktail__img {
