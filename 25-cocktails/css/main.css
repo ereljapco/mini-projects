@@ -42,6 +42,17 @@ cocktails section
   text-align: center;
 }
 
+/* search form */
+.cocktails__search-input {
+  width: 90vw;
+  color: var(--clr-primary-400);
+  font-size: 0.875rem;
+  background-color: var(--clr-primary-800);
+  padding: 0.25rem 1rem;
+  border-color: transparent;
+  border-radius: 3rem;
+}
+
 /* cocktail */
 .cocktail__img {
   width: 100%;
