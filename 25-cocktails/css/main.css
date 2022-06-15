@@ -63,6 +63,7 @@ cocktails section
 /* cocktail */
 .cocktails-container {
   display: grid;
+  row-gap: 2.5rem;
   width: 90vw;
   margin-inline: auto;
 }
