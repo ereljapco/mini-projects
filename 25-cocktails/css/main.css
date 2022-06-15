@@ -86,7 +86,8 @@ cocktails section
   right: -1rem;
   color: var(--clr-secondary-500);
   font-size: 1.5rem;
+  letter-spacing: 0.1rem;
   background-color: var(--clr-primary-800);
   padding: 0.75rem 1rem;
-  border-radius: 0.25rem;
+  border-radius: var(--border-02);
 }
