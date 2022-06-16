@@ -1,3 +1,5 @@
+import fecthCocktails from './modules/fetch-cocktails.js';
+
 let cocktailsURL = 'https://www.thecocktaildb.com/api/json/v1/1/search.php?s=a';
 
 const cocktailsContainer = document.querySelector('.cocktails-container');
@@ -18,7 +20,7 @@ cocktailsSearchInput.addEventListener('keyup', () => {
 });
 
 async function displayCocktails() {
-  const cocktailsList = await fecthCocktails();
+  const cocktailsList = await fecthCocktails(cocktailsURL);
 
   try {
     const displayCocktails = cocktailsList
@@ -51,12 +53,4 @@ async function displayCocktails() {
   } catch (error) {
     cocktailsContainer.innerHTML = `<p class="cocktails__error-message">Sorry, your search does not match any cocktails.</p>`;
   }
-}
-
-async function fecthCocktails() {
-  const response = await fetch(cocktailsURL);
-  const data = await response.json();
-  const cocktails = data.drinks;
-
-  return cocktails;
 }
