@@ -145,6 +145,12 @@ cocktails section
 single-cocktail
 =============*/
 
+.single-cocktail {
+  width: 85vw;
+  margin-block: 5rem;
+  margin-inline: auto;
+}
+
 .go-back-link {
   display: inline-block;
   color: var(--clr-primary-200);
