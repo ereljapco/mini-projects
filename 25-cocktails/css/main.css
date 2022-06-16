@@ -184,3 +184,12 @@ single-cocktail
   border-radius: var(--border-03);
   opacity: 0.75;
 }
+
+.single-cocktail__name {
+  color: var(--clr-secondary-500);
+}
+
+.single-cocktail__instructions {
+  color: var(--clr-primary-400);
+  margin-bottom: 1.5rem;
+}
