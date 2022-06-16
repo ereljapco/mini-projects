@@ -23,14 +23,13 @@ async function displayCocktails() {
   try {
     const displayCocktails = cocktailsList
       .map(({ idDrink: id, strDrink: name, strDrinkThumb: img }) => {
-        return `<a href="./drinks.html">
-              <article class="cocktail">
+        return `<a href="./cocktail.html">
+              <article class="cocktail" data-id="${id}">
                 <div class="cocktail__img-container">
                   <img
                     class="cocktail__img"
                     src="${img}"
                     alt="${name}"
-                    data-id="${id}"
                   />
                   <div class="cocktail__img-overlay"></div>
                 </div>
@@ -41,6 +40,14 @@ async function displayCocktails() {
       .join('');
 
     cocktailsContainer.innerHTML = displayCocktails;
+
+    const cocktails = document.querySelectorAll('.cocktail');
+
+    cocktails.forEach((cocktail) => {
+      cocktail.addEventListener('click', (e) => {
+        localStorage.setItem('cocktail', e.currentTarget.dataset['id']);
+      });
+    });
   } catch (error) {
     cocktailsContainer.innerHTML = `<p class="cocktails__error-message">Sorry, your search does not match any cocktails.</p>`;
   }
