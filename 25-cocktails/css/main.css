@@ -67,6 +67,13 @@ cocktails section
   border: 0.15rem solid var(--clr-primary-400);
 }
 
+.cocktails__error-message {
+  color: var(--clr-primary-400);
+  font-style: italic;
+  text-align: center;
+  grid-column: 1 / -1;
+}
+
 /* cocktail */
 .cocktails-container {
   display: grid;
