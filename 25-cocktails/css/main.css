@@ -26,7 +26,9 @@ Global Variables
   --clr-highlight-med: hsl(249, 15%, 28%);
   --clr-highlight-high: hsla(248, 13%, 36%, 0.4);
   /* other */
+  --border-01: 0.25rem;
   --border-02: 0.5rem;
+  --border-03: 0.75rem;
 }
 
 body {
@@ -165,4 +167,20 @@ single-cocktail
 
 .go-back-link:hover {
   background-color: var(--clr-highlight-med);
+}
+
+/* container */
+
+.single-cocktail__img-container {
+  height: 25rem;
+  background-color: var(--clr-primary-800);
+  border-radius: var(--border-02);
+  border: var(--border-03) solid transparent;
+}
+
+.single-cocktail__img {
+  height: 100%;
+  object-fit: cover;
+  border-radius: var(--border-03);
+  opacity: 0.75;
 }
