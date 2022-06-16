@@ -50,6 +50,8 @@ async function displayCocktail() {
       })
       .join('');
 
+    document.title = `${name} | Your chosen cocktail`;
+
     cocktailContainer.innerHTML = `<div class="single-cocktail__img-container">
             <img
               class="single-cocktail__img"
