@@ -223,3 +223,45 @@ single-cocktail
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.loading {
+  grid-column: 1 / -1;
+  text-align: center;
+}
+
+.loading__icon {
+  fill: var(--clr-primary-400);
+  height: 3rem;
+  margin-bottom: 1rem;
+  transform: rotate(-5deg);
+  animation: shakeMartini 1s linear infinite;
+}
+
+.loading__message {
+  color: var(--clr-primary-400);
+  font-size: 1.5rem;
+  font-style: italic;
+  text-align: center;
+}
+
+@keyframes shakeMartini {
+  0% {
+    transform: rotate(-5deg);
+  }
+
+  25% {
+    transform: rotate(0);
+  }
+
+  50% {
+    transform: rotate(5deg);
+  }
+
+  75% {
+    transform: (0deg);
+  }
+
+  100% {
+    transform: rotate(-5deg);
+  }
+}
