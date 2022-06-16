@@ -149,6 +149,7 @@ single-cocktail
 
 .single-cocktail {
   width: 85vw;
+  max-width: 1150px;
   margin-block: 5rem;
   margin-inline: auto;
 }
