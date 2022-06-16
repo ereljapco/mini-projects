@@ -171,6 +171,14 @@ single-cocktail
 
 /* container */
 
+@media screen and (min-width: 768px) {
+  .single-cocktail-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+  }
+}
+
 .single-cocktail__img-container {
   height: 25rem;
   background-color: var(--clr-primary-800);
