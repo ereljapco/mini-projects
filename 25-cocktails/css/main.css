@@ -22,6 +22,9 @@ Global Variables
   --clr-primary-900: hsl(249, 22%, 12%);
   --clr-secondary-500: hsl(267, 57%, 78%);
   --clr-tertiary-500: hsl(35, 88%, 72%);
+  --clr-highlight-low: hsl(244, 18%, 15%);
+  --clr-highlight-med: hsl(249, 15%, 28%);
+  --clr-highlight-high: hsla(248, 13%, 36%, 0.4);
   /* other */
   --border-02: 0.5rem;
 }
@@ -144,10 +147,16 @@ single-cocktail
 
 .go-back-link {
   display: inline-block;
-  color: var(--clr-primary-400);
+  color: var(--clr-primary-200);
+  font-weight: 500;
   text-decoration: none;
-  background-color: var(--clr-primary-700);
-  padding: 0.5rem 1rem;
+  background-color: var(--clr-highlight-high);
+  padding: 0.75rem 1rem;
   border-radius: 10rem;
   margin-bottom: 2rem;
+  transition: all 0.25s ease-in-out;
+}
+
+.go-back-link:hover {
+  background-color: var(--clr-highlight-med);
 }
