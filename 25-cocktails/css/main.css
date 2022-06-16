@@ -31,6 +31,10 @@ body {
   background-color: var(--clr-primary-900);
 }
 
+img {
+  width: 100%;
+}
+
 /* =============
 cocktails section
 =============*/
@@ -132,4 +136,18 @@ cocktails section
   background-color: var(--clr-primary-800);
   padding: 0.75rem 1rem;
   border-radius: var(--border-02);
+}
+
+/* =============
+single-cocktail
+=============*/
+
+.go-back-link {
+  display: inline-block;
+  color: var(--clr-primary-400);
+  text-decoration: none;
+  background-color: var(--clr-primary-700);
+  padding: 0.5rem 1rem;
+  border-radius: 10rem;
+  margin-bottom: 2rem;
 }
