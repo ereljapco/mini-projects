@@ -7,7 +7,7 @@
 }
 
 /* =============
-Global Variables
+global variables
 =============*/
 
 :root {
@@ -41,6 +41,59 @@ img {
 }
 
 /* =============
+global classes
+=============*/
+
+.error-message {
+  color: var(--clr-primary-400);
+  font-style: italic;
+  text-align: center;
+  grid-column: 1 / -1;
+}
+
+.loading {
+  grid-column: 1 / -1;
+  text-align: center;
+}
+
+.loading__icon {
+  fill: var(--clr-primary-400);
+  height: 3rem;
+  margin-bottom: 1rem;
+  transform: rotate(-5deg);
+  animation: shakeMartini 1s linear infinite;
+}
+
+.loading__message {
+  color: var(--clr-primary-400);
+  font-size: 1.5rem;
+  font-style: italic;
+  text-align: center;
+}
+
+@keyframes shakeMartini {
+  0% {
+    transform: rotate(-5deg);
+  }
+
+  25% {
+    transform: rotate(0);
+  }
+
+  50% {
+    transform: rotate(5deg);
+  }
+
+  75% {
+    transform: (0deg);
+  }
+
+  100% {
+    transform: rotate(-5deg);
+  }
+}
+
+/* =============
 cocktails section
 =============*/
 
@@ -54,6 +107,7 @@ cocktails section
 }
 
 /* search form */
+
 .cocktails__search-form {
   text-align: center;
   margin-bottom: 5rem;
@@ -74,13 +128,6 @@ cocktails section
 
 .cocktails__search-input:focus {
   border: 0.15rem solid var(--clr-primary-400);
-}
-
-.cocktails__error-message {
-  color: var(--clr-primary-400);
-  font-style: italic;
-  text-align: center;
-  grid-column: 1 / -1;
 }
 
 /* cocktail */
@@ -109,7 +156,6 @@ cocktails section
 }
 
 .cocktail__img {
-  width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: var(--border-02);
@@ -223,46 +269,4 @@ single-cocktail
   );
   background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-
-.loading {
-  grid-column: 1 / -1;
-  text-align: center;
-}
-
-.loading__icon {
-  fill: var(--clr-primary-400);
-  height: 3rem;
-  margin-bottom: 1rem;
-  transform: rotate(-5deg);
-  animation: shakeMartini 1s linear infinite;
-}
-
-.loading__message {
-  color: var(--clr-primary-400);
-  font-size: 1.5rem;
-  font-style: italic;
-  text-align: center;
-}
-
-@keyframes shakeMartini {
-  0% {
-    transform: rotate(-5deg);
-  }
-
-  25% {
-    transform: rotate(0);
-  }
-
-  50% {
-    transform: rotate(5deg);
-  }
-
-  75% {
-    transform: (0deg);
-  }
-
-  100% {
-    transform: rotate(-5deg);
-  }
 }
