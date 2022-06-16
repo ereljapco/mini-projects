@@ -193,3 +193,20 @@ single-cocktail
   color: var(--clr-primary-400);
   margin-bottom: 1.5rem;
 }
+
+.single-cocktail__ingredients {
+  list-style-type: none;
+}
+
+.single-cocktail__ingredient::before {
+  font-family: 'FontAwesome';
+  content: '\f058'; /* circle with check*/
+  padding-right: 0.25rem;
+  background: linear-gradient(
+    to right,
+    var(--clr-secondary-500),
+    var(--clr-tertiary-500)
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
