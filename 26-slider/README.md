@@ -1,6 +1,6 @@
 # Slider
 
-This is a solution for John Smilga's [Slider Project](https://vannilla-js-basic-project-25-es6-slider.netlify.app/) which is part of his (Javascript Tutorial and Projects Course)[https://www.udemy.com/course/javascript-tutorial-for-beginners-w/?referralCode=DD9FA6C0D976918D3E1C] on Udemy.
+This is a solution for John Smilga's [Slider Project](https://vannilla-js-basic-project-25-es6-slider.netlify.app/) which is part of his [Javascript Tutorial and Projects Course](https://www.udemy.com/course/javascript-tutorial-for-beginners-w/?referralCode=DD9FA6C0D976918D3E1C) on Udemy.
 
 ![Javascript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black) ![Udemy](https://img.shields.io/badge/Udemy-a435f0?style=for-the-badge&logo=Udemy&logoColor=white)
 
