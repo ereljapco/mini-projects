@@ -121,5 +121,6 @@ reviews section
 
 .review__text {
   color: var(--clr-primary-200);
-  font-size: 0.875rem;
+  font-size: 1rem;
+  line-height: 1.5;
 }
