@@ -75,11 +75,17 @@ reviews section
 
 .slider__prev-btn,
 .slider__next-btn {
-  color: var(--clr-primary-800);
-  background-color: var(--clr-secondary-500);
+  color: var(--clr-primary-400);
+  background-color: var(--clr-highlight-med);
   padding: 0.25rem 0.5rem;
   border-radius: 100vmax;
   border-color: transparent;
+  cursor: pointer;
+}
+
+.slider__prev-btn:hover,
+.slider__next-btn:hover {
+  background-color: var(--clr-highlight-high);
 }
 
 /* review */
