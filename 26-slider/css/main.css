@@ -44,6 +44,12 @@ img {
 reviews section
 =============*/
 
+.reviews {
+  width: 85vw;
+  max-width: 48rem;
+  margin-inline: auto;
+}
+
 .reviews__title {
   color: var(--clr-primary-200);
   text-align: center;
