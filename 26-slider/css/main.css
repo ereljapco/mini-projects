@@ -102,6 +102,7 @@ reviews section
   border-radius: 50%;
   border: 0.25rem solid var(--clr-primary-200);
   outline: 0.1rem solid var(--clr-highlight-med);
+  margin-bottom: 1rem;
 }
 
 .review__name {
@@ -109,11 +110,13 @@ reviews section
   font-size: 0.875rem;
   font-weight: 400;
   text-transform: uppercase;
+  margin-bottom: 0.25rem;
 }
 
 .review__job {
   color: var(--clr-primary-400);
   font-size: 0.875rem;
+  margin-bottom: 1rem;
 }
 
 .review__text {
