@@ -39,3 +39,19 @@ body {
 img {
   width: 100%;
 }
+
+/* =============
+reviews section
+=============*/
+
+.reviews__title {
+  color: var(--clr-primary-200);
+  text-align: center;
+}
+
+.reviews__title::before {
+  content: '/';
+  color: var(--clr-tertiary-500);
+  font-size: 1.25rem;
+  padding-right: 0.5rem;
+}
