@@ -21,17 +21,17 @@ function displayReviews() {
       }
 
       return `<article class="review ${position}">
-      <img
-      class="review__img"
-      src="${img}"
-      alt="${name}"
-      />
-      <h2 class="review__name">${name}</h2>
-      <p class="review__job">${job}</p>
-      <p class="review__text">
-      ${text}
-      </p>
-      </article>`;
+                <img
+                class="review__img"
+                src="${img}"
+                alt="${name}"
+                />
+                <h2 class="review__name">${name}</h2>
+                <p class="review__job">${job}</p>
+                <p class="review__text">
+                ${text}
+                </p>
+              </article>`;
     })
     .join('');
 
