@@ -54,6 +54,7 @@ reviews section
 .reviews__title {
   color: var(--clr-primary-200);
   text-align: center;
+  margin-bottom: 4rem;
 }
 
 .reviews__title::before {
