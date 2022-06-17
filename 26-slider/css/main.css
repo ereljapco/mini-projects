@@ -83,6 +83,10 @@ reviews section
 
 /* review */
 
+.review {
+  text-align: center;
+}
+
 .review__img {
   width: 8rem;
   height: 8rem;
