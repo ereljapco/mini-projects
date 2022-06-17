@@ -66,7 +66,7 @@ reviewsNextBtn.addEventListener('click', () => {
 
 ### Continued development
 
-I will be doing FrontendMentor's (Coding Bootcamp Testimonials Sldier)[https://www.frontendmentor.io/challenges/coding-bootcamp-testimonials-slider-4FNyLA8JL] to practice what I learned here on this course and, of course, to practice HTML and CSS, as well.
+I will be doing FrontendMentor's [Coding Bootcamp Testimonials Sldier](https://www.frontendmentor.io/challenges/coding-bootcamp-testimonials-slider-4FNyLA8JL) to practice what I learned here on this course and, of course, to practice HTML and CSS, as well.
 
 ### Useful resources
 
