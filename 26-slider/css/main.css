@@ -45,7 +45,7 @@ reviews section
 =============*/
 
 .reviews {
-  width: 85vw;
+  width: 90vw;
   max-width: 48rem;
   margin-inline: auto;
 }
@@ -60,6 +60,11 @@ reviews section
   color: var(--clr-tertiary-500);
   font-size: 1.25rem;
   padding-right: 0.5rem;
+}
+
+.slider {
+  display: grid;
+  grid-template-columns: 2rem auto 2rem;
 }
 
 /* buttons */
