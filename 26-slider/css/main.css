@@ -71,6 +71,7 @@ reviews section
   grid-template-columns: 2rem auto 2rem;
   align-items: center;
   column-gap: 1rem;
+  row-gap: 2rem;
 }
 
 .slider__prev-btn,
@@ -86,6 +87,13 @@ reviews section
 .slider__prev-btn:hover,
 .slider__next-btn:hover {
   background-color: var(--clr-highlight-high);
+}
+
+.slider__quote-icon {
+  grid-column: 1 / -1;
+  color: var(--clr-secondary-500);
+  font-size: 3.5rem;
+  text-align: center;
 }
 
 /* review */
