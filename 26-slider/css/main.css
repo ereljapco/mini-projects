@@ -110,3 +110,13 @@ reviews section
   font-weight: 400;
   text-transform: uppercase;
 }
+
+.review__job {
+  color: var(--clr-primary-400);
+  font-size: 0.875rem;
+}
+
+.review__text {
+  color: var(--clr-primary-200);
+  font-size: 0.875rem;
+}
