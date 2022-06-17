@@ -98,8 +98,34 @@ reviews section
 
 /* review */
 
+.reviews-container {
+  position: relative;
+  height: 20rem;
+  display: flex;
+  overflow: hidden;
+}
+
 .review {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
   text-align: center;
+  opacity: 0;
+  transition: all 0.25s ease-in-out;
+}
+
+.review--active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.review--next {
+  transform: translateX(100%);
+}
+
+.review--last {
+  transform: translateX(-100%);
 }
 
 .review__img {
