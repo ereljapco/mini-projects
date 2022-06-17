@@ -47,6 +47,7 @@ reviews section
 .reviews {
   width: 90vw;
   max-width: 48rem;
+  margin-block: 6rem;
   margin-inline: auto;
 }
 
