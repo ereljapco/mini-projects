@@ -103,3 +103,10 @@ reviews section
   border: 0.25rem solid var(--clr-primary-200);
   outline: 0.1rem solid var(--clr-highlight-med);
 }
+
+.review__name {
+  color: var(--clr-secondary-500);
+  font-size: 0.875rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
