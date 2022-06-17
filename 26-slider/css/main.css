@@ -63,6 +63,8 @@ reviews section
   padding-right: 0.5rem;
 }
 
+/* slider */
+
 .slider {
   display: grid;
   grid-template-columns: 2rem auto 2rem;
@@ -70,7 +72,6 @@ reviews section
   column-gap: 1rem;
 }
 
-/* buttons */
 .slider__prev-btn,
 .slider__next-btn {
   color: var(--clr-primary-800);
@@ -78,4 +79,16 @@ reviews section
   padding: 0.25rem 0.5rem;
   border-radius: 100vmax;
   border-color: transparent;
+}
+
+/* review */
+
+.review__img {
+  width: 8rem;
+  height: 8rem;
+  object-fit: cover;
+  background-color: var(--clr-primary-200);
+  border-radius: 50%;
+  border: 0.25rem solid var(--clr-primary-200);
+  outline: 0.1rem solid var(--clr-highlight-med);
 }
