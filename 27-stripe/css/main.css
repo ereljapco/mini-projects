@@ -1,0 +1,41 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* =============
+custom properties
+=============*/
+
+:root {
+  /* fonts */
+  --ft-primary: 'Poppins', sans-serif;
+  /* colors */
+  --clr-primary-200: hsl(245, 50%, 91%);
+  --clr-primary-400: hsl(248, 15%, 61%);
+  --clr-primary-500: hsl(249, 12%, 47%);
+  --clr-primary-700: hsl(248, 25%, 18%);
+  --clr-primary-800: hsl(247, 23%, 15%);
+  --clr-primary-900: hsl(249, 22%, 12%);
+  --clr-secondary-500: hsl(267, 57%, 78%);
+  --clr-tertiary-500: hsl(35, 88%, 72%);
+  --clr-highlight-low: hsl(244, 18%, 15%);
+  --clr-highlight-med: hsl(249, 15%, 28%);
+  --clr-highlight-high: hsla(248, 13%, 36%, 0.4);
+  /* other */
+  --border-01: 0.25rem;
+  --border-02: 0.5rem;
+  --border-03: 0.75rem;
+}
+
+body {
+  font-family: var(--ft-primary);
+  background-color: var(--clr-primary-900);
+}
+
+img {
+  width: 100%;
+}
