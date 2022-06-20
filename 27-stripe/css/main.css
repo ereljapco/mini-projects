@@ -96,7 +96,7 @@ hero section
 }
 
 .hero__title {
-  color: var(--clr-tertiary-500);
+  color: var(--clr-primary-800);
   font-size: 2.75rem;
   letter-spacing: 0.1rem;
   line-height: 1.25;
