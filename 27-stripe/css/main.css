@@ -86,3 +86,7 @@ hero section
 .hero {
   background: url(../images/hero.svg);
 }
+
+.hero__title {
+  margin-block: 0;
+}
