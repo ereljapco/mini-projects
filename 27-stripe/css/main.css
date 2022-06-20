@@ -39,3 +39,23 @@ body {
 img {
   width: 100%;
 }
+
+/* =============
+nav
+=============*/
+
+/* nav header */
+.nav__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* navbar */
+.navbar {
+  display: none;
+}
+
+.nav__sign-in-btn {
+  display: none;
+}
