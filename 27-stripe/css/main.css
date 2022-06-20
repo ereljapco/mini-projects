@@ -100,5 +100,11 @@ hero section
   font-size: 2.75rem;
   letter-spacing: 0.1rem;
   line-height: 1.25;
-  margin-block: 0;
+  margin-block: 0 2rem;
+}
+
+.hero__text {
+  color: var(--clr-primary-500);
+  font-size: 0.875rem;
+  line-height: 1.75;
 }
