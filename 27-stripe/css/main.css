@@ -98,7 +98,8 @@ hero section
 .hero-container {
   width: 90vw;
   height: 100vh;
-  padding-block: 12.75rem;
+  display: flex;
+  align-items: center;
   margin-inline: auto;
 }
 
