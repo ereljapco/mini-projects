@@ -107,4 +107,20 @@ hero section
   color: var(--clr-primary-500);
   font-size: 0.875rem;
   line-height: 1.75;
+  margin-bottom: 1.25rem;
+}
+
+.hero__start-btn {
+  color: var(--clr-primary-200);
+  font-size: 1.05rem;
+  background-color: var(--clr-highlight-med);
+  padding: 0.25rem 0.75rem;
+  border-color: transparent;
+  border-radius: var(--border-03);
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+}
+
+.hero__start-btn:hover {
+  background-color: var(--clr-highlight-high);
 }
