@@ -26,11 +26,12 @@
   </head>
   <body>
     <nav class="nav">
-      <div class="nav__header">
-        <img class="nav__logo" src="./images/logo.svg" alt="Stripe logo" />
-        <button class="nav__toggle-btn">
-          <i class="fa-solid fa-bars"></i>
-        </button>
+      <div class="nav-container">
+        <div class="nav__header">
+          <img class="nav__logo" src="./images/logo.svg" alt="Stripe logo" />
+          <button class="nav__toggle-btn">
+            <i class="fa-solid fa-bars"></i>
+          </button>
       </div>
       <ul class="navbar">
         <li class="navbar__item">
@@ -41,11 +42,29 @@
         </li>
         <li class="navbar__item">
           <button class="navbar__btn">Company</bsutton>
-        </li>
-      </ul>
-      <button class="nav__sign-in-btn">Sign In</button>
-      <aside class="sidebar"></aside>
+          </li>
+        </ul>
+        <button class="nav__sign-in-btn">Sign In</button>
+        <aside class="sidebar"></aside>
+      </div>
     </nav>
+    <main class="main">
+      <section class="hero">
+        <div class="hero-container">
+          <div class="hero__info">
+
+            <h1 class="hero__title">Payments infrastructure for the internet</h1>
+            <p class="hero__text">
+              Millions of companies of all sizes—from startups to Fortune 500s—use Stripe’s software and APIs to accept payments, send payouts, and manage their businesses online. 
+            </p>
+            <button class="hero__start-btn">Start now</button>
+          </div>
+          <div class="hero__img-container">
+            <img class="hero__img" src="./images/phone.svg" alt="">
+          </div>
+        </div>
+      </section>
+    </main>
     <!-- javascript -->
     <script type="module" src="./js/app.js"></script>
   </body>
