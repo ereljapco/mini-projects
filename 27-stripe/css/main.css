@@ -60,6 +60,14 @@ nav
   align-items: center;
 }
 
+.nav__toggle-btn {
+  color: var(--clr-primary-200);
+  background-color: var(--clr-highlight-high);
+  padding: 0.2rem 0.75rem;
+  border-color: transparent;
+  border-radius: var(--border-03);
+}
+
 /* navbar */
 .navbar {
   display: none;
