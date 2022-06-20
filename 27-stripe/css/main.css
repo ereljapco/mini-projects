@@ -24,7 +24,7 @@ custom properties
   --clr-tertiary-500: hsl(35, 88%, 72%);
   --clr-highlight-low: hsl(244, 18%, 15%);
   --clr-highlight-med: hsl(249, 15%, 28%);
-  --clr-highlight-high: hsla(248, 13%, 36%, 0.4);
+  --clr-highlight-high: hsl(248, 13%, 36%);
   /* other */
   --border-01: 0.25rem;
   --border-02: 0.5rem;
@@ -45,6 +45,8 @@ nav
 =============*/
 
 .nav {
+  width: 100%;
+  position: absolute;
   margin-block: 1rem;
 }
 
@@ -75,4 +77,12 @@ nav
 
 .nav__sign-in-btn {
   display: none;
+}
+
+/* =============
+hero section
+=============*/
+
+.hero {
+  background: url(../images/hero.svg);
 }
