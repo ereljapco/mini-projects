@@ -65,10 +65,16 @@ nav
 
 .nav__toggle-btn {
   color: var(--clr-primary-200);
-  background-color: var(--clr-highlight-high);
+  background-color: var(--clr-primary-800);
   padding: 0.2rem 0.75rem;
   border-color: transparent;
   border-radius: var(--border-03);
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+}
+
+.nav__toggle-btn:hover {
+  background-color: var(--clr-primary-700);
 }
 
 /* navbar */
