@@ -44,6 +44,15 @@ img {
 nav
 =============*/
 
+.nav {
+  margin-block: 1rem;
+}
+
+.nav-container {
+  width: 90vw;
+  margin-inline: auto;
+}
+
 /* nav header */
 .nav__header {
   display: flex;
