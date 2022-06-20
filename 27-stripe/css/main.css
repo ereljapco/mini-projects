@@ -84,7 +84,14 @@ hero section
 =============*/
 
 .hero {
-  background: url(../images/hero.svg);
+  background: url(../images/hero.svg) no-repeat;
+}
+
+.hero-container {
+  width: 90vw;
+  height: 100vh;
+  padding-block: 13rem;
+  margin-inline: auto;
 }
 
 .hero__title {
