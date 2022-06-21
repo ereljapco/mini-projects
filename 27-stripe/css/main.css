@@ -174,11 +174,13 @@ hero section
 
 .hero {
   background: url(../images/hero.svg) no-repeat;
+  height: 100vh;
 }
 
 .hero-container {
   width: 90vw;
-  height: 100vh;
+  max-width: 1150px;
+  height: 100%;
   display: grid;
   grid-template-columns: 2fr 1fr;
   justify-content: space-between;
@@ -244,5 +246,25 @@ hero section
 
   .hero__img {
     height: 24.25rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-container {
+    height: 88%;
+    align-items: end;
+  }
+
+  .hero__title {
+    max-width: 45rem;
+    font-size: 5.5rem;
+  }
+
+  .hero__text {
+    max-width: 45rem;
+  }
+
+  .hero__img {
+    height: 30rem;
   }
 }
