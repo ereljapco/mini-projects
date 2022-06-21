@@ -1,6 +1,11 @@
-const navOpenBtn = document.querySelector('.nav__open-btn');
 const navSidebar = document.querySelector('.sidebar');
+const sidebarOpenBtn = document.querySelector('.nav__open-btn');
+const sidebarCloseBtn = document.querySelector('.sidebar__close-btn');
 
-navOpenBtn.addEventListener('click', () => {
+sidebarOpenBtn.addEventListener('click', () => {
   navSidebar.classList.add('sidebar--show');
+});
+
+sidebarCloseBtn.addEventListener('click', () => {
+  navSidebar.classList.remove('sidebar--show');
 });
