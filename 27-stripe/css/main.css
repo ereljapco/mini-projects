@@ -94,7 +94,18 @@ nav
   position: absolute;
   top: 0;
   left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: hsla(249, 22%, 12%, 0.5);
+}
+
+.sidebar-container {
+  width: 90vw;
+  height: 95vh;
+  background-color: var(--clr-white);
+  padding: 2rem;
+  border-radius: var(--border-03);
 }
 
 /* =============
