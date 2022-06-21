@@ -111,7 +111,7 @@ nav
   width: 100%;
   display: flex;
   justify-content: flex-end;
-  padding: 1rem;
+  padding: 1rem 1rem 0.5rem 1rem;
 }
 
 .sidebar__close-btn {
@@ -131,6 +131,23 @@ nav
   font-size: 0.85rem;
   letter-spacing: 0.1rem;
   margin-bottom: 1rem;
+}
+
+.sidebar__sublinks {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(5rem, 50%));
+  row-gap: 0.75rem;
+}
+
+.sidebar__link {
+  color: var(--clr-highlight-low);
+  font-size: 0.875rem;
+  text-decoration: none;
+}
+
+.sidebar__icon {
+  color: var(--clr-highlight-high);
+  margin-right: 0.75rem;
 }
 
 /* =============
