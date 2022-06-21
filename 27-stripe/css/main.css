@@ -219,3 +219,29 @@ hero section
 .hero__img-container {
   display: none;
 }
+
+@media screen and (min-width: 800px) {
+  .hero {
+    background-size: 100%;
+  }
+
+  .hero-container {
+    column-gap: 1.5rem;
+  }
+
+  .hero__title {
+    font-size: 3rem;
+    line-height: 1;
+    margin-bottom: 1.975rem;
+  }
+
+  .hero__text {
+    font-size: 1.25rem;
+    line-height: 1.8;
+  }
+
+  .hero__img-container {
+    display: block;
+    width: 12rem;
+  }
+}
