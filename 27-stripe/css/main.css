@@ -179,7 +179,9 @@ hero section
 .hero-container {
   width: 90vw;
   height: 100vh;
-  display: flex;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  justify-content: space-between;
   align-items: center;
   margin-inline: auto;
 }
@@ -194,7 +196,6 @@ hero section
 }
 
 .hero__text {
-  max-width: 30rem;
   color: var(--clr-primary-500);
   font-size: 0.875rem;
   line-height: 1.75;
@@ -225,10 +226,6 @@ hero section
     background-size: 100%;
   }
 
-  .hero-container {
-    column-gap: 1.5rem;
-  }
-
   .hero__title {
     font-size: 3rem;
     line-height: 1;
@@ -241,7 +238,11 @@ hero section
   }
 
   .hero__img-container {
-    display: block;
-    width: 12rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .hero__img {
+    height: 24.25rem;
   }
 }
