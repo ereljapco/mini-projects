@@ -1,6 +1,6 @@
-const navToggleBtn = document.querySelector('.nav__toggle-btn');
+const navOpenBtn = document.querySelector('.nav__open-btn');
 const navSidebar = document.querySelector('.sidebar');
 
-navToggleBtn.addEventListener('click', () => {
+navOpenBtn.addEventListener('click', () => {
   navSidebar.classList.add('sidebar--show');
 });

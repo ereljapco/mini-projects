@@ -64,7 +64,7 @@ nav
   margin-top: 1rem;
 }
 
-.nav__toggle-btn {
+.nav__open-btn {
   color: var(--clr-white);
   background-color: var(--clr-primary-800);
   padding: 0.2rem 0.75rem;
@@ -74,7 +74,7 @@ nav
   transition: all 0.25s ease-in-out;
 }
 
-.nav__toggle-btn:hover {
+.nav__open-btn:hover {
   background-color: var(--clr-primary-700);
 }
 
