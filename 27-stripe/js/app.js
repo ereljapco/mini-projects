@@ -22,14 +22,24 @@ navbarBtns.forEach((btn) => {
 
 function displaySubItems(e) {
   const btn = e.target;
-  const btnLabel = btn.textContent.toLowerCase();
 
-  console.log(e.currentTarget);
-
-  const currentPage = sublinks.find((page) => page.page === btnLabel);
+  const currentPage = sublinks.find((page) => page.page === btn.textContent);
 
   const { page: title, links } = currentPage;
 
+  subItems.classList.add('sub-items--show');
+
+  subItemsContainer.innerHTML = `<h3 class="sub-items__title">${title}</h3>
+                                  <div class="sub-items__links sub-items__links--col-${
+                                    links.length
+                                  }">
+                                  ${displayLinks(links)}
+                                  </div>`;
+
+  displayTriangle(btn);
+}
+
+function displayLinks(links) {
   const displayLinks = links
     .map((link) => {
       return `<a class="sub-items__link" href="${link.url}">
@@ -39,17 +49,14 @@ function displaySubItems(e) {
     })
     .join('');
 
-  const btnDOMRect = e.currentTarget.getBoundingClientRect();
+  return displayLinks;
+}
+
+function displayTriangle(btn) {
+  const btnDOMRect = btn.getBoundingClientRect();
   const btnCenter = (btnDOMRect.left + btnDOMRect.right) / 2;
 
-  console.log(btnCenter);
-
-  subItems.classList.add('sub-items--show');
   subItemsTriangle.classList.add('sub-items__triangle--show');
-  subItemsTriangle.style.left = `${btnCenter}px`;
 
-  subItemsContainer.innerHTML = `<h3 class="sub-items__title">${title}</h3>
-                                  <div class="sub-items__links sub-items__links--col-${links.length}">
-                                  ${displayLinks}
-                                  </div>`;
+  subItemsTriangle.style.left = `${btnCenter}px`;
 }
