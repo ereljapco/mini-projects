@@ -162,6 +162,15 @@ nav
   margin-bottom: 1.5rem;
 }
 
+.sub-items__link {
+  color: var(--clr-primary-low);
+  text-decoration: none;
+}
+
+.sub-items__icon {
+  color: var(--clr-highlight-high);
+}
+
 /* sidebar */
 .sidebar {
   width: 0;
