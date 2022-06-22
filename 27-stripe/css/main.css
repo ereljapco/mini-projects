@@ -162,6 +162,12 @@ nav
   margin-bottom: 1.5rem;
 }
 
+.sub-items__links {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(5rem, 1fr));
+  column-gap: 1rem;
+}
+
 .sub-items__link {
   color: var(--clr-primary-low);
   text-decoration: none;
