@@ -80,6 +80,7 @@ paginations section
   );
   padding: 1.5rem;
   border-radius: var(--border-03);
+  margin-bottom: 3rem;
 }
 
 .user__img {
@@ -115,4 +116,39 @@ paginations section
   display: flex;
   justify-content: center;
   column-gap: 1rem;
+}
+
+.users__prev-btn,
+.users__next-btn {
+  color: var(--clr-text);
+  font-weight: 500;
+  background-color: transparent;
+  padding: 0.25rem 0.75rem;
+  border-color: transparent;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: var(--transition-01);
+}
+
+.users__prev-btn:hover,
+.users__next-btn:hover {
+  background-color: var(--clr-highlight-low);
+}
+
+.users__page-btn {
+  width: 2rem;
+  color: var(--clr-text);
+  background-color: var(--clr-highlight-med);
+  border-color: transparent;
+  border-radius: var(--border-01);
+  cursor: pointer;
+  transition: var(--transition-01);
+}
+
+.users__page-btn:hover {
+  background-color: var(--clr-highlight-high);
+}
+
+.users__page-btn--active {
+  background-color: var(--clr-highlight-low);
 }
