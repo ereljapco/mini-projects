@@ -44,6 +44,10 @@ img {
   width: 100%;
 }
 
+.main {
+  margin-block: 5rem;
+}
+
 /* =============
 paginations section
 =============*/
@@ -51,6 +55,7 @@ paginations section
 .pagination__title {
   color: var(--clr-text);
   text-align: center;
+  margin-bottom: 3rem;
 }
 
 .users-container {
