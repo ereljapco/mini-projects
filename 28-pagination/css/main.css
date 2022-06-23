@@ -54,12 +54,27 @@ paginations section
 }
 
 .users-container {
+  width: 90vw;
+  max-width: 1150px;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  gap: 2rem;
+  margin-inline: auto;
 }
 
 .user {
-  height: 20rem;
+  display: grid;
+  height: 17rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(
+    to bottom right,
+    var(--clr-primary-700),
+    var(--clr-primary-800)
+  );
+  padding: 1.5rem;
+  border-radius: var(--border-03);
 }
 
 .user__img {
@@ -67,4 +82,26 @@ paginations section
   height: 8rem;
   object-fit: cover;
   border-radius: 50%;
+}
+
+.user__name {
+  color: var(--clr-text);
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.user__profile-link {
+  color: var(--clr-text);
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: var(--clr-primary-900);
+  padding: 0.5rem;
+  border-radius: var(--border-03);
+  transition: var(--transition-01);
+}
+
+.user__profile-link:hover {
+  background-color: var(--clr-primary-700);
 }
