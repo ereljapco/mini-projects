@@ -110,3 +110,9 @@ paginations section
 .user__profile-link:hover {
   background-color: var(--clr-primary-700);
 }
+
+.users__btns {
+  display: flex;
+  justify-content: center;
+  column-gap: 1rem;
+}
