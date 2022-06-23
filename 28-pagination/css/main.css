@@ -32,7 +32,7 @@ custom properties
   --border-03: 0.75rem;
   --transition-01: all 0.25s ease-in-out;
   --clr-text: var(--clr-white);
-  --clr-main-bg: var(--clr-primary-800);
+  --clr-main-bg: var(--clr-primary-900);
 }
 
 body {
