@@ -52,3 +52,12 @@ paginations section
   color: var(--clr-text);
   text-align: center;
 }
+
+.users-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+}
+
+.user {
+  height: 20rem;
+}
