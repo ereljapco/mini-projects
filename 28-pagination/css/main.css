@@ -65,6 +65,7 @@ paginations section
   grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
   gap: 2rem;
   margin-inline: auto;
+  margin-bottom: 3rem;
 }
 
 .user {
@@ -80,7 +81,6 @@ paginations section
   );
   padding: 1.5rem;
   border-radius: var(--border-03);
-  margin-bottom: 3rem;
 }
 
 .user__img {
