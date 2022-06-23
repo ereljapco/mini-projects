@@ -61,3 +61,10 @@ paginations section
 .user {
   height: 20rem;
 }
+
+.user__img {
+  width: 8rem;
+  height: 8rem;
+  object-fit: cover;
+  border-radius: 50%;
+}
