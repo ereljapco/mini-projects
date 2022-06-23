@@ -149,6 +149,7 @@ paginations section
   background-color: var(--clr-highlight-high);
 }
 
-.users__page-btn--active {
+.users__page-btn--active,
+.users__page-btn--active:hover {
   background-color: var(--clr-highlight-low);
 }
