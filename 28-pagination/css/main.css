@@ -25,19 +25,30 @@ custom properties
   --clr-highlight-low: hsl(244, 18%, 15%);
   --clr-highlight-med: hsl(249, 15%, 28%);
   --clr-highlight-high: hsl(248, 13%, 36%);
-  --clr-white: #fffffe;
+  --clr-white: #e0def4;
   /* other */
   --border-01: 0.25rem;
   --border-02: 0.5rem;
   --border-03: 0.75rem;
   --transition-01: all 0.25s ease-in-out;
+  --clr-text: var(--clr-white);
+  --clr-main-bg: var(--clr-primary-800);
 }
 
 body {
   font-family: var(--ft-primary);
-  background-color: var(--clr-primary-800);
+  background-color: var(--clr-main-bg);
 }
 
 img {
   width: 100%;
+}
+
+/* =============
+paginations section
+=============*/
+
+.pagination__title {
+  color: var(--clr-text);
+  text-align: center;
 }
