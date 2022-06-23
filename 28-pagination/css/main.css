@@ -52,7 +52,7 @@ img {
 paginations section
 =============*/
 
-.pagination__title {
+.users__title {
   color: var(--clr-text);
   text-align: center;
   margin-bottom: 3rem;
