@@ -30,6 +30,7 @@ custom properties
   --border-01: 0.25rem;
   --border-02: 0.5rem;
   --border-03: 0.75rem;
+  --border-pill: 100vmax;
   --transition-01: all 0.25s ease-in-out;
   --clr-text: var(--clr-white);
   --clr-main-bg: var(--clr-primary-900);
@@ -64,4 +65,50 @@ wikipedia section
   color: var(--clr-text);
   font-weight: 600;
   text-align: center;
+}
+
+.wikipedia__search-container {
+  max-width: 27rem;
+  display: flex;
+  margin-inline: auto;
+  background-color: var(--clr-primary-800);
+  border-radius: var(--border-pill);
+}
+
+.wikipedia__search-input {
+  width: 100%;
+  color: var(--clr-highlight-high);
+  font-size: 0.875rem;
+  background-color: transparent;
+  border-color: transparent;
+  border-top-left-radius: var(--border-pill);
+  border-bottom-left-radius: var(--border-pill);
+  padding: 0.5rem 1rem;
+  transition: var(--transition-01);
+}
+
+.wikipedia__search-input:focus {
+  outline: none;
+  border: 0.15rem solid var(--clr-highlight-high);
+  border-right: transparent;
+}
+
+.wikipedia__search-btn {
+  color: var(--clr-primary-400);
+  background-color: var(--clr-primary-700);
+  border-color: transparent;
+  border-radius: var(--border-pill);
+  outline: none;
+  padding-inline: 1rem;
+  cursor: pointer;
+  transition: var(--transition-01);
+}
+
+.wikipedia__search-btn:hover {
+  background-color: var(--clr-highlight-low);
+}
+
+.wikipedia__search-btn:focus {
+  outline: none;
+  border: 0.15rem solid var(--clr-highlight-high);
 }
