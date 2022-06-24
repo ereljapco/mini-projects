@@ -1,4 +1,5 @@
 function displayPage(list, pageBtns, index) {
+  const usersContainer = document.querySelector('.users-container');
   const followers = list;
   const start = index * 10;
   const end = start + 10;
@@ -35,7 +36,7 @@ function displayPage(list, pageBtns, index) {
     })
     .join('');
 
-  return displayFollowers;
+  usersContainer.innerHTML = displayFollowers;
 }
 
 export default displayPage;
