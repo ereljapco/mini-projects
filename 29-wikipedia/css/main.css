@@ -33,6 +33,7 @@ custom properties
   --border-pill: 100vmax;
   --transition-01: all 0.25s ease-in-out;
   --transition-02: all 0.45s ease-in-out;
+  --outline-01: 0.15rem solid var(--clr-highlight-high);
   --clr-text: var(--clr-white);
   --clr-main-bg: var(--clr-primary-900);
 }
@@ -73,6 +74,7 @@ wikipedia section
 }
 
 .wikipedia__search-container {
+  position: relative;
   max-width: 27rem;
   display: flex;
   margin-inline: auto;
@@ -86,9 +88,9 @@ wikipedia section
   font-size: 0.875rem;
   background-color: transparent;
   border-color: transparent;
-  border-top-left-radius: var(--border-pill);
-  border-bottom-left-radius: var(--border-pill);
-  padding: 0.5rem 1rem;
+  border-radius: var(--border-pill);
+  padding-block: 0.5rem;
+  padding-inline: 1rem 6rem;
   transition: var(--transition-01);
 }
 
@@ -99,6 +101,10 @@ wikipedia section
 }
 
 .wikipedia__search-btn {
+  height: 100%;
+  position: absolute;
+  right: -0.2rem;
+  top: 0;
   color: var(--clr-primary-400);
   background-color: var(--clr-primary-700);
   border-color: transparent;
