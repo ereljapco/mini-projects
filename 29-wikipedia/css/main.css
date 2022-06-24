@@ -68,6 +68,10 @@ wikipedia section
   text-align: center;
 }
 
+.wikipedia__form {
+  margin-bottom: 4rem;
+}
+
 .wikipedia__search-container {
   max-width: 27rem;
   display: flex;
