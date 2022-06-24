@@ -32,6 +32,7 @@ custom properties
   --border-03: 0.75rem;
   --border-pill: 100vmax;
   --transition-01: all 0.25s ease-in-out;
+  --transition-02: all 0.45s ease-in-out;
   --clr-text: var(--clr-white);
   --clr-main-bg: var(--clr-primary-900);
 }
@@ -111,4 +112,37 @@ wikipedia section
 .wikipedia__search-btn:focus {
   outline: none;
   border: 0.15rem solid var(--clr-highlight-high);
+}
+
+.result {
+  background: linear-gradient(
+    to bottom right,
+    var(--clr-primary-700),
+    var(--clr-primary-800)
+  );
+  border-radius: var(--border-03);
+  padding: 2rem;
+}
+
+.result:hover {
+  background: linear-gradient(
+    to bottom right,
+    var(--clr-primary-800),
+    var(--clr-primary-900)
+  );
+}
+
+.result__link {
+  text-decoration: none;
+}
+
+.result__title {
+  color: var(--clr-primary-500);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.result__summary {
+  color: var(--clr-text);
+  line-height: 1.5;
 }
