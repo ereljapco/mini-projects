@@ -114,6 +114,12 @@ wikipedia section
   border: 0.15rem solid var(--clr-highlight-high);
 }
 
+.wikipedia__results {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+}
+
 .result {
   background: linear-gradient(
     to bottom right,
