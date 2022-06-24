@@ -43,3 +43,25 @@ body {
 img {
   width: 100%;
 }
+
+/* =============
+wikipedia section
+=============*/
+
+.wikipedia {
+  width: 90%;
+  max-width: 1150px;
+  margin-block: 5rem;
+  margin-inline: auto;
+}
+
+.wikipedia__logo-container {
+  width: 12rem;
+  margin-inline: auto;
+}
+
+.wikipedia__title {
+  color: var(--clr-text);
+  font-weight: 600;
+  text-align: center;
+}
