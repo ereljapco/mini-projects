@@ -1,5 +1,22 @@
-function displayPage(list, start, end) {
+function displayPage(list, pageBtns, index) {
   const followers = list;
+  const start = index * 10;
+  const end = start + 10;
+
+  localStorage.setItem('index', index);
+
+  const currentBtn = pageBtns.find((btn) => {
+    return index == btn.dataset['index'];
+  });
+
+  pageBtns.forEach((btn) => {
+    if (btn.classList.contains('users__page-btn--active')) {
+      btn.classList.remove('users__page-btn--active');
+    }
+  });
+
+  currentBtn.classList.add('users__page-btn--active');
+
   const displayFollowers = followers
     .slice(start, end)
     .map((follower) => {

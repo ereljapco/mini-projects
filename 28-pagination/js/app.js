@@ -16,14 +16,13 @@ async function displayFollowers() {
 
   userBtnsContainer.innerHTML = displayPageBtns(followersList);
 
-  let start = 0;
-  let end = 10;
+  const userPageBtns = [...document.querySelectorAll('.users__page-btn')];
+  const index = 0;
 
-  usersContainer.innerHTML = displayPage(followersList, start, end);
+  usersContainer.innerHTML = displayPage(followersList, userPageBtns, index);
 
   const usersPrevBtn = document.querySelector('.users__prev-btn');
   const usersNextBtn = document.querySelector('.users__next-btn');
-  const pageBtns = [...document.querySelectorAll('.users__page-btn')];
 
   usersPrevBtn.addEventListener('click', () => {
     let index = localStorage.getItem('index');
@@ -34,24 +33,7 @@ async function displayFollowers() {
       index--;
     }
 
-    localStorage.setItem('index', index);
-
-    const currentBtn = pageBtns.find((btn) => {
-      return index == btn.dataset['index'];
-    });
-
-    pageBtns.forEach((btn) => {
-      if (btn.classList.contains('users__page-btn--active')) {
-        btn.classList.remove('users__page-btn--active');
-      }
-    });
-
-    currentBtn.classList.add('users__page-btn--active');
-
-    start = index * 10;
-    end = start + 10;
-
-    usersContainer.innerHTML = displayPage(followersList, start, end);
+    usersContainer.innerHTML = displayPage(followersList, userPageBtns, index);
   });
 
   usersNextBtn.addEventListener('click', () => {
@@ -63,45 +45,19 @@ async function displayFollowers() {
       index++;
     }
 
-    localStorage.setItem('index', index);
-
-    const currentBtn = pageBtns.find((btn) => {
-      return index == btn.dataset['index'];
-    });
-
-    pageBtns.forEach((btn) => {
-      if (btn.classList.contains('users__page-btn--active')) {
-        btn.classList.remove('users__page-btn--active');
-      }
-    });
-
-    currentBtn.classList.add('users__page-btn--active');
-
-    start = index * 10;
-    end = start + 10;
-
-    usersContainer.innerHTML = displayPage(followersList, start, end);
+    usersContainer.innerHTML = displayPage(followersList, userPageBtns, index);
   });
 
-  pageBtns.forEach((pageBtn) => {
+  userPageBtns.forEach((pageBtn) => {
     pageBtn.addEventListener('click', (e) => {
       const btn = e.target;
       const index = btn.dataset['index'];
 
-      localStorage.setItem('index', index);
-
-      pageBtns.forEach((btn) => {
-        if (btn.classList.contains('users__page-btn--active')) {
-          btn.classList.remove('users__page-btn--active');
-        }
-      });
-
-      btn.classList.add('users__page-btn--active');
-
-      start = index * 10;
-      end = start + 10;
-
-      usersContainer.innerHTML = displayPage(followersList, start, end);
+      usersContainer.innerHTML = displayPage(
+        followersList,
+        userPageBtns,
+        index
+      );
     });
   });
 }
