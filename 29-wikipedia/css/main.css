@@ -152,6 +152,12 @@ wikipedia section
   text-decoration: none;
 }
 
+.result__link:focus {
+  outline: none;
+  border: var(--outline-01);
+  border-radius: var(--border-03);
+}
+
 .result__title {
   color: var(--clr-primary-500);
   font-weight: 600;
