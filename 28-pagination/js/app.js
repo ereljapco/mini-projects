@@ -1,6 +1,7 @@
 import fetchFollowers from './modules/fetch-followers.js';
 import displayPageBtns from './modules/display-page-btns.js';
 import displayPage from './modules/display-page.js';
+import setPageIndex from './modules/set-page-index.js';
 
 const followersURL =
   'https://api.github.com/users/dmalan/followers?per_page=100';
@@ -17,7 +18,7 @@ async function displayFollowers() {
   userBtnsContainer.innerHTML = displayPageBtns(followersList);
 
   const userPageBtns = [...document.querySelectorAll('.users__page-btn')];
-  const index = 0;
+  let index = 0;
 
   usersContainer.innerHTML = displayPage(followersList, userPageBtns, index);
 
@@ -25,25 +26,13 @@ async function displayFollowers() {
   const usersNextBtn = document.querySelector('.users__next-btn');
 
   usersPrevBtn.addEventListener('click', () => {
-    let index = localStorage.getItem('index');
-
-    if (index == 0) {
-      index = pageCount - 1;
-    } else {
-      index--;
-    }
+    index = setPageIndex(followersList);
 
     usersContainer.innerHTML = displayPage(followersList, userPageBtns, index);
   });
 
   usersNextBtn.addEventListener('click', () => {
-    let index = localStorage.getItem('index');
-
-    if (index == pageCount - 1) {
-      index = 0;
-    } else {
-      index++;
-    }
+    index = setPageIndex(followersList, 'next');
 
     usersContainer.innerHTML = displayPage(followersList, userPageBtns, index);
   });
