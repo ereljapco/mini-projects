@@ -6,6 +6,14 @@ const wikiResultsContainer = document.querySelector('.wikipedia__results');
 
 wikiSearchForm.addEventListener('submit', (e) => {
   e.preventDefault();
+
+  if (!wikiSearchInput.value) {
+    wikiResultsContainer.innerHTML = `<p class="error-message">
+                                        Please type your search in the search bar.
+                                      </p>`;
+    return;
+  }
+
   displaySearchResults();
 });
 
@@ -14,6 +22,13 @@ async function displaySearchResults() {
 
   try {
     const searchResults = await fetchSearchResults(wikiSearchInput.value);
+
+    if (searchResults.length < 1) {
+      wikiResultsContainer.innerHTML = `<p class="error-message">
+                                          No results matched your search.
+                                        </p>`;
+      return;
+    }
 
     const displaySearchResults = searchResults
       .map((result) => {
@@ -29,5 +44,7 @@ async function displaySearchResults() {
       .join('');
 
     wikiResultsContainer.innerHTML = displaySearchResults;
-  } catch (error) {}
+  } catch (error) {
+    wikiResultsContainer.innerHTML = `<p class="error-message">Uh, oh! Something went wrong :/</p>`;
+  }
 }

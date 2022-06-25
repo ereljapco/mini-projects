@@ -50,7 +50,7 @@ img {
 .loading {
   width: 10rem;
   height: 10rem;
-  grid-column: 1 / 2;
+  grid-column: 1 / -1;
   border: 0.5rem solid transparent;
   border-top: 0.5rem solid var(--clr-highlight-high);
   border-radius: 50%;
@@ -70,6 +70,13 @@ img {
   100% {
     transform: rotate(360deg);
   }
+}
+
+.error-message {
+  grid-column: 1 / -1;
+  color: var(--clr-primary-400);
+  text-align: center;
+  font-style: italic;
 }
 
 /* =============
