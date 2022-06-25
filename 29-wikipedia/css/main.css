@@ -47,6 +47,31 @@ img {
   width: 100%;
 }
 
+.loading {
+  width: 10rem;
+  height: 10rem;
+  grid-column: 1 / 2;
+  border: 0.5rem solid transparent;
+  border-top: 0.5rem solid var(--clr-highlight-high);
+  border-radius: 50%;
+  margin-inline: auto;
+  animation: rotateLoading 1s linear infinite;
+}
+
+@keyframes rotateLoading {
+  0% {
+    transform: rotate(0);
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 /* =============
 wikipedia section
 =============*/

@@ -10,20 +10,24 @@ wikiSearchForm.addEventListener('submit', (e) => {
 });
 
 async function displaySearchResults() {
-  const searchResults = await fetchSearchResults(wikiSearchInput.value);
+  wikiResultsContainer.innerHTML = `<span class="loading"></span>`;
 
-  const displaySearchResults = searchResults
-    .map((result) => {
-      const { title, pageid, snippet } = result;
+  try {
+    const searchResults = await fetchSearchResults(wikiSearchInput.value);
 
-      return `<a class="result__link" href="https://en.wikipedia.org/w/index.php?curid=${pageid}" target="_blank">
-                <article class="result">
-                  <h2 class="result__title">${title}</h2>
-                  <p class="result__summary">${snippet}</p>
-                </article>
-              </a>`;
-    })
-    .join('');
+    const displaySearchResults = searchResults
+      .map((result) => {
+        const { title, pageid, snippet } = result;
 
-  wikiResultsContainer.innerHTML = displaySearchResults;
+        return `<a class="result__link" href="https://en.wikipedia.org/w/index.php?curid=${pageid}" target="_blank">
+      <article class="result">
+      <h2 class="result__title">${title}</h2>
+      <p class="result__summary">${snippet}</p>
+      </article>
+      </a>`;
+      })
+      .join('');
+
+    wikiResultsContainer.innerHTML = displaySearchResults;
+  } catch (error) {}
 }
