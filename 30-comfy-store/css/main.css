@@ -181,6 +181,7 @@ hero section
   height: 100vh;
   display: flex;
   align-items: center;
+  margin-bottom: 5rem;
 }
 
 .hero-container {
@@ -249,4 +250,121 @@ hero section
     font-size: 1rem;
     padding-block: 0.75rem;
   }
+}
+
+/* =============
+featured section
+============= */
+
+.featured {
+  margin-bottom: 5rem;
+  text-align: center;
+}
+
+.featured__title {
+  color: var(--clr-primary-200);
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  margin-bottom: 3rem;
+}
+
+.featured__title::before {
+  content: '/';
+  color: var(--clr-secondary-500);
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+
+.featured__products {
+  width: 90vw;
+  max-width: var(--max-width);
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-inline: auto;
+  margin-bottom: 3rem;
+}
+
+.product {
+  background: linear-gradient(
+    to bottom right,
+    var(--clr-primary-700),
+    var(--clr-primary-800)
+  );
+  border-radius: var(--border-03);
+  padding: 1rem;
+}
+
+.product__img-container {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.product__img {
+  height: 14rem;
+  object-fit: cover;
+  border-radius: var(--border-03);
+}
+
+.product__icons {
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 1rem;
+  transition: var(--transition-01);
+}
+
+.product__img-container:hover .product__icons {
+  opacity: 1;
+}
+
+.product__view-link,
+.product__add-btn {
+  width: 2.25rem;
+  height: 2.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--clr-text);
+  text-decoration: none;
+  background-color: var(--clr-highlight-med);
+  border-radius: 50%;
+}
+
+.product__add-btn {
+  border-color: transparent;
+  cursor: pointer;
+}
+
+.product__title {
+  color: var(--clr-text);
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+
+.product__price {
+  color: var(--clr-primary-400);
+}
+
+.featured__all-btn {
+  display: inline-block;
+  color: var(--clr-text);
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  background-color: var(--clr-primary-500);
+  border-color: transparent;
+  border-radius: var(--border-01);
+  padding: 0.5rem 1rem;
+  margin-inline: auto;
+  transition: var(--transition-01);
+  cursor: pointer;
+}
+
+.featured__all-btn:hover {
+  background-color: var(--clr-highlight-med);
 }
