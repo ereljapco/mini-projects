@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
 *,
 ::before,
 ::after {
@@ -13,6 +15,7 @@ custom properties
 :root {
   /* fonts */
   --ft-primary: 'Poppins', sans-serif;
+  --ft-secondary: 'Kaushan Script', cursive;
   /* colors */
   --clr-primary-200: hsl(245, 50%, 91%);
   --clr-primary-400: hsl(248, 15%, 61%);
@@ -51,6 +54,10 @@ img {
 /* =============
 navbar
 ============= */
+.nav {
+  width: 100%;
+  position: fixed;
+}
 
 .navbar {
   width: 90vw;
@@ -155,4 +162,91 @@ navbar
   color: var(--clr-text);
   background-color: var(--clr-highlight-med);
   border-radius: 50%;
+}
+
+/* =============
+hero section
+============= */
+
+.hero {
+  background: linear-gradient(
+      0deg,
+      hsla(249, 22%, 12%, 0.7),
+      hsla(249, 22%, 12%, 0.7)
+    ),
+    url(../images/main-bcg.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.hero-container {
+  width: 90vw;
+  max-width: var(--max-width);
+  margin-inline: auto;
+}
+
+.hero__title {
+  color: var(--clr-text);
+  font-family: var(--ft-secondary);
+  font-size: 3rem;
+  margin-block: 0 1rem;
+}
+
+.hero__text {
+  color: var(--clr-text);
+  font-size: 1.4rem;
+  line-height: 1.25;
+  margin-bottom: 1.25rem;
+}
+
+.hero__shop-btn {
+  color: var(--clr-text);
+  font-size: 0.875rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 0.1rem solid var(--clr-text);
+  border-radius: var(--border-01);
+  padding: 0.5rem 0.75rem;
+  transition: var(--transition-01);
+  cursor: pointer;
+}
+
+.hero__shop-btn:hover {
+  color: var(--clr-highlight-med);
+  background-color: var(--clr-text);
+}
+
+@media screen and (min-width: 800px) {
+  .hero__title {
+    font-size: 4.25rem;
+  }
+
+  .hero__text {
+    font-size: 1.5rem;
+  }
+
+  .hero__shop-btn {
+    font-size: 1rem;
+    padding-block: 0.75rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .hero__title {
+    font-size: 6rem;
+  }
+
+  .hero__text {
+    font-size: 2.5rem;
+  }
+
+  .hero__shop-btn {
+    font-size: 1rem;
+    padding-block: 0.75rem;
+  }
 }
