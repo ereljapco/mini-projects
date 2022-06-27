@@ -27,6 +27,7 @@ custom properties
   --clr-highlight-high: hsl(248, 13%, 36%);
   --clr-white: #e0def4;
   /* other */
+  --max-width: 1170px;
   --border-01: 0.25rem;
   --border-02: 0.5rem;
   --border-03: 0.75rem;
@@ -53,6 +54,7 @@ navbar
 
 .navbar {
   width: 90vw;
+  max-width: var(--max-width);
   display: grid;
   grid-template-columns: auto 1fr auto;
   align-items: center;
@@ -60,8 +62,39 @@ navbar
   margin-inline: auto;
 }
 
+@media screen and (min-width: 800px) {
+  .navbar {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .navbar {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
 .navbar__pages {
   display: none;
+}
+
+@media screen and (min-width: 800px) {
+  .navbar__pages {
+    height: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 2.85rem;
+    align-items: center;
+    list-style-type: none;
+  }
+
+  .navbar__page-link {
+    color: var(--clr-text);
+    font-size: 1.15rem;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+    text-decoration: none;
+  }
 }
 
 .navbar__open-btn {
@@ -83,6 +116,12 @@ navbar
   background-color: var(--clr-highlight-high);
 }
 
+@media screen and (min-width: 800px) {
+  .navbar__open-btn {
+    display: none;
+  }
+}
+
 .navbar__logo-container {
   height: 4.9rem;
 }
@@ -93,6 +132,7 @@ navbar
 
 .navbar__cart-btn-container {
   position: relative;
+  justify-self: end;
 }
 
 .navbar__cart-btn {
