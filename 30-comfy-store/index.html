@@ -25,6 +25,37 @@
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
+    <nav class="nav">
+      <div class="navbar">
+        <ul class="navbar__pages">
+          <li class="navbar__page">
+            <a href="index.html" class="navbar__page-link">Home</a>
+          </li>
+          <li class="navbar__page">
+            <a href="products.html" class="navbar__page-link">Products</a>
+          </li>
+          <li class="navbar__page">
+            <a href="about.html" class="navbar__page-link">About</a>
+          </li>
+        </ul>
+        <button class="navbar__open-btn">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="navbar__logo-container">
+          <img
+            class="navbar__logo"
+            src="./images/logo-white.svg"
+            alt="Comfy Store logo"
+          />
+        </div>
+        <div class="navbar__cart-btn-container">
+          <button class="navbar__cart-btn">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </button>
+          <span class="navbar__cart-items">2</span>
+        </div>
+      </div>
+    </nav>
     <script type="module" src="./js/app.js"></script>
   </body>
 </html>
