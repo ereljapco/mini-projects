@@ -253,7 +253,40 @@
         </h1>
       </div>
     </header>
-    <main class="main"></main>
+    <main class="main">
+      <section class="products">
+        <div class="filter">
+          <form class="search-form">
+            <input
+              class="search-form__input"
+              type="text"
+              placeholder="Search"
+            />
+          </form>
+          <div class="company">
+            <h2 class="company__title">company</h2>
+            <div class="company__btns"></div>
+          </div>
+          <form class="price-form">
+            <label class="price-form__label" for="price__form-input"
+              >Price
+            </label>
+            <input
+              class="price-form__input"
+              id="price-form__input"
+              type="range"
+              value="50"
+              min="0"
+              max="80"
+            />
+            <p class="price-form__current-input">
+              Value: <span class="price-form__current-value">$51</span>
+            </p>
+          </form>
+        </div>
+        <div class="products-container"></div>
+      </section>
+    </main>
     <script type="module" src="./js/app.js"></script>
   </body>
 </html>

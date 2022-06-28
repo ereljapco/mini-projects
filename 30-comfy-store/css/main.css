@@ -51,6 +51,10 @@ img {
   width: 100%;
 }
 
+.main {
+  margin-bottom: 5rem;
+}
+
 /* =============
 navbar
 ============= */
@@ -593,7 +597,7 @@ featured section
   background-color: var(--clr-highlight-med);
 }
 
-/* ===================
+/* ======================
 PRODUCTS PAGE
 ====================== */
 
@@ -604,6 +608,7 @@ header
 .page__header {
   width: 100%;
   padding-top: 6rem;
+  margin-bottom: 4rem;
 }
 
 .page__header-container {
@@ -628,4 +633,97 @@ header
   .breadcrumb {
     font-size: 1.75rem;
   }
+}
+
+/* =============
+products section
+============= */
+
+.products {
+  width: 90vw;
+  max-width: var(--max-width);
+  display: grid;
+  gap: 2rem;
+  margin-inline: auto;
+}
+
+@media screen and (min-width: 800px) {
+  .products {
+    grid-template-columns: 15rem auto;
+  }
+}
+
+.search-form {
+  margin-bottom: 1.5rem;
+}
+
+.search-form__input {
+  width: 15rem;
+  color: var(--clr-text);
+  font-size: 0.875rem;
+  background-color: var(--clr-primary-700);
+  border-color: transparent;
+  border-radius: var(--border-pill);
+  padding: 0.25rem 1rem;
+  transition: var(--transition-01);
+}
+
+.search-form__input:focus {
+  outline: none;
+  border: 0.15rem solid var(--clr-primary-500);
+}
+
+.company {
+  margin-bottom: 1.5rem;
+}
+
+.company__title {
+  color: var(--clr-primary-400);
+  font-size: 1rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  margin-bottom: 0.75rem;
+}
+
+.company__btns {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.company__btn {
+  color: var(--clr-primary-500);
+  text-transform: capitalize;
+  background-color: transparent;
+  border-color: transparent;
+  margin-left: 0.5rem;
+  transition: var(--transition-01);
+  cursor: pointer;
+}
+
+.company__btn:hover {
+  color: var(--clr-primary-400);
+}
+
+.price-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.price-form__label {
+  color: var(--clr-primary-400);
+}
+
+.price-form__current-input {
+  color: var(--clr-primary-500);
+}
+
+.products-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 2rem;
 }

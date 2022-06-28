@@ -1,10 +1,22 @@
-import { featuredProductsContainer } from './elements.js';
+import {
+  featuredProductsContainer,
+  companyBtnsContainer,
+  productsContainer,
+} from './elements.js';
 import fetchProducts from './fetch-products.js';
 
 async function displayProducts() {
+  const currentPage = window.location.pathname;
   const products = await fetchProducts;
 
-  displayFeaturedProducts(products);
+  if (currentPage === '/index.html') {
+    displayFeaturedProducts(products, 'index');
+  }
+
+  if (currentPage === '/products.html') {
+    displayCompanies(products);
+    displayProductsPage(products);
+  }
 }
 
 function displayFeaturedProducts(products) {
@@ -13,7 +25,37 @@ function displayFeaturedProducts(products) {
     return featured;
   });
 
-  const displayFeaturedProducts = featuredProducts
+  featuredProductsContainer.innerHTML =
+    displayFilteredProducts(featuredProducts);
+}
+
+function displayCompanies(products) {
+  const companies = [
+    ...new Set(
+      products.map((product) => {
+        const { company } = product.fields;
+        return company;
+      })
+    ),
+  ];
+
+  const displayCompanies = companies
+    .map((company) => {
+      return `<button class="company__btn" data-company="${company}">${company}</button>`;
+    })
+    .join('');
+
+  companyBtnsContainer.innerHTML = `<button class="company__btn" data-company="all">all</button> ${displayCompanies}`;
+}
+
+function displayProductsPage(products, page) {
+  let productsList = products;
+
+  productsContainer.innerHTML = displayFilteredProducts(productsList);
+}
+
+function displayFilteredProducts(products) {
+  const displayFeaturedProducts = products
     .map((product) => {
       const id = product.id;
       const { name, price, image } = product.fields;
@@ -43,7 +85,7 @@ function displayFeaturedProducts(products) {
     })
     .join('');
 
-  featuredProductsContainer.innerHTML = displayFeaturedProducts;
+  return displayFeaturedProducts;
 }
 
 export default displayProducts;
