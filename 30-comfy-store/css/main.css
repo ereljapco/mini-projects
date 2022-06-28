@@ -577,20 +577,18 @@ featured section
   color: var(--clr-primary-400);
 }
 
-.featured__all-btn {
-  display: inline-block;
+.featured__all-products-link {
   color: var(--clr-text);
   text-transform: uppercase;
+  text-decoration: none;
   letter-spacing: 0.1rem;
   background-color: var(--clr-primary-500);
-  border-color: transparent;
   border-radius: var(--border-01);
   padding: 0.5rem 1rem;
   margin-inline: auto;
   transition: var(--transition-01);
-  cursor: pointer;
 }
 
-.featured__all-btn:hover {
+.featured__all-products-link:hover {
   background-color: var(--clr-highlight-med);
 }
