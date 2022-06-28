@@ -592,3 +592,40 @@ featured section
 .featured__all-products-link:hover {
   background-color: var(--clr-highlight-med);
 }
+
+/* ===================
+PRODUCTS PAGE
+====================== */
+
+/* =============
+header
+============= */
+
+.page__header {
+  width: 100%;
+  padding-top: 6rem;
+}
+
+.page__header-container {
+  height: 10rem;
+  background-color: var(--clr-primary-800);
+}
+
+.breadcrumb {
+  width: 90vw;
+  max-width: var(--max-width);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  color: var(--clr-text);
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin-inline: auto;
+  margin-block: 0;
+}
+
+@media screen and (min-width: 800px) {
+  .breadcrumb {
+    font-size: 1.75rem;
+  }
+}
