@@ -505,7 +505,7 @@ featured section
   width: 90vw;
   max-width: var(--max-width);
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 2rem;
   margin-inline: auto;
   margin-bottom: 3rem;
@@ -569,6 +569,7 @@ featured section
   color: var(--clr-text);
   font-size: 1rem;
   font-weight: 400;
+  text-transform: capitalize;
   margin-bottom: 0.5rem;
 }
 
