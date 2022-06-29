@@ -7,8 +7,7 @@ const cartCloseBtn = document.querySelector('.cart__close-btn');
 const featuredProductsContainer = document.querySelector('.featured__products');
 const companyBtnsContainer = document.querySelector('.company__btns');
 const productsContainer = document.querySelector('.products-container');
-
-const productsURL = 'https://course-api.com/javascript-store-products';
+const singleProductContainer = document.querySelector('.single-product');
 
 export {
   menu,
@@ -20,5 +19,5 @@ export {
   featuredProductsContainer,
   companyBtnsContainer,
   productsContainer,
-  productsURL,
+  singleProductContainer,
 };
