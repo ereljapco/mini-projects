@@ -1,9 +1,8 @@
-async function fetchProducts() {
-  const productsURL = 'https://course-api.com/javascript-store-products';
-  const response = await fetch(productsURL);
+async function fetchProducts(url) {
+  const response = await fetch(url);
   const data = await response.json();
 
   return data;
 }
 
-export default fetchProducts();
+export default fetchProducts;

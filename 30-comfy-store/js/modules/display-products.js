@@ -4,10 +4,12 @@ import {
   productsContainer,
 } from './elements.js';
 import fetchProducts from './fetch-products.js';
+import displayProduct from './display-product.js';
 
 async function displayProducts() {
   const currentPage = window.location.pathname;
-  const products = await fetchProducts;
+  const productsURL = 'https://course-api.com/javascript-store-products';
+  const products = await fetchProducts(productsURL);
 
   if (currentPage === '/index.html') {
     displayFeaturedProducts(products, 'index');
@@ -16,6 +18,10 @@ async function displayProducts() {
   if (currentPage === '/products.html') {
     displayCompanies(products);
     displayProductsPage(products);
+  }
+
+  if (currentPage === '/product.html') {
+    displayProduct();
   }
 }
 
