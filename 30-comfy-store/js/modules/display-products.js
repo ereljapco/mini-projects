@@ -2,6 +2,9 @@ import {
   featuredProductsContainer,
   companyBtnsContainer,
   productsContainer,
+  productsSearchInput,
+  productsPriceRangeInput,
+  productsPriceCurrentInput,
 } from './elements.js';
 import fetchProducts from './fetch-products.js';
 import displayProduct from './display-product.js';
@@ -55,12 +58,72 @@ function displayCompanies(products) {
     .join('');
 
   companyBtnsContainer.innerHTML = `<button class="company__btn" data-company="all">all</button> ${displayCompanies}`;
+
+  const companyBtns = document.querySelectorAll('.company__btn');
+
+  companyBtns.forEach((btn) => {
+    btn.addEventListener('click', (e) => {
+      let filteredProducts = products;
+      const btnCompany = e.currentTarget.dataset['company'];
+
+      if (btnCompany == 'all') {
+        productsContainer.innerHTML = displayFilteredProducts(filteredProducts);
+        return;
+      }
+
+      filteredProducts = products.filter((product) => {
+        const { company: productCompany } = product.fields;
+
+        return btnCompany == productCompany;
+      });
+
+      productsContainer.innerHTML = displayFilteredProducts(filteredProducts);
+    });
+  });
 }
 
 function displayProductsPage(products) {
-  let productsList = products;
+  let productsList = [...products];
 
   displayBreadcrumb();
+
+  productsSearchInput.addEventListener('keyup', () => {
+    const value = productsSearchInput.value;
+
+    const filteredProducts = productsList.filter((product) => {
+      const { name } = product.fields;
+
+      return name.includes(value);
+    });
+
+    productsContainer.innerHTML = displayFilteredProducts(filteredProducts);
+  });
+
+  productsPriceCurrentInput.textContent = `Value: $${productsPriceRangeInput.value}`;
+
+  const priceList = productsList.map((product) => {
+    const { price } = product.fields;
+
+    return price;
+  });
+
+  const maxPrice = Math.max(...priceList);
+
+  productsPriceRangeInput.max = Math.ceil(maxPrice / 100);
+
+  productsPriceRangeInput.addEventListener('change', () => {
+    const priceRangeValue = productsPriceRangeInput.value;
+
+    productsPriceCurrentInput.textContent = `Value: $${priceRangeValue}`;
+
+    const filteredProducts = productsList.filter((product) => {
+      const { price } = product.fields;
+
+      return price / 100 <= priceRangeValue;
+    });
+
+    productsContainer.innerHTML = displayFilteredProducts(filteredProducts);
+  });
 
   productsContainer.innerHTML = displayFilteredProducts(productsList);
 }
@@ -85,7 +148,7 @@ function displayFilteredProducts(products) {
                         class="product__view-icon fa-solid fa-magnifying-glass"
                       ></i>
                     </a>
-                    <button class="product__add-btn">
+                    <button class="product__add-btn data-id=${id}">
                       <i class="fa-solid fa-cart-shopping"></i>
                     </button>
                   </div>

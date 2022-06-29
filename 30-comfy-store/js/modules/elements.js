@@ -8,6 +8,11 @@ const featuredProductsContainer = document.querySelector('.featured__products');
 const companyBtnsContainer = document.querySelector('.company__btns');
 const productsContainer = document.querySelector('.products-container');
 const singleProductContainer = document.querySelector('.single-product');
+const productsSearchInput = document.querySelector('.search-form__input');
+const productsPriceRangeInput = document.querySelector('.price-form__input');
+const productsPriceCurrentInput = document.querySelector(
+  '.price-form__current-input'
+);
 
 export {
   menu,
@@ -20,4 +25,7 @@ export {
   companyBtnsContainer,
   productsContainer,
   singleProductContainer,
+  productsSearchInput,
+  productsPriceRangeInput,
+  productsPriceCurrentInput,
 };
