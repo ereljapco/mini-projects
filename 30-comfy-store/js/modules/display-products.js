@@ -5,6 +5,7 @@ import {
 } from './elements.js';
 import fetchProducts from './fetch-products.js';
 import displayProduct from './display-product.js';
+import displayBreadcrumb from './display-breadcrumb.js';
 
 async function displayProducts() {
   const currentPage = window.location.pathname;
@@ -13,11 +14,13 @@ async function displayProducts() {
 
   if (currentPage === '/index.html') {
     displayFeaturedProducts(products, 'index');
+    document.title = `Home | Comfy Store`;
   }
 
   if (currentPage === '/products.html') {
     displayCompanies(products);
     displayProductsPage(products);
+    document.title = `Products | Comfy Store`;
   }
 
   if (currentPage === '/product.html') {
@@ -54,8 +57,10 @@ function displayCompanies(products) {
   companyBtnsContainer.innerHTML = `<button class="company__btn" data-company="all">all</button> ${displayCompanies}`;
 }
 
-function displayProductsPage(products, page) {
+function displayProductsPage(products) {
   let productsList = products;
+
+  displayBreadcrumb();
 
   productsContainer.innerHTML = displayFilteredProducts(productsList);
 }

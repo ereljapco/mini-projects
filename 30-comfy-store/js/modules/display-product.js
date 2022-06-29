@@ -1,5 +1,6 @@
 import fetchProducts from './fetch-products.js';
 import { singleProductContainer } from './elements.js';
+import displayBreadcrumb from './display-breadcrumb.js';
 
 async function displayProduct() {
   const productId = window.location.search.replace('?id=', '');
@@ -9,6 +10,8 @@ async function displayProduct() {
   const { name, price, image, description, colors, company } = product.fields;
   const formatPrice = `$${price / 100}`;
   const imgURL = image[0].url;
+
+  displayBreadcrumb(name);
 
   const displayColors = colors
     .map((color) => {
