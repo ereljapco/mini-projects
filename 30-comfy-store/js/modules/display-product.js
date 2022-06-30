@@ -1,8 +1,9 @@
 import fetchProducts from './fetch-products.js';
 import { singleProductContainer } from './elements.js';
 import displayBreadcrumb from './display-breadcrumb.js';
+import addItemToCart from './add-item-to-cart.js';
 
-async function displayProduct() {
+async function displayProduct(products) {
   const productId = window.location.search.replace('?id=', '');
   const productURL = `https://course-api.com/javascript-store-single-product?id=${productId}`;
 
@@ -40,6 +41,12 @@ async function displayProduct() {
           </p>
           <button class="single-product__add-btn" data-id=${productId}>Add to Cart</button>
         </div>`;
+
+  const addBtn = document.querySelector('.single-product__add-btn');
+
+  addBtn.addEventListener('click', () => {
+    addItemToCart(products, addBtn);
+  });
 }
 
 export default displayProduct;
