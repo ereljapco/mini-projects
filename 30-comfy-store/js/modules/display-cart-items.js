@@ -44,11 +44,11 @@ function displayCartItems() {
 
   cartItemsContainer.innerHTML = displayCartItems;
 
+  removeCartItem();
+
   displayTotalAmount(cartItems);
 
   displayTotalQty(cartItems);
-
-  removeCartItem();
 }
 
 function displayTotalAmount(cartItems) {
@@ -87,6 +87,11 @@ function removeCartItem() {
       localStorage.setItem('cart', JSON.stringify(cartItems));
 
       item.parentElement.removeChild(item);
+
+      cartItems = JSON.parse(localStorage.getItem('cart'));
+
+      displayTotalAmount(cartItems);
+      displayTotalQty(cartItems);
     });
   });
 }
