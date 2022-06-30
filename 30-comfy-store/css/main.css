@@ -820,3 +820,51 @@ single product
 .single-product__add-btn:hover {
   background-color: var(--clr-highlight-high);
 }
+
+/* =============
+about page
+============= */
+
+.about-container {
+  width: 90vw;
+  max-width: var(--max-width);
+  margin-inline: auto;
+}
+
+.about__title {
+  color: var(--clr-primary-200);
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.about__title::before {
+  content: '/';
+  color: var(--clr-secondary-500);
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+
+.about__text {
+  max-width: 45rem;
+  color: var(--clr-primary-500);
+  font-size: 0.875rem;
+  line-height: 1.75;
+  margin-inline: auto;
+}
+
+@media screen and (min-width: 800px) {
+  .about__title {
+    font-size: 2.5rem;
+  }
+
+  .about__title::before {
+    font-size: 1.75rem;
+  }
+
+  .about__text {
+    font-size: 1rem;
+  }
+}

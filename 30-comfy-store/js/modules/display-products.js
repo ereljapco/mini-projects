@@ -30,6 +30,10 @@ async function displayProducts() {
   if (currentPage === '/product.html') {
     displayProduct(products);
   }
+
+  if (currentPage === '/about.html') {
+    displayBreadcrumb('About');
+  }
 }
 
 function displayFeaturedProducts(products) {

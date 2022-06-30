@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Comfy Store</title>
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- styles -->
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="navbar">
+        <ul class="navbar__pages">
+          <li class="navbar__page">
+            <a href="index.html" class="navbar__page-link">Home</a>
+          </li>
+          <li class="navbar__page">
+            <a href="products.html" class="navbar__page-link">Products</a>
+          </li>
+          <li class="navbar__page">
+            <a href="about.html" class="navbar__page-link">About</a>
+          </li>
+        </ul>
+        <button class="navbar__open-btn">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="navbar__logo-container">
+          <img
+            class="navbar__logo"
+            src="./images/logo-white.svg"
+            alt="Comfy Store logo"
+          />
+        </div>
+        <div class="navbar__cart-btn-container">
+          <button class="navbar__cart-btn">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </button>
+          <span class="navbar__cart-items">0</span>
+        </div>
+      </div>
+      <aside class="menu">
+        <div class="menu-overlay">
+          <div class="menu-container">
+            <header class="menu__header">
+              <button class="menu__close-btn">
+                <i class="fa-solid fa-xmark"></i>
+              </button>
+            </header>
+            <ul class="menu__items">
+              <il class="menu__item">
+                <a class="menu__link" href="./index.html">
+                  <span class="menu__icon">
+                    <i class="fa-solid fa-house-chimney"></i>
+                  </span>
+                  Home
+                </a>
+              </il>
+              <il class="menu__item">
+                <a class="menu__link" href="./products.html">
+                  <span class="menu__icon">
+                    <i class="fa-solid fa-couch"></i>
+                  </span>
+                  Products
+                </a>
+              </il>
+              <il class="menu__item">
+                <a class="menu__link" href="./about.html">
+                  <span class="menu__icon">
+                    <i class="fa-solid fa-book"></i>
+                  </span>
+                  About
+                </a>
+              </il>
+            </ul>
+          </div>
+        </div>
+      </aside>
+      <aside class="cart">
+        <div class="cart-overlay">
+          <div class="cart-container">
+            <header class="cart__header">
+              <button class="cart__close-btn">
+                <i class="fa-solid fa-xmark"></i>
+              </button>
+              <h2 class="cart__title">Your Bag</h2>
+            </header>
+            <div class="cart__items"></div>
+            <footer class="cart__footer">
+              <p class="cart__total">
+                Total: <span class="cart__total-amount">0</span>
+              </p>
+              <button class="cart__checkout-btn">Checkout</button>
+            </footer>
+          </div>
+        </div>
+      </aside>
+    </nav>
+    <header class="page__header">
+      <div class="page__header-container">
+        <h1 class="breadcrumb">
+          Home &nbsp;/ &nbsp;<span class="breadcrumb__current-page"></span>
+        </h1>
+      </div>
+    </header>
+    <main class="main">
+      <section class="about">
+        <div class="about-container">
+          <h2 class="about__title">Our History</h2>
+          <p class="about__text">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat
+            accusantium sapiente tempora sed dolore esse deserunt eaque
+            excepturi, delectus error accusamus vel eligendi, omnis beatae.
+            Quisquam, dicta. Eos quod quisquam esse recusandae vitae neque
+            dolore, obcaecati incidunt sequi blanditiis est exercitationem
+            molestiae delectus saepe odio eligendi modi porro eaque in libero
+            minus unde sapiente consectetur architecto. Ullam rerum, nemo iste
+            ex, eaque perspiciatis nisi, eum totam velit saepe sed quos
+            similique amet. Ex, voluptate accusamus nesciunt totam vitae esse
+            iste.
+          </p>
+        </div>
+      </section>
+    </main>
+    <script type="module" src="./js/app.js"></script>
+  </body>
+</html>
