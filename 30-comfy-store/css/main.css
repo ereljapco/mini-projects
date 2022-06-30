@@ -346,19 +346,19 @@ sidebar
   cursor: pointer;
 }
 
-.item__qty {
+.item__qty-container {
   text-align: center;
 }
 
-.item__add-qty,
-.item__minus-qty {
+.item__increase-btn,
+.item__decrease-btn {
   color: var(--clr-highlight-high);
   background-color: transparent;
   border-color: transparent;
   cursor: pointer;
 }
 
-.item__number {
+.item__qty {
   color: var(--clr-text);
 }
 
