@@ -2,10 +2,6 @@ import displayCartItems from './display-cart-items.js';
 import { cart } from './elements.js';
 
 function addItemToCart(products, btn) {
-  // const productAddBtns = document.querySelectorAll('.product__add-btn');
-
-  // productAddBtns.forEach((btn) => {
-  //   btn.addEventListener('click', () => {
   const id = btn.dataset['id'];
 
   let cartItems = JSON.parse(localStorage.getItem('cart'));
@@ -53,8 +49,6 @@ function addItemToCart(products, btn) {
   cart.classList.add('cart--show');
 
   displayCartItems();
-  //   });
-  // });
 }
 
 export default addItemToCart;
