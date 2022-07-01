@@ -1,3 +1,4 @@
+const currentPage = window.location.pathname;
 const menu = document.querySelector('.menu');
 const menuOpenBtn = document.querySelector('.navbar__open-btn');
 const menuCloseBtn = document.querySelector('.menu__close-btn');
@@ -17,7 +18,11 @@ const productsPriceCurrentInput = document.querySelector(
   '.price-form__current-input'
 );
 
+const productsURL = 'https://course-api.com/javascript-store-products';
+const productURL = 'https://course-api.com/javascript-store-single-product';
+
 export {
+  currentPage,
   menu,
   menuOpenBtn,
   menuCloseBtn,
@@ -34,4 +39,6 @@ export {
   productsSearchInput,
   productsPriceRangeInput,
   productsPriceCurrentInput,
+  productsURL,
+  productURL,
 };
