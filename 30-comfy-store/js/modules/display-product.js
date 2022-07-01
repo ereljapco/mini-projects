@@ -4,10 +4,8 @@ import displayBreadcrumb from './display-breadcrumb.js';
 import addItemToCart from './add-item-to-cart.js';
 
 async function displayProduct(products) {
-  const productId = window.location.search.replace('?id=', '');
-  const productURL = `https://course-api.com/javascript-store-single-product?id=${productId}`;
-
-  const product = await fetchProducts(productURL);
+  const product = await fetchProducts('product');
+  const id = product.id;
   const { name, price, image, description, colors, company } = product.fields;
   const formatPrice = `$${price / 100}`;
   const imgURL = image[0].url;
@@ -39,7 +37,7 @@ async function displayProduct(products) {
           <p class="single-product__text">
             ${description}
           </p>
-          <button class="single-product__add-btn" data-id=${productId}>Add to Cart</button>
+          <button class="single-product__add-btn" data-id=${id}>Add to Cart</button>
         </div>`;
 
   const addBtn = document.querySelector('.single-product__add-btn');

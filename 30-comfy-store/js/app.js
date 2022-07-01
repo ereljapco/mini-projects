@@ -3,6 +3,7 @@ import toggleCartDisplay from './modules/toggle-cart-display.js';
 import fetchProducts from './modules/fetch-products.js';
 import displayFeaturedProducts from './modules/featured-products.js';
 import displayProductsPage from './modules/products-page.js';
+import displayProduct from './modules/display-product.js';
 import displayCartItems from './modules/display-cart-items.js';
 import { currentPage } from './modules/elements.js';
 
@@ -28,7 +29,7 @@ async function initializeComfy() {
   }
 
   if (currentPage === '/product.html') {
-    // displayProduct(products);
+    displayProduct(products);
   }
 
   if (currentPage === '/about.html') {

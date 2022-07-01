@@ -4,7 +4,8 @@ async function fetchProducts(product) {
   let url = productsURL;
 
   if (product == 'product') {
-    url = productURL;
+    const id = window.location.search;
+    url = `${productURL}${id}`;
   }
 
   const response = await fetch(url);
