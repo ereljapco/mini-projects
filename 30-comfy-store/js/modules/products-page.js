@@ -1,4 +1,4 @@
-import displayBreadcrumb from './display-breadcrumb.js';
+import displayPageTitle from './page-title.js';
 import displayFilteredProducts from './filtered-products.js';
 import addItemToCart from './add-item-to-cart.js';
 import {
@@ -12,7 +12,7 @@ import {
 function displayProductsPage(products) {
   let productsList = [...products];
 
-  displayBreadcrumb();
+  displayPageTitle('Products');
 
   displayCompanies(products);
 

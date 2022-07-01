@@ -1,7 +1,7 @@
 import fetchProducts from './fetch-products.js';
-import { singleProductContainer } from './elements.js';
-import displayBreadcrumb from './display-breadcrumb.js';
+import displayPageTitle from './page-title.js';
 import addItemToCart from './add-item-to-cart.js';
+import { singleProductContainer } from './elements.js';
 
 async function displayProduct(products) {
   const product = await fetchProducts('product');
@@ -10,7 +10,7 @@ async function displayProduct(products) {
   const formatPrice = `$${price / 100}`;
   const imgURL = image[0].url;
 
-  displayBreadcrumb(name);
+  displayPageTitle(name);
 
   const displayColors = colors
     .map((color) => {

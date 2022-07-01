@@ -1,3 +1,4 @@
+import displayPageTitle from './page-title.js';
 import displayFilteredProducts from './filtered-products.js';
 import addItemToCart from './add-item-to-cart.js';
 import { featuredProductsContainer } from './elements.js';
@@ -7,6 +8,8 @@ function displayFeaturedProducts(products) {
     const { featured } = product.fields;
     return featured;
   });
+
+  displayPageTitle('Home');
 
   featuredProductsContainer.innerHTML =
     displayFilteredProducts(featuredProducts);

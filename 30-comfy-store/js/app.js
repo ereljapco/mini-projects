@@ -5,6 +5,7 @@ import displayFeaturedProducts from './modules/featured-products.js';
 import displayProductsPage from './modules/products-page.js';
 import displayProduct from './modules/display-product.js';
 import displayCartItems from './modules/display-cart-items.js';
+import displayPageTitle from './modules/page-title.js';
 import { currentPage } from './modules/elements.js';
 
 initializeComfy();
@@ -20,12 +21,10 @@ async function initializeComfy() {
 
   if (currentPage === '/index.html') {
     displayFeaturedProducts(products);
-    document.title = `Home | Comfy Store`;
   }
 
   if (currentPage === '/products.html') {
     displayProductsPage(products);
-    document.title = `Products | Comfy Store`;
   }
 
   if (currentPage === '/product.html') {
@@ -33,6 +32,6 @@ async function initializeComfy() {
   }
 
   if (currentPage === '/about.html') {
-    // displayBreadcrumb('About');
+    displayPageTitle('About');
   }
 }
