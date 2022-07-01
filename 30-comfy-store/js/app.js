@@ -1,12 +1,37 @@
 import toggleMenuDisplay from './modules/toggle-menu-display.js';
 import toggleCartDisplay from './modules/toggle-cart-display.js';
-import displayProducts from './modules/display-products.js';
+import fetchProducts from './modules/fetch-products.js';
+import displayFeaturedProducts from './modules/featured-products.js';
 import displayCartItems from './modules/display-cart-items.js';
+import { currentPage } from './modules/elements.js';
 
-toggleMenuDisplay();
+initializeComfy();
 
-toggleCartDisplay();
+async function initializeComfy() {
+  toggleMenuDisplay();
 
-displayProducts();
+  toggleCartDisplay();
 
-displayCartItems();
+  displayCartItems();
+
+  const products = await fetchProducts();
+
+  if (currentPage === '/index.html') {
+    displayFeaturedProducts(products);
+    document.title = `Home | Comfy Store`;
+  }
+
+  if (currentPage === '/products.html') {
+    // displayCompanies(products);
+    // displayProductsPage(products);
+    document.title = `Products | Comfy Store`;
+  }
+
+  if (currentPage === '/product.html') {
+    // displayProduct(products);
+  }
+
+  if (currentPage === '/about.html') {
+    // displayBreadcrumb('About');
+  }
+}
