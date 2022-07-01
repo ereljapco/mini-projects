@@ -433,20 +433,19 @@ hero section
   margin-bottom: 1.25rem;
 }
 
-.hero__shop-btn {
+.hero__shop-link {
   color: var(--clr-text);
   font-size: 0.875rem;
   letter-spacing: 0.1rem;
   text-transform: uppercase;
-  background-color: transparent;
+  text-decoration: none;
   border: 0.1rem solid var(--clr-text);
   border-radius: var(--border-01);
   padding: 0.5rem 0.75rem;
   transition: var(--transition-01);
-  cursor: pointer;
 }
 
-.hero__shop-btn:hover {
+.hero__shop-link:hover {
   color: var(--clr-highlight-med);
   background-color: var(--clr-text);
 }
