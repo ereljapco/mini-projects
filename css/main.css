@@ -130,7 +130,7 @@ nav
 
 /* navbar */
 .navbar {
-  height: 5rem;
+  height: 4rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -159,6 +159,10 @@ nav
   text-transform: capitalize;
 }
 
+.navbar__list {
+  display: none;
+}
+
 .navbar__toggle-btn {
   width: 1.75rem;
   height: 1.75rem;
@@ -181,4 +185,26 @@ nav
 
 .navbar__toggle-icon path {
   fill: var(--clr-text-subtle);
+}
+
+@media screen and (min-width: 768px) {
+  .navbar__list {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .navbar__link {
+    color: var(--clr-text-subtle);
+    padding: 0.25rem 0.5rem;
+    transition: var(--transition-01);
+  }
+
+  .navbar__link:hover {
+    background-color: var(--clr-highlight-med);
+    border-radius: var(--border-01);
+  }
+
+  .navbar__toggle-btn {
+    display: none;
+  }
 }
