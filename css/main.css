@@ -1,0 +1,125 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* =============
+custom properties
+============= */
+
+:root {
+  /* colors */
+  --clr-base-100: hsl(32, 57%, 95%);
+  --clr-base-500: hsl(249, 22%, 12%);
+  --clr-surface-100: hsl(35, 100%, 98%);
+  --clr-surface-500: hsl(247, 23%, 15%);
+  --clr-overlay-100: hsl(33, 43%, 91%);
+  --clr-overlay-500: hsl(248, 25%, 18%);
+  --clr-muted-400: hsl(257, 9%, 61%);
+  --clr-muted-500: hsl(249, 12%, 47%);
+  --clr-subtle-500: hsl(248, 15%, 61%);
+  --clr-subtle-600: hsl(248, 12%, 52%);
+  --clr-text-500: hsl(245, 50%, 91%);
+  --clr-text-900: hsl(248, 19%, 40%);
+  --clr-love-500: hsl(343, 76%, 68%);
+  --clr-love-700: hsl(343, 35%, 55%);
+  --clr-gold-500: hsl(35, 88%, 72%);
+  --clr-gold-700: hsl(35, 81%, 56%);
+  --clr-rose-500: hsl(2, 55%, 83%);
+  --clr-rose-700: hsl(3, 53%, 67%);
+  --clr-pine-500: hsl(197, 49%, 38%);
+  --clr-pine-700: hsl(197, 53%, 34%);
+  --clr-foam-500: hsl(189, 43%, 73%);
+  --clr-foam-800: hsl(189, 30%, 48%);
+  --clr-iris-500: hsl(267, 57%, 78%);
+  --clr-iris-700: hsl(268, 21%, 57%);
+  --clr-highlight-low-100: hsl(25, 35%, 93%);
+  --clr-highlight-medium-100: hsl(10, 9%, 86%);
+  --clr-highlight-high-100: hsl(315, 4%, 80%);
+  --clr-highlight-low-500: hsl(244, 18%, 15%);
+  --clr-highlight-medium-500: hsl(249, 15%, 28%);
+  --clr-highlight-high-500: hsl(248, 13%, 36%);
+  /* fonts */
+  --ft-primary: 'Inter', sans-serif;
+  --ft-secondary: 'Montserrat', sans-serif;
+  /* color assignment */
+  --clr-base: var(--clr-base-100);
+  --clr-surface: var(--clr-surface-100);
+  --clr-overlay: var(--clr-overlay-100);
+  --clr-muted: var(--clr-muted-400);
+  --clr-subtle: var(--clr-subtle-600);
+  --clr-text: var(--clr-text-900);
+  --clr-text-subtle: var(--clr-text-900);
+  --clr-love: var(--clr-love-700);
+  --clr-gold: var(--clr-gold-700);
+  --clr-rose: var(--clr-rose-700);
+  --clr-pine: var(--clr-pine-700);
+  --clr-foam: var(--clr-foam-800);
+  --clr-iris: var(--clr-iris-700);
+  --clr-highlight-low: var(--clr-highlight-low-100);
+  --clr-highlight-med: var(--clr-highlight-medium-100);
+  --clr-highlight-high: var(--clr-highlight-high-100);
+  /* values */
+  --max-width: 1150px;
+  --border-01: 0.25rem;
+  --transition-01: all 0.25s ease-in-out;
+}
+
+.dark-mode {
+  --clr-base: var(--clr-base-500);
+  --clr-surface: var(--clr-surface-500);
+  --clr-overlay: var(--clr-overlay-500);
+  --clr-muted: var(--clr-muted-500);
+  --clr-subtle: var(--clr-subtle-500);
+  --clr-text: var(--clr-text-500);
+  --clr-text-subtle: var(--clr-subtle);
+  --clr-love: var(--clr-love-500);
+  --clr-gold: var(--clr-gold-500);
+  --clr-rose: var(--clr-rose-500);
+  --clr-pine: var(--clr-pine-500);
+  --clr-foam: var(--clr-foam-500);
+  --clr-iris: var(--clr-iris-500);
+  --clr-highlight-low: var(--clr-highlight-low-500);
+  --clr-highlight-med: var(--clr-highlight-medium-500);
+  --clr-highlight-high: var(--clr-highlight-high-500);
+}
+
+body {
+  color: var(--clr-text);
+  font-family: var(--ft-primary);
+  font-weight: 400;
+  background-color: var(--clr-base);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: var(--ft-secondary);
+  font-family: 600;
+  text-transform: capitalize;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.container {
+  width: 90vw;
+  max-width: var(--max-width);
+  margin-inline: auto;
+}
