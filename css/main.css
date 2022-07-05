@@ -123,3 +123,62 @@ ul {
   max-width: var(--max-width);
   margin-inline: auto;
 }
+
+/* =============
+nav
+============= */
+
+/* navbar */
+.navbar {
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 0.25rem;
+}
+
+.navbar__logo-link {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  height: 1.35rem;
+}
+
+.navbar__logo-icon {
+  height: 100%;
+}
+
+.navbar__logo-icon path {
+  fill: var(--clr-foam);
+}
+
+.navbar__logo-text {
+  color: var(--clr-text);
+  font-size: 1.2rem;
+  font-weight: 800;
+  text-transform: capitalize;
+}
+
+.navbar__toggle-btn {
+  width: 1.75rem;
+  height: 1.75rem;
+  display: grid;
+  place-items: center;
+  background-color: var(--clr-highlight-med);
+  border-color: transparent;
+  border-radius: var(--border-01);
+  cursor: pointer;
+  transition: var(--transition-01);
+}
+
+.navbar__toggle-btn:hover {
+  background-color: var(--clr-highlight-high);
+}
+
+.navbar__toggle-icon {
+  height: 1.2rem;
+}
+
+.navbar__toggle-icon path {
+  fill: var(--clr-text-subtle);
+}
