@@ -238,6 +238,8 @@ menu
 }
 
 .menu-list {
+  display: grid;
+  gap: 1rem;
   width: 90vw;
   background-color: var(--clr-surface);
   border: 1px solid var(--clr-highlight-med);
@@ -245,10 +247,6 @@ menu
   margin-inline: auto;
   z-index: 999;
   padding: 1rem;
-}
-
-.menu-sublist {
-  margin-bottom: 1rem;
 }
 
 .menu-sublist__title {
