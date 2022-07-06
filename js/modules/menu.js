@@ -1,7 +1,7 @@
 import { menuOpenBtn, menu, menuOverlay } from './elements.js';
 
 function toggleMenu() {
-  menuOpenBtn.addEventListener('click', (e) => {
+  menuOpenBtn.addEventListener('click', () => {
     menu.classList.add('menu--display');
   });
 
