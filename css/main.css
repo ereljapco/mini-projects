@@ -378,13 +378,13 @@ projects section
   position: absolute;
   top: 0;
   left: 0;
-  background-color: var(--clr-subtle);
+  background-color: var(--clr-overlay);
   opacity: 0;
   transition: var(--transition-01);
 }
 
 .project__img-container:hover .project-overlay {
-  opacity: 0.875;
+  opacity: 0.75;
 }
 
 .project-overlay-container {
