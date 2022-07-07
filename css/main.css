@@ -526,6 +526,7 @@ contact section
 }
 
 .contact__email {
+  color: var(--clr-text-subtle);
   text-align: center;
   margin-bottom: 1rem;
 }
