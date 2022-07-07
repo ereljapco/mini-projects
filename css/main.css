@@ -447,8 +447,9 @@ projects section
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
-  font-size: 0.875rem;
+  font-size: 0.8rem;
   font-weight: 400;
+  text-transform: uppercase;
   border-radius: var(--border-01);
   padding-block: 0.15rem;
   cursor: pointer;
@@ -467,6 +468,10 @@ projects section
   background-color: transparent;
 }
 
+.actions__btn-icon-container {
+  overflow: hidden;
+}
+
 .actions__btn-icon {
   width: 1rem;
   height: 1rem;
@@ -478,4 +483,26 @@ projects section
 
 .actions__btn--secondary .actions__btn-icon {
   stroke: var(--clr-love);
+}
+
+.actions__btn:hover .actions__btn-icon {
+  animation: animateActionBtnIcon 0.5s;
+}
+
+@keyframes animateActionBtnIcon {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-100%);
+  }
+
+  51% {
+    transform: translateY(100%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }
