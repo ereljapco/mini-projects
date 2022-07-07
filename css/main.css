@@ -122,15 +122,23 @@ ul {
 
 .navbar,
 .hero-container,
-.projects-container {
+.projects-container,
+.contact-container {
   width: 90vw;
   max-width: var(--max-width);
   margin-inline: auto;
 }
 
 .hero__title,
-.projects__title {
+.projects__title,
+.contact__title {
   text-align: center;
+}
+
+.projects__title,
+.contact__title {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
 }
 
 /* =============
@@ -319,11 +327,6 @@ projects section
   margin-block: 5rem;
 }
 
-.projects__title {
-  font-size: 2.5rem;
-  margin-bottom: 1.5rem;
-}
-
 .projects__copy {
   width: 85%;
   color: var(--clr-text-subtle);
@@ -487,6 +490,70 @@ projects section
 
 .actions__btn:hover .actions__btn-icon {
   animation: animateActionBtnIcon 0.5s;
+}
+
+/* =============
+contact section
+============= */
+
+.contact-container {
+  margin-block: 5rem;
+}
+
+.contact__title {
+  font-size: 2.5rem;
+}
+
+.contact__icon {
+  height: 2rem;
+  fill: var(--clr-gold);
+  transform: rotate(-10deg);
+  animation: animateContactIcon 0.35s linear 2;
+}
+
+@keyframes animateContactIcon {
+  0% {
+    transform: rotate(0);
+  }
+
+  50% {
+    transform: rotate(10deg);
+  }
+
+  100% {
+    transform: rotate(-10deg);
+  }
+}
+
+.contact__email {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.contact__socials {
+  display: grid;
+  grid-template-columns: repeat(3, 1.75rem);
+  justify-content: center;
+  gap: 0.5rem;
+  margin-inline: auto;
+}
+
+.contact__social-link {
+  width: 1.75rem;
+  height: 1.75rem;
+  display: grid;
+  place-items: center;
+  border-radius: var(--border-01);
+}
+
+.contact__social-link:hover {
+  background-color: var(--clr-highlight-med);
+}
+
+.contact__social-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  stroke: var(--clr-text-subtle);
 }
 
 @keyframes animateActionBtnIcon {
