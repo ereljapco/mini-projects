@@ -123,7 +123,8 @@ ul {
 .navbar,
 .hero-container,
 .projects-container,
-.contact-container {
+.contact-container,
+.footer-container {
   width: 90vw;
   max-width: var(--max-width);
   margin-inline: auto;
@@ -573,4 +574,40 @@ contact section
   100% {
     transform: translateY(0);
   }
+}
+
+/* =============
+footer
+============= */
+
+.footer {
+  margin-bottom: 3rem;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-copy {
+  color: var(--clr-text-subtle);
+  font-size: 0.85rem;
+}
+
+.footer-socials__link {
+  width: 1.5rem;
+  height: 1.5rem;
+  display: grid;
+  place-content: center;
+  border-radius: var(--border-01);
+}
+
+.footer-socials__link:hover {
+  background-color: var(--clr-highlight-med);
+}
+
+.footer-socials__icon {
+  height: 1.15rem;
+  stroke: var(--clr-text);
 }
